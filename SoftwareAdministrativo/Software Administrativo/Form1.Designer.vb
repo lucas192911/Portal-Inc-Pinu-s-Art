@@ -30,11 +30,10 @@ Partial Class Form1
         Me.PreciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PendientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegistroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MaterialesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabelFH = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.btnMostrar = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +57,7 @@ Partial Class Form1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.LavenderBlush
         Me.MenuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Nj8ihToolStripMenuItem, Me.CajaToolStripMenuItem, Me.AyudaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Nj8ihToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(655, 28)
@@ -68,7 +67,7 @@ Partial Class Form1
         'Nj8ihToolStripMenuItem
         '
         Me.Nj8ihToolStripMenuItem.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Nj8ihToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem, Me.PendientesToolStripMenuItem, Me.RegistroToolStripMenuItem})
+        Me.Nj8ihToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreciosToolStripMenuItem, Me.PendientesToolStripMenuItem, Me.RegistroToolStripMenuItem, Me.MaterialesToolStripMenuItem})
         Me.Nj8ihToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Nj8ihToolStripMenuItem.ForeColor = System.Drawing.Color.MediumVioletRed
         Me.Nj8ihToolStripMenuItem.Name = "Nj8ihToolStripMenuItem"
@@ -97,15 +96,13 @@ Partial Class Form1
         Me.RegistroToolStripMenuItem.ForeColor = System.Drawing.Color.MediumVioletRed
         Me.RegistroToolStripMenuItem.Name = "RegistroToolStripMenuItem"
         Me.RegistroToolStripMenuItem.Size = New System.Drawing.Size(158, 24)
-        Me.RegistroToolStripMenuItem.Text = "Registro"
+        Me.RegistroToolStripMenuItem.Text = "Clientes"
         '
-        'CajaToolStripMenuItem
+        'MaterialesToolStripMenuItem
         '
-        Me.CajaToolStripMenuItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CajaToolStripMenuItem.ForeColor = System.Drawing.Color.MediumVioletRed
-        Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
-        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
-        Me.CajaToolStripMenuItem.Text = "Caja"
+        Me.MaterialesToolStripMenuItem.Name = "MaterialesToolStripMenuItem"
+        Me.MaterialesToolStripMenuItem.Size = New System.Drawing.Size(158, 24)
+        Me.MaterialesToolStripMenuItem.Text = "Materiales"
         '
         'AyudaToolStripMenuItem
         '
@@ -131,21 +128,15 @@ Partial Class Form1
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
-        'btnMostrar
-        '
-        Me.btnMostrar.Location = New System.Drawing.Point(469, 273)
-        Me.btnMostrar.Name = "btnMostrar"
-        Me.btnMostrar.Size = New System.Drawing.Size(125, 45)
-        Me.btnMostrar.TabIndex = 5
-        Me.btnMostrar.Text = "Mostrar"
-        Me.btnMostrar.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Fondo_2
-        Me.PictureBox1.Location = New System.Drawing.Point(0, -588)
+        Me.PictureBox1.Location = New System.Drawing.Point(-9, -746)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1193, 1202)
+        Me.PictureBox1.Size = New System.Drawing.Size(681, 1158)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
@@ -154,7 +145,6 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(655, 400)
-        Me.Controls.Add(Me.btnMostrar)
         Me.Controls.Add(Me.LabelFH)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -179,10 +169,9 @@ Partial Class Form1
     Friend WithEvents PreciosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PendientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RegistroToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CajaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LabelFH As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents btnMostrar As System.Windows.Forms.Button
+    Friend WithEvents MaterialesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

@@ -1,0 +1,5 @@
+C:\Users\kel\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Release\Software_Administrativo.Form1.resources
+C:\Users\kel\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Release\Software_Administrativo.IngresarCliente.resources
+C:\Users\kel\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Release\Software_Administrativo.mostar.resources
+C:\Users\kel\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Release\Software_Administrativo.Resources.resources
+C:\Users\kel\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Release\Software Administrativo.vbproj.GenerateResource.Cache
