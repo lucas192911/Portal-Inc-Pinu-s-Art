@@ -28,7 +28,7 @@ CREATE TABLE `cliente` (
   `nombre` varchar(45) DEFAULT NULL,
   `direccion` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `cliente` (
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (94654859,1,'Juan',NULL),(94469759,2,'Pedro',NULL),(25454,3,'asdf',NULL),(468465,5,'am',NULL),(54512,8,'wdgfwe',NULL),(94647859,10,'Luis',NULL),(9845648,12,'Jose',NULL),(98745621,14,'Maria',NULL),(45864,27,'Juan',NULL),(544824,28,'Nombre',NULL),(2978146,41,'Jose',NULL),(95845624,45,'Marcos',NULL),(8942564,46,'Manuel',NULL),(291464,58,'jose',NULL),(458454,60,'Nombre',NULL);
+INSERT INTO `cliente` VALUES (45816,61,'Nombre1','direccion1'),(45454,62,'Nombre1','dire'),(4545,63,'kk','sdf'),(454,64,'adf','sadf');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,8 +77,9 @@ CREATE TABLE `materiales` (
   `precio` int(11) DEFAULT NULL,
   `descripcion` varchar(225) DEFAULT NULL,
   `cantidad` int(11) DEFAULT NULL,
+  `nombre` varchar(25) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,6 +88,7 @@ CREATE TABLE `materiales` (
 
 LOCK TABLES `materiales` WRITE;
 /*!40000 ALTER TABLE `materiales` DISABLE KEYS */;
+INSERT INTO `materiales` VALUES (1,10,'descripcion',2,'Nombre de un material'),(2,40,'descripcion',22,'Nombre de otro material'),(3,90,'descripcion',100,'material');
 /*!40000 ALTER TABLE `materiales` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,6 +112,7 @@ CREATE TABLE `producto` (
 
 LOCK TABLES `producto` WRITE;
 /*!40000 ALTER TABLE `producto` DISABLE KEYS */;
+INSERT INTO `producto` VALUES (28,'otroItem'),(38,'otroProd'),(45,'producto1'),(48,'producto2');
 /*!40000 ALTER TABLE `producto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -126,4 +129,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-07 17:46:24
+-- Dump completed on 2020-09-10 20:21:19
