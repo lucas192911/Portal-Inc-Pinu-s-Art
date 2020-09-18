@@ -76,10 +76,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar Materiales.Designer.vb">
-      <DependentUpon>Agregar Materiales.vb</DependentUpon>
+    <Compile Include="Agregar MAteriales.Designer.vb">
+      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
     </Compile>
-    <Compile Include="Agregar Materiales.vb">
+    <Compile Include="Agregar MAteriales.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Eleccion.Designer.vb">
@@ -131,8 +131,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Agregar Materiales.resx">
-      <DependentUpon>Agregar Materiales.vb</DependentUpon>
+    <EmbeddedResource Include="Agregar MAteriales.resx">
+      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eleccion.resx">
       <DependentUpon>Eleccion.vb</DependentUpon>
@@ -179,6 +179,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Fondo 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-abstracto-textura-metalica-oro-rosa_1048-7968.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-marco-lineas-doradas-hexagonales-premium_1017-26502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-abstracto-textura-metalica-oro-rosa_1048-79681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-marco-lineas-doradas-hexagonales-premium_1017-265021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Posible fondo claro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo para posible modo oscuro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-marco-lineas-doradas-hexagonales-premium_1017-265022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_clear_128_28306.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_clear_128_283061.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-09-15 at 5.39.57 PM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

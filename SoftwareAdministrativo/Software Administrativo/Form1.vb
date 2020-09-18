@@ -1,9 +1,6 @@
 ﻿Imports MySql.Data
 Imports MySql.Data.MySqlClient
-
 Public Class Form1
-
-
 
     Dim conexion As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema")
     Dim da As MySqlDataAdapter
@@ -11,22 +8,45 @@ Public Class Form1
     Dim sql As String
     Dim comando As MySqlCommand
 
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         LabelFH.Text = Date.Now.ToLongTimeString & "   " & DateTime.Now.ToString("dd/MM/yyyy")
+
     End Sub
 
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Eleccion.Show()
+        Dim f As New IngresarCliente
+        f.ShowDialog()
     End Sub
 
     Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         mostar.ShowDialog()
     End Sub
 
+    Private Sub PictureBox1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-    Private Sub PendientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PendientesToolStripMenuItem.Click
-        'showEncargo
+    End Sub
+
+    Private Sub LabelFH_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LabelFH.Click
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Close()
     End Sub
 End Class

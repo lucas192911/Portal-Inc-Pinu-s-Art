@@ -25,11 +25,12 @@ Partial Class Eleccion
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(39, 49)
+        Me.Button1.Location = New System.Drawing.Point(47, 80)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 37)
         Me.Button1.TabIndex = 0
@@ -38,7 +39,7 @@ Partial Class Eleccion
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(182, 49)
+        Me.Button2.Location = New System.Drawing.Point(203, 80)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(106, 37)
         Me.Button2.TabIndex = 1
@@ -48,22 +49,35 @@ Partial Class Eleccion
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(98, 19)
+        Me.Label1.Location = New System.Drawing.Point(109, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 13)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "¿Cliente nuevo o existente?"
         '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(310, 0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(43, 29)
+        Me.Button5.TabIndex = 10
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'Eleccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(318, 98)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(170, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(353, 139)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Eleccion"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "?"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -72,4 +86,5 @@ Partial Class Eleccion
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

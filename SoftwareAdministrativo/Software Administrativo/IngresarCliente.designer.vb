@@ -26,9 +26,11 @@ Partial Class IngresarCliente
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtDireccion = New System.Windows.Forms.TextBox()
+        Me.txtDescripcion = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -36,7 +38,7 @@ Partial Class IngresarCliente
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(68, 45)
+        Me.Label1.Location = New System.Drawing.Point(68, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(69, 20)
         Me.Label1.TabIndex = 0
@@ -45,7 +47,7 @@ Partial Class IngresarCliente
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(179, 45)
+        Me.txtNombre.Location = New System.Drawing.Point(179, 26)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(166, 26)
         Me.txtNombre.TabIndex = 1
@@ -68,13 +70,13 @@ Partial Class IngresarCliente
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Telefono:"
         '
-        'txtDireccion
+        'txtDescripcion
         '
-        Me.txtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(179, 140)
-        Me.txtDireccion.Name = "txtDireccion"
-        Me.txtDireccion.Size = New System.Drawing.Size(166, 26)
-        Me.txtDireccion.TabIndex = 3
+        Me.txtDescripcion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescripcion.Location = New System.Drawing.Point(179, 140)
+        Me.txtDescripcion.Name = "txtDescripcion"
+        Me.txtDescripcion.Size = New System.Drawing.Size(166, 26)
+        Me.txtDescripcion.TabIndex = 3
         '
         'Label3
         '
@@ -95,6 +97,24 @@ Partial Class IngresarCliente
         Me.btnGuardar.Text = "Continuar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
+        'txtID
+        '
+        Me.txtID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtID.Location = New System.Drawing.Point(179, 59)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(166, 26)
+        Me.txtID.TabIndex = 0
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(68, 65)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(30, 20)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "ID:"
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(68, 200)
@@ -110,8 +130,10 @@ Partial Class IngresarCliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(462, 238)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtID)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnGuardar)
-        Me.Controls.Add(Me.txtDireccion)
+        Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtTelefono)
         Me.Controls.Add(Me.Label2)
@@ -128,8 +150,10 @@ Partial Class IngresarCliente
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents txtTelefono As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtDireccion As System.Windows.Forms.TextBox
+    Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
+    Friend WithEvents txtID As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

@@ -3,6 +3,7 @@
 Module funciones
     Dim conection As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema")
 
+    Dim adapter As MySqlDataAdapter
 
 
 
@@ -10,7 +11,7 @@ Module funciones
     Public Sub insertRegistry(ByVal sentenceValidation As String, ByVal sentence As String)
         conection.Open()
         Dim dtValidation As New DataTable
-        Dim searchInTable As DataTable = showQuery(sentenceValidation)
+        Dim searchInTable As DataTable = fillTable(showQuery(sentenceValidation), dtValidation)
 
         Try
 
@@ -29,23 +30,32 @@ Module funciones
     End Sub
 
 
-    '---Envía una consulta de registro, como parametro 'sentence'.---
-    Public Function showQuery(ByVal sentence As String) As DataTable
-        Dim dt As New DataTable
-
+    '---Envía una consulta de obtención de registro, como parametro 'sentence'.Y retorna una variable de tipo MysqlAdapter---
+    Public Function showQuery(ByVal sentence As String)
         Try
-            Dim adapter As New MySqlDataAdapter
+
             adapter = New MySqlDataAdapter(sentence, conection)
-            adapter.Fill(dt)
+
 
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
 
-        Return dt
+        Return adapter
 
     End Function
 
-    
+    '---Llena un dataTable con el retorno de showQuery---
+    Public Function fillTable(ByVal adapter As MySqlDataAdapter, ByVal dataTable As DataTable)
+        Try
+            adapter.Fill(DataTable)
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+
+        Return DataTable
+
+    End Function
+
     
 End Module
