@@ -27,6 +27,6 @@ Public Class Form1
 
 
     Private Sub PendientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PendientesToolStripMenuItem.Click
-        'showEncargo
+        'showEncargos
     End Sub
 End Class

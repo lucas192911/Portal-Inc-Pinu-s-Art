@@ -119,7 +119,7 @@ Partial Class Ingresar_Encargo
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(104, 214)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(231, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(259, 21)
         Me.ComboBox1.TabIndex = 12
         '
         'Label6
@@ -144,7 +144,7 @@ Partial Class Ingresar_Encargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(511, 364)
+        Me.ClientSize = New System.Drawing.Size(595, 476)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.ComboBox1)

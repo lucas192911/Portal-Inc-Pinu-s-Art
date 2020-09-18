@@ -7,10 +7,10 @@ Module funciones
 
 
     'Validación de registro antes de ingresarlo. 'sentenceValidation: consulta para validar, y sentence: consulta para ingresar'---
-    Public Sub insertRegistry(ByVal sentenceValidation As String, ByVal sentence As String)
+    Public Sub InsertRow(ByVal sentenceValidation As String, ByVal sentence As String)
         conection.Open()
         Dim dtValidation As New DataTable
-        Dim searchInTable As DataTable = showQuery(sentenceValidation)
+        Dim searchInTable As DataTable = Consulta(sentenceValidation)
 
         Try
 
@@ -18,7 +18,7 @@ Module funciones
                 MsgBox("Ya existe", MsgBoxStyle.Critical)
             Else
                 Dim Command As New MySqlCommand(sentence, conection)
-                command.ExecuteNonQuery()
+                Command.ExecuteNonQuery()
                 MsgBox("Datos guardados", MsgBoxStyle.Information)
             End If
 
@@ -30,7 +30,7 @@ Module funciones
 
 
     '---Envía una consulta de registro, como parametro 'sentence'.---
-    Public Function showQuery(ByVal sentence As String) As DataTable
+    Public Function Consulta(ByVal sentence As String) As DataTable
         Dim dt As New DataTable
 
         Try
