@@ -36,14 +36,13 @@ Partial Class Form1
         Me.btnMateriales = New System.Windows.Forms.Button()
         Me.btnPendiente = New System.Windows.Forms.Button()
         Me.btnEncargo = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlTitleBar = New System.Windows.Forms.Panel()
         Me.lblCerrar = New System.Windows.Forms.Label()
         Me.lblMinimizar = New System.Windows.Forms.Label()
         Me.lblMaximizar = New System.Windows.Forms.Label()
+        Me.pnlContenedor = New System.Windows.Forms.Panel()
         Me.pnlMenu.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTitleBar.SuspendLayout()
         Me.SuspendLayout()
@@ -106,6 +105,7 @@ Partial Class Form1
         Me.pnlMenu.Controls.Add(Me.Label1)
         Me.pnlMenu.Controls.Add(Me.btnCliente)
         Me.pnlMenu.Controls.Add(Me.btnPrecio)
+        Me.pnlMenu.Controls.Add(Me.pnlContenedor)
         Me.pnlMenu.Controls.Add(Me.btnMateriales)
         Me.pnlMenu.Controls.Add(Me.btnPendiente)
         Me.pnlMenu.Controls.Add(Me.btnEncargo)
@@ -195,17 +195,6 @@ Partial Class Form1
         Me.btnEncargo.Text = "Encargos"
         Me.btnEncargo.UseVisualStyleBackColor = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(780, 578)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -268,10 +257,18 @@ Partial Class Form1
         Me.lblMaximizar.Text = "Maximizar"
         Me.lblMaximizar.Visible = False
         '
+        'pnlContenedor
+        '
+        Me.pnlContenedor.Location = New System.Drawing.Point(172, 25)
+        Me.pnlContenedor.Name = "pnlContenedor"
+        Me.pnlContenedor.Size = New System.Drawing.Size(605, 550)
+        Me.pnlContenedor.TabIndex = 15
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(780, 578)
         Me.Controls.Add(Me.lblMaximizar)
         Me.Controls.Add(Me.lblMinimizar)
@@ -280,7 +277,6 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.LabelFH)
-        Me.Controls.Add(Me.PictureBox1)
         Me.ForeColor = System.Drawing.Color.MediumVioletRed
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -289,7 +285,6 @@ Partial Class Form1
         Me.Text = "de"
         Me.pnlMenu.ResumeLayout(False)
         Me.pnlMenu.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTitleBar.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -300,7 +295,6 @@ Partial Class Form1
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents LabelFH As System.Windows.Forms.Label
     Friend WithEvents pnlMenu As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents btnMinimizar As System.Windows.Forms.Button
     Friend WithEvents btnMaximizar As System.Windows.Forms.Button
@@ -314,5 +308,6 @@ Partial Class Form1
     Friend WithEvents lblCerrar As System.Windows.Forms.Label
     Friend WithEvents lblMinimizar As System.Windows.Forms.Label
     Friend WithEvents lblMaximizar As System.Windows.Forms.Label
+    Friend WithEvents pnlContenedor As System.Windows.Forms.Panel
 
 End Class
