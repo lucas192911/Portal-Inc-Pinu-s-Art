@@ -29,16 +29,16 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCliente = New System.Windows.Forms.Button()
+        Me.btnPrecio = New System.Windows.Forms.Button()
+        Me.btnMateriales = New System.Windows.Forms.Button()
+        Me.btnPendiente = New System.Windows.Forms.Button()
+        Me.btnEncargo = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.pnlMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,11 +52,11 @@ Partial Class Form1
         '
         Me.LabelFH.AutoSize = True
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.LabelFH.Font = New System.Drawing.Font("Modern No. 20", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFH.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFH.ForeColor = System.Drawing.Color.MediumVioletRed
         Me.LabelFH.Location = New System.Drawing.Point(328, 452)
         Me.LabelFH.Name = "LabelFH"
-        Me.LabelFH.Size = New System.Drawing.Size(29, 34)
+        Me.LabelFH.Size = New System.Drawing.Size(35, 37)
         Me.LabelFH.TabIndex = 3
         Me.LabelFH.Text = "g"
         '
@@ -90,20 +90,20 @@ Partial Class Form1
         Me.Button2.TabIndex = 7
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'pnlMenu
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button8)
-        Me.Panel1.Controls.Add(Me.Button7)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(172, 578)
-        Me.Panel1.TabIndex = 5
+        Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlMenu.Controls.Add(Me.Label1)
+        Me.pnlMenu.Controls.Add(Me.btnCliente)
+        Me.pnlMenu.Controls.Add(Me.btnPrecio)
+        Me.pnlMenu.Controls.Add(Me.btnMateriales)
+        Me.pnlMenu.Controls.Add(Me.btnPendiente)
+        Me.pnlMenu.Controls.Add(Me.btnEncargo)
+        Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
+        Me.pnlMenu.Name = "pnlMenu"
+        Me.pnlMenu.Size = New System.Drawing.Size(172, 578)
+        Me.pnlMenu.TabIndex = 5
         '
         'Label1
         '
@@ -114,80 +114,80 @@ Partial Class Form1
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Ayuda"
         '
-        'Button8
+        'btnCliente
         '
-        Me.Button8.BackColor = System.Drawing.Color.LightPink
-        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
-        Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.Button8.Location = New System.Drawing.Point(0, 225)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(172, 39)
-        Me.Button8.TabIndex = 13
-        Me.Button8.Text = "Clientes"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.btnCliente.BackColor = System.Drawing.Color.LightPink
+        Me.btnCliente.BackgroundImage = CType(resources.GetObject("btnCliente.BackgroundImage"), System.Drawing.Image)
+        Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCliente.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnCliente.Location = New System.Drawing.Point(0, 225)
+        Me.btnCliente.Name = "btnCliente"
+        Me.btnCliente.Size = New System.Drawing.Size(172, 39)
+        Me.btnCliente.TabIndex = 13
+        Me.btnCliente.Text = "Clientes"
+        Me.btnCliente.UseVisualStyleBackColor = False
         '
-        'Button7
+        'btnPrecio
         '
-        Me.Button7.BackColor = System.Drawing.Color.LightPink
-        Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
-        Me.Button7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.Button7.Location = New System.Drawing.Point(0, 339)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(172, 39)
-        Me.Button7.TabIndex = 12
-        Me.Button7.Text = "Precios"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.btnPrecio.BackColor = System.Drawing.Color.LightPink
+        Me.btnPrecio.BackgroundImage = CType(resources.GetObject("btnPrecio.BackgroundImage"), System.Drawing.Image)
+        Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrecio.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
+        Me.btnPrecio.Name = "btnPrecio"
+        Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
+        Me.btnPrecio.TabIndex = 12
+        Me.btnPrecio.Text = "Precios"
+        Me.btnPrecio.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btnMateriales
         '
-        Me.Button6.BackColor = System.Drawing.Color.LightPink
-        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
-        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.Button6.Location = New System.Drawing.Point(0, 283)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(172, 39)
-        Me.Button6.TabIndex = 11
-        Me.Button6.Text = "Materiales"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btnMateriales.BackColor = System.Drawing.Color.LightPink
+        Me.btnMateriales.BackgroundImage = CType(resources.GetObject("btnMateriales.BackgroundImage"), System.Drawing.Image)
+        Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMateriales.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMateriales.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
+        Me.btnMateriales.Name = "btnMateriales"
+        Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
+        Me.btnMateriales.TabIndex = 11
+        Me.btnMateriales.Text = "Materiales"
+        Me.btnMateriales.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnPendiente
         '
-        Me.Button5.BackColor = System.Drawing.Color.LightPink
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.Button5.Location = New System.Drawing.Point(0, 107)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(172, 39)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "Pendientes"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnPendiente.BackColor = System.Drawing.Color.LightPink
+        Me.btnPendiente.BackgroundImage = CType(resources.GetObject("btnPendiente.BackgroundImage"), System.Drawing.Image)
+        Me.btnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPendiente.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnPendiente.Location = New System.Drawing.Point(0, 107)
+        Me.btnPendiente.Name = "btnPendiente"
+        Me.btnPendiente.Size = New System.Drawing.Size(172, 39)
+        Me.btnPendiente.TabIndex = 10
+        Me.btnPendiente.Text = "Pendientes"
+        Me.btnPendiente.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnEncargo
         '
-        Me.Button1.BackColor = System.Drawing.Color.LightPink
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.Button1.Location = New System.Drawing.Point(0, 164)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(172, 40)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Encargos"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnEncargo.BackColor = System.Drawing.Color.LightPink
+        Me.btnEncargo.BackgroundImage = CType(resources.GetObject("btnEncargo.BackgroundImage"), System.Drawing.Image)
+        Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnEncargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEncargo.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
+        Me.btnEncargo.Name = "btnEncargo"
+        Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
+        Me.btnEncargo.TabIndex = 0
+        Me.btnEncargo.Text = "Encargos"
+        Me.btnEncargo.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -218,7 +218,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.LabelFH)
         Me.Controls.Add(Me.PictureBox1)
         Me.ForeColor = System.Drawing.Color.MediumVioletRed
@@ -227,27 +227,27 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "de"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pnlMenu.ResumeLayout(False)
+        Me.pnlMenu.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnEncargo As System.Windows.Forms.Button
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents LabelFH As System.Windows.Forms.Label
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlMenu As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnPendiente As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents btnCliente As System.Windows.Forms.Button
+    Friend WithEvents btnPrecio As System.Windows.Forms.Button
+    Friend WithEvents btnMateriales As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 
 End Class

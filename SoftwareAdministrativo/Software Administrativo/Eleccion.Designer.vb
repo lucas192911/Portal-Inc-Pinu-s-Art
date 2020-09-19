@@ -78,6 +78,7 @@ Partial Class Eleccion
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Eleccion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "?"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -9,9 +9,9 @@ Module funciones
 
     'Validación de registro antes de ingresarlo. 'sentenceValidation: consulta para validar, y sentence: consulta para ingresar'---
     Public Sub insertRegistry(ByVal sentenceValidation As String, ByVal sentence As String)
-        conection.Open()
+       conection.Open()
         Dim dtValidation As New DataTable
-        Dim searchInTable As DataTable = fillTable(showQuery(sentenceValidation), dtValidation)
+        Dim searchInTable As DataTable = Consulta(sentenceValidation)
 
         Try
 
@@ -19,41 +19,30 @@ Module funciones
                 MsgBox("Ya existe", MsgBoxStyle.Critical)
             Else
                 Dim Command As New MySqlCommand(sentence, conection)
-                command.ExecuteNonQuery()
+                Command.ExecuteNonQuery()
                 MsgBox("Datos guardados", MsgBoxStyle.Information)
             End If
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        conection.Close()
     End Sub
 
 
-    '---Envía una consulta de obtención de registro, como parametro 'sentence'.Y retorna una variable de tipo MysqlAdapter---
-    Public Function showQuery(ByVal sentence As String)
-        Try
+    '---Envía una consulta de registro, como parametro 'sentence'.---
+    Public Function Consulta(ByVal sentence As String) As DataTable
+        Dim dt As New DataTable
 
+        Try
+            Dim adapter As New MySqlDataAdapter
             adapter = New MySqlDataAdapter(sentence, conection)
-
+            adapter.Fill(dt)
 
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
 
-        Return adapter
-
-    End Function
-
-    '---Llena un dataTable con el retorno de showQuery---
-    Public Function fillTable(ByVal adapter As MySqlDataAdapter, ByVal dataTable As DataTable)
-        Try
-            adapter.Fill(DataTable)
-        Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.Critical)
-        End Try
-
-        Return DataTable
+        Return dt
 
     End Function
 
