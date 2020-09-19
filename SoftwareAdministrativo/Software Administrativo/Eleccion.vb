@@ -2,7 +2,7 @@
 
    
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExistente.Click
 
         Dim dt As New DataTable
 
@@ -17,11 +17,16 @@
         mostar.Show()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
         IngresarCliente.Show()
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         Me.Close()
+    End Sub
+
+    Private Sub Eleccion_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove
+        ReleaseCapture()
+        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 End Class

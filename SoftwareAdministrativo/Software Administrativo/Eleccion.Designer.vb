@@ -22,29 +22,29 @@ Partial Class Eleccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.btnExistente = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnNuevo
         '
-        Me.Button1.Location = New System.Drawing.Point(47, 80)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 37)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Nuevo"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnNuevo.Location = New System.Drawing.Point(47, 80)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(106, 37)
+        Me.btnNuevo.TabIndex = 0
+        Me.btnNuevo.Text = "Nuevo"
+        Me.btnNuevo.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnExistente
         '
-        Me.Button2.Location = New System.Drawing.Point(203, 80)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 37)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Existente"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnExistente.Location = New System.Drawing.Point(203, 80)
+        Me.btnExistente.Name = "btnExistente"
+        Me.btnExistente.Size = New System.Drawing.Size(106, 37)
+        Me.btnExistente.TabIndex = 1
+        Me.btnExistente.Text = "Existente"
+        Me.btnExistente.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -76,8 +76,8 @@ Partial Class Eleccion
         Me.ClientSize = New System.Drawing.Size(353, 139)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnExistente)
+        Me.Controls.Add(Me.btnNuevo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Eleccion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -86,8 +86,8 @@ Partial Class Eleccion
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnNuevo As System.Windows.Forms.Button
+    Friend WithEvents btnExistente As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Runtime.InteropServices
 
 Module funciones
     Dim conection As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema")
@@ -8,8 +9,8 @@ Module funciones
 
 
     'Validación de registro antes de ingresarlo. 'sentenceValidation: consulta para validar, y sentence: consulta para ingresar'---
-    Public Sub insertRegistry(ByVal sentenceValidation As String, ByVal sentence As String)
-       conection.Open()
+    Public Sub InsertRow(ByVal sentenceValidation As String, ByVal sentence As String)
+        conection.Open()
         Dim dtValidation As New DataTable
         Dim searchInTable As DataTable = Consulta(sentenceValidation)
 
@@ -26,6 +27,7 @@ Module funciones
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+        conection.Close()
     End Sub
 
 
@@ -46,5 +48,13 @@ Module funciones
 
     End Function
 
-    
+
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Public Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Public Sub SendMesagge(ByVal hWnd As Integer, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+
+
+    End Sub
 End Module

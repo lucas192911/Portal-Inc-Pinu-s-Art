@@ -39,6 +39,9 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlTitleBar = New System.Windows.Forms.Panel()
+        Me.lblCerrar = New System.Windows.Forms.Label()
+        Me.lblMinimizar = New System.Windows.Forms.Label()
+        Me.lblMaximizar = New System.Windows.Forms.Label()
         Me.pnlMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +67,7 @@ Partial Class Form1
         '
         'btnMinimizar
         '
+        Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMinimizar.FlatAppearance.BorderSize = 0
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimizar.Location = New System.Drawing.Point(489, 0)
@@ -123,10 +127,9 @@ Partial Class Form1
         '
         'btnCliente
         '
-        Me.btnCliente.BackColor = System.Drawing.Color.LightPink
-        Me.btnCliente.BackgroundImage = CType(resources.GetObject("btnCliente.BackgroundImage"), System.Drawing.Image)
+        Me.btnCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCliente.ForeColor = System.Drawing.Color.DarkMagenta
         Me.btnCliente.Location = New System.Drawing.Point(0, 225)
@@ -138,10 +141,9 @@ Partial Class Form1
         '
         'btnPrecio
         '
-        Me.btnPrecio.BackColor = System.Drawing.Color.LightPink
-        Me.btnPrecio.BackgroundImage = CType(resources.GetObject("btnPrecio.BackgroundImage"), System.Drawing.Image)
+        Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrecio.ForeColor = System.Drawing.Color.DarkMagenta
         Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
@@ -153,10 +155,9 @@ Partial Class Form1
         '
         'btnMateriales
         '
-        Me.btnMateriales.BackColor = System.Drawing.Color.LightPink
-        Me.btnMateriales.BackgroundImage = CType(resources.GetObject("btnMateriales.BackgroundImage"), System.Drawing.Image)
+        Me.btnMateriales.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMateriales.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMateriales.ForeColor = System.Drawing.Color.DarkMagenta
         Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
@@ -168,10 +169,9 @@ Partial Class Form1
         '
         'btnPendiente
         '
-        Me.btnPendiente.BackColor = System.Drawing.Color.LightPink
-        Me.btnPendiente.BackgroundImage = CType(resources.GetObject("btnPendiente.BackgroundImage"), System.Drawing.Image)
+        Me.btnPendiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPendiente.ForeColor = System.Drawing.Color.DarkMagenta
         Me.btnPendiente.Location = New System.Drawing.Point(0, 107)
@@ -183,10 +183,9 @@ Partial Class Form1
         '
         'btnEncargo
         '
-        Me.btnEncargo.BackColor = System.Drawing.Color.LightPink
-        Me.btnEncargo.BackgroundImage = CType(resources.GetObject("btnEncargo.BackgroundImage"), System.Drawing.Image)
+        Me.btnEncargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEncargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEncargo.ForeColor = System.Drawing.Color.DarkMagenta
         Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
@@ -230,11 +229,53 @@ Partial Class Form1
         Me.pnlTitleBar.Size = New System.Drawing.Size(608, 29)
         Me.pnlTitleBar.TabIndex = 11
         '
+        'lblCerrar
+        '
+        Me.lblCerrar.AutoSize = True
+        Me.lblCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCerrar.ForeColor = System.Drawing.Color.White
+        Me.lblCerrar.Location = New System.Drawing.Point(723, 20)
+        Me.lblCerrar.Name = "lblCerrar"
+        Me.lblCerrar.Size = New System.Drawing.Size(41, 15)
+        Me.lblCerrar.TabIndex = 12
+        Me.lblCerrar.Text = "Cerrar"
+        Me.lblCerrar.Visible = False
+        '
+        'lblMinimizar
+        '
+        Me.lblMinimizar.AutoSize = True
+        Me.lblMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblMinimizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMinimizar.ForeColor = System.Drawing.Color.White
+        Me.lblMinimizar.Location = New System.Drawing.Point(680, 20)
+        Me.lblMinimizar.Name = "lblMinimizar"
+        Me.lblMinimizar.Size = New System.Drawing.Size(62, 15)
+        Me.lblMinimizar.TabIndex = 13
+        Me.lblMinimizar.Text = "Minimizar"
+        Me.lblMinimizar.Visible = False
+        '
+        'lblMaximizar
+        '
+        Me.lblMaximizar.AutoSize = True
+        Me.lblMaximizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblMaximizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMaximizar.ForeColor = System.Drawing.Color.White
+        Me.lblMaximizar.Location = New System.Drawing.Point(715, 20)
+        Me.lblMaximizar.Name = "lblMaximizar"
+        Me.lblMaximizar.Size = New System.Drawing.Size(65, 15)
+        Me.lblMaximizar.TabIndex = 14
+        Me.lblMaximizar.Text = "Maximizar"
+        Me.lblMaximizar.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 578)
+        Me.Controls.Add(Me.lblMaximizar)
+        Me.Controls.Add(Me.lblMinimizar)
+        Me.Controls.Add(Me.lblCerrar)
         Me.Controls.Add(Me.pnlTitleBar)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.pnlMenu)
@@ -270,5 +311,8 @@ Partial Class Form1
     Friend WithEvents btnMateriales As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents pnlTitleBar As System.Windows.Forms.Panel
+    Friend WithEvents lblCerrar As System.Windows.Forms.Label
+    Friend WithEvents lblMinimizar As System.Windows.Forms.Label
+    Friend WithEvents lblMaximizar As System.Windows.Forms.Label
 
 End Class
