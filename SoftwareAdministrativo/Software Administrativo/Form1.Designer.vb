@@ -28,7 +28,7 @@ Partial Class Form1
         Me.LabelFH = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCliente = New System.Windows.Forms.Button()
@@ -38,9 +38,11 @@ Partial Class Form1
         Me.btnEncargo = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -54,7 +56,7 @@ Partial Class Form1
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.LabelFH.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFH.ForeColor = System.Drawing.Color.MediumVioletRed
-        Me.LabelFH.Location = New System.Drawing.Point(328, 452)
+        Me.LabelFH.Location = New System.Drawing.Point(324, 442)
         Me.LabelFH.Name = "LabelFH"
         Me.LabelFH.Size = New System.Drawing.Size(35, 37)
         Me.LabelFH.TabIndex = 3
@@ -80,15 +82,16 @@ Partial Class Form1
         Me.Button4.TabIndex = 9
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnClose
         '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(736, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(43, 29)
-        Me.Button2.TabIndex = 7
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnClose.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(565, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(43, 29)
+        Me.btnClose.TabIndex = 7
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'pnlMenu
         '
@@ -192,9 +195,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.PictureBox1.Location = New System.Drawing.Point(166, -29)
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(613, 633)
+        Me.PictureBox1.Size = New System.Drawing.Size(780, 578)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -202,22 +206,32 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
-        Me.PictureBox2.Location = New System.Drawing.Point(307, 35)
+        Me.PictureBox2.Location = New System.Drawing.Point(313, 66)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(355, 352)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnClose)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(172, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(608, 29)
+        Me.Panel1.TabIndex = 11
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 578)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.LabelFH)
         Me.Controls.Add(Me.PictureBox1)
@@ -231,6 +245,7 @@ Partial Class Form1
         Me.pnlMenu.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -240,7 +255,7 @@ Partial Class Form1
     Friend WithEvents LabelFH As System.Windows.Forms.Label
     Friend WithEvents pnlMenu As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents btnPendiente As System.Windows.Forms.Button
@@ -249,5 +264,6 @@ Partial Class Form1
     Friend WithEvents btnPrecio As System.Windows.Forms.Button
     Friend WithEvents btnMateriales As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
 
 End Class
