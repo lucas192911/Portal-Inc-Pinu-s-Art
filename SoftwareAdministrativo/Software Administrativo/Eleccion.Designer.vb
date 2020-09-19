@@ -58,11 +58,13 @@ Partial Class Eleccion
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.Button5.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(310, 0)
+        Me.Button5.Location = New System.Drawing.Point(318, 0)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(43, 29)
+        Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 10
         Me.Button5.UseVisualStyleBackColor = False
         '

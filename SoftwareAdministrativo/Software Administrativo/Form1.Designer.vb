@@ -26,8 +26,8 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.LabelFH = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnMinimizar = New System.Windows.Forms.Button()
+        Me.btnMaximizar = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,11 +38,11 @@ Partial Class Form1
         Me.btnEncargo = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlTitleBar = New System.Windows.Forms.Panel()
         Me.pnlMenu.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        Me.pnlTitleBar.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -52,38 +52,41 @@ Partial Class Form1
         '
         'LabelFH
         '
+        Me.LabelFH.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LabelFH.AutoSize = True
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.LabelFH.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFH.ForeColor = System.Drawing.Color.MediumVioletRed
         Me.LabelFH.Location = New System.Drawing.Point(324, 442)
         Me.LabelFH.Name = "LabelFH"
-        Me.LabelFH.Size = New System.Drawing.Size(35, 37)
+        Me.LabelFH.Size = New System.Drawing.Size(0, 37)
         Me.LabelFH.TabIndex = 3
-        Me.LabelFH.Text = "g"
         '
-        'Button3
+        'btnMinimizar
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(656, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(43, 29)
-        Me.Button3.TabIndex = 8
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnMinimizar.FlatAppearance.BorderSize = 0
+        Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimizar.Location = New System.Drawing.Point(489, 0)
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMinimizar.TabIndex = 8
+        Me.btnMinimizar.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnMaximizar
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(696, 0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(43, 29)
-        Me.Button4.TabIndex = 9
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnMaximizar.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnMaximizar.FlatAppearance.BorderSize = 0
+        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximizar.Location = New System.Drawing.Point(530, 0)
+        Me.btnMaximizar.Name = "btnMaximizar"
+        Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMaximizar.TabIndex = 9
+        Me.btnMaximizar.UseVisualStyleBackColor = True
         '
         'btnClose
         '
+        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnClose.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -110,6 +113,7 @@ Partial Class Form1
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(4, 562)
         Me.Label1.Name = "Label1"
@@ -205,6 +209,7 @@ Partial Class Form1
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
         Me.PictureBox2.Location = New System.Drawing.Point(313, 66)
         Me.PictureBox2.Name = "PictureBox2"
@@ -213,25 +218,25 @@ Partial Class Form1
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
         '
-        'Panel1
+        'pnlTitleBar
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.btnClose)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(172, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(608, 29)
-        Me.Panel1.TabIndex = 11
+        Me.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlTitleBar.Controls.Add(Me.btnMaximizar)
+        Me.pnlTitleBar.Controls.Add(Me.btnClose)
+        Me.pnlTitleBar.Controls.Add(Me.btnMinimizar)
+        Me.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlTitleBar.Location = New System.Drawing.Point(172, 0)
+        Me.pnlTitleBar.Name = "pnlTitleBar"
+        Me.pnlTitleBar.Size = New System.Drawing.Size(608, 29)
+        Me.pnlTitleBar.TabIndex = 11
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(780, 578)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlTitleBar)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.LabelFH)
         Me.Controls.Add(Me.PictureBox1)
@@ -245,7 +250,7 @@ Partial Class Form1
         Me.pnlMenu.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
+        Me.pnlTitleBar.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -256,14 +261,14 @@ Partial Class Form1
     Friend WithEvents pnlMenu As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnClose As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents btnMinimizar As System.Windows.Forms.Button
+    Friend WithEvents btnMaximizar As System.Windows.Forms.Button
     Friend WithEvents btnPendiente As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnCliente As System.Windows.Forms.Button
     Friend WithEvents btnPrecio As System.Windows.Forms.Button
     Friend WithEvents btnMateriales As System.Windows.Forms.Button
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents pnlTitleBar As System.Windows.Forms.Panel
 
 End Class
