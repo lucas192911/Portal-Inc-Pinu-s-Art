@@ -13,8 +13,8 @@
                                     from cliente</a>
 
         mostar.dtgMostrar.DataSource = Consulta(s)
-
-        mostar.Show()
+        Me.Close()
+        AbrirFormEnPanel(Form1.pnlContenedor, mostar)
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
