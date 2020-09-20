@@ -27,11 +27,6 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnCliente = New System.Windows.Forms.Button()
-        Me.btnPrecio = New System.Windows.Forms.Button()
-        Me.btnMateriales = New System.Windows.Forms.Button()
-        Me.btnPendiente = New System.Windows.Forms.Button()
-        Me.btnEncargo = New System.Windows.Forms.Button()
         Me.pnlTitleBar = New System.Windows.Forms.Panel()
         Me.lblCerrar = New System.Windows.Forms.Label()
         Me.lblMinimizar = New System.Windows.Forms.Label()
@@ -44,6 +39,11 @@ Partial Class Form1
         Me.btnMaximizar = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnMinimizar = New System.Windows.Forms.Button()
+        Me.btnCliente = New System.Windows.Forms.Button()
+        Me.btnPrecio = New System.Windows.Forms.Button()
+        Me.btnMateriales = New System.Windows.Forms.Button()
+        Me.btnPendiente = New System.Windows.Forms.Button()
+        Me.btnEncargo = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlMenu.SuspendLayout()
         Me.pnlTitleBar.SuspendLayout()
@@ -81,76 +81,6 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(37, 13)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Ayuda"
-        '
-        'btnCliente
-        '
-        Me.btnCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCliente.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnCliente.Location = New System.Drawing.Point(0, 225)
-        Me.btnCliente.Name = "btnCliente"
-        Me.btnCliente.Size = New System.Drawing.Size(172, 39)
-        Me.btnCliente.TabIndex = 13
-        Me.btnCliente.Text = "Clientes"
-        Me.btnCliente.UseVisualStyleBackColor = False
-        '
-        'btnPrecio
-        '
-        Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrecio.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
-        Me.btnPrecio.Name = "btnPrecio"
-        Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
-        Me.btnPrecio.TabIndex = 12
-        Me.btnPrecio.Text = "Precios"
-        Me.btnPrecio.UseVisualStyleBackColor = False
-        '
-        'btnMateriales
-        '
-        Me.btnMateriales.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMateriales.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMateriales.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
-        Me.btnMateriales.Name = "btnMateriales"
-        Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
-        Me.btnMateriales.TabIndex = 11
-        Me.btnMateriales.Text = "Materiales"
-        Me.btnMateriales.UseVisualStyleBackColor = False
-        '
-        'btnPendiente
-        '
-        Me.btnPendiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPendiente.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnPendiente.Location = New System.Drawing.Point(0, 107)
-        Me.btnPendiente.Name = "btnPendiente"
-        Me.btnPendiente.Size = New System.Drawing.Size(172, 39)
-        Me.btnPendiente.TabIndex = 10
-        Me.btnPendiente.Text = "Pendientes"
-        Me.btnPendiente.UseVisualStyleBackColor = False
-        '
-        'btnEncargo
-        '
-        Me.btnEncargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEncargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEncargo.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
-        Me.btnEncargo.Name = "btnEncargo"
-        Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
-        Me.btnEncargo.TabIndex = 0
-        Me.btnEncargo.Text = "Encargos"
-        Me.btnEncargo.UseVisualStyleBackColor = False
         '
         'pnlTitleBar
         '
@@ -308,6 +238,88 @@ Partial Class Form1
         Me.btnMinimizar.TabIndex = 8
         Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnMinimizar.UseVisualStyleBackColor = True
+        '
+        'btnCliente
+        '
+        Me.btnCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCliente.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnCliente.Image = Global.Software_Administrativo.My.Resources.Resources.clientIco
+        Me.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCliente.Location = New System.Drawing.Point(0, 225)
+        Me.btnCliente.Name = "btnCliente"
+        Me.btnCliente.Size = New System.Drawing.Size(172, 39)
+        Me.btnCliente.TabIndex = 13
+        Me.btnCliente.Text = "Clientes"
+        Me.btnCliente.UseVisualStyleBackColor = False
+        '
+        'btnPrecio
+        '
+        Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrecio.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnPrecio.Image = Global.Software_Administrativo.My.Resources.Resources.price
+        Me.btnPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
+        Me.btnPrecio.Name = "btnPrecio"
+        Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
+        Me.btnPrecio.TabIndex = 12
+        Me.btnPrecio.Text = "Precios"
+        Me.btnPrecio.UseVisualStyleBackColor = False
+        '
+        'btnMateriales
+        '
+        Me.btnMateriales.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMateriales.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMateriales.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnMateriales.Image = Global.Software_Administrativo.My.Resources.Resources.materials
+        Me.btnMateriales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
+        Me.btnMateriales.Name = "btnMateriales"
+        Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
+        Me.btnMateriales.TabIndex = 11
+        Me.btnMateriales.Text = "Materiales"
+        Me.btnMateriales.UseVisualStyleBackColor = False
+        '
+        'btnPendiente
+        '
+        Me.btnPendiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPendiente.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnPendiente.Image = Global.Software_Administrativo.My.Resources.Resources.pending
+        Me.btnPendiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnPendiente.Location = New System.Drawing.Point(0, 107)
+        Me.btnPendiente.Name = "btnPendiente"
+        Me.btnPendiente.Size = New System.Drawing.Size(172, 39)
+        Me.btnPendiente.TabIndex = 10
+        Me.btnPendiente.Text = "Pendientes"
+        Me.btnPendiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnPendiente.UseVisualStyleBackColor = False
+        '
+        'btnEncargo
+        '
+        Me.btnEncargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEncargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEncargo.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnEncargo.Image = Global.Software_Administrativo.My.Resources.Resources.order
+        Me.btnEncargo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
+        Me.btnEncargo.Name = "btnEncargo"
+        Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
+        Me.btnEncargo.TabIndex = 0
+        Me.btnEncargo.Text = "Encargos"
+        Me.btnEncargo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnEncargo.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '

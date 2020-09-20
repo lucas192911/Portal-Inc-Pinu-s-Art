@@ -15,6 +15,10 @@ SoftwareAdministrativo
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.clientIco">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Software_Administrativo.My.Resources.Resources.Fondo_2">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -71,11 +75,27 @@ SoftwareAdministrativo
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.materials">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.order">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Software_Administrativo.My.Resources.Resources.Pantalla_de_carga_1">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.pending">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Software_Administrativo.My.Resources.Resources.Posible_fondo_claro">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.price">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
