@@ -55,6 +55,18 @@ SoftwareAdministrativo
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.Icono_Maximizar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.Icono_Minimizar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Software_Administrativo.My.Resources.Resources.Icono_Restaurar">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Software_Administrativo.My.Resources.Resources.LOGO_PINUS">
 	<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

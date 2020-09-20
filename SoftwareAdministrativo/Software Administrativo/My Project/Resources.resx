@@ -124,8 +124,8 @@
   <data name="fondo-abstracto-textura-metalica-oro-rosa_1048-7968" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo-abstracto-textura-metalica-oro-rosa_1048-7968.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fondo para posible modo oscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo para posible modo oscuro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pantalla de carga 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pantalla de carga 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGO PINUS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO PINUS.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,6 +139,9 @@
   <data name="ic_clear_128_28306" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_clear_128_28306.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icono Maximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono Maximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fondo uno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo uno.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,8 +151,8 @@
   <data name="fondo-abstracto-textura-metalica-oro-rosa_1048-79681" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo-abstracto-textura-metalica-oro-rosa_1048-79681.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pantalla de carga 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pantalla de carga 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fondo para posible modo oscuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo para posible modo oscuro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Posible fondo claro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Posible fondo claro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,5 +162,11 @@
   </data>
   <data name="WhatsApp Image 2020-09-15 at 5.39.57 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2020-09-15 at 5.39.57 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono Restaurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono Restaurar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

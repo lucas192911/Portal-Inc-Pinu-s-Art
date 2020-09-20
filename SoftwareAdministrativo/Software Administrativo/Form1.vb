@@ -29,7 +29,15 @@ Public Class Form1
     End Sub
 
     Private Sub btnMaximizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMaximizar.Click
+        btnMaximizar.Visible = False
+        btnRestaurar.Visible = True
         Me.WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub btnRestaurar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRestaurar.Click
+        btnRestaurar.Visible = False
+        btnMaximizar.Visible = True
+        Me.WindowState = FormWindowState.Normal
     End Sub
 
 
@@ -64,4 +72,29 @@ Public Class Form1
     Private Sub btnMinimizar_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnMinimizar.MouseLeave
         lblMinimizar.Visible = False
     End Sub
+
+    Private Sub btnRestaurar_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnRestaurar.MouseHover
+        lblRestaurar.Visible = True
+    End Sub
+
+    Private Sub btnRestaurar_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnRestaurar.MouseLeave
+        lblRestaurar.Visible = False
+    End Sub
+
+
+
+
+    Private Sub pnlTitleBar_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseDoubleClick
+
+        If (Me.WindowState = FormWindowState.Normal = True) Then
+            Me.WindowState = FormWindowState.Maximized
+            btnRestaurar.Visible = True
+        Else
+            Me.WindowState = FormWindowState.Normal
+            btnRestaurar.Visible = False
+        End If
+
+    End Sub
+
+    
 End Class
