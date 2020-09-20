@@ -10,7 +10,10 @@ Public Class Form1
 
 
 
-  
+    Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        mostar.ShowDialog()
+    End Sub
+
     Private Sub btnEncargo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEncargo.Click
         Eleccion.Show()
     End Sub
@@ -93,33 +96,5 @@ Public Class Form1
 
     End Sub
 
-
     
-
-    Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
-        Dim s As String = <a>select 
-                                id as ID, 
-                                nombre as Nombre, 
-                                precio as Precio, 
-                                cantidad as Cantidad, 
-                                descripcion as Descripcion 
-                            from materiales</a>
-
-        Materiales.dtgMostrar.DataSource = Consulta(s)
-
-        AbrirFormEnPanel(Me.pnlContenedor, Materiales)
-    End Sub
-
-    Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
-
-        Dim s As String = <a>select id as ID, 
-                                    nombre as Nombre,
-                                    telefono as Telefono, 
-                                    direccion as Direccion 
-                                    from cliente</a>
-
-        mostar.dtgMostrar.DataSource = Consulta(s)
-
-        AbrirFormEnPanel(Me.pnlContenedor, mostar)
-    End Sub
 End Class

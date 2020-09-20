@@ -26,39 +26,10 @@ Partial Class mostar
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.pnlMostrarContenedor = New System.Windows.Forms.Panel()
-        Me.btnSeleccionarCliente = New System.Windows.Forms.Button()
         Me.dtgMostrar = New System.Windows.Forms.DataGridView()
-        Me.btnVolver = New System.Windows.Forms.Button()
-        Me.pnlMostrarContenedor.SuspendLayout()
+        Me.btnSeleccionarCliente = New System.Windows.Forms.Button()
         CType(Me.dtgMostrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pnlMostrarContenedor
-        '
-        Me.pnlMostrarContenedor.Controls.Add(Me.btnVolver)
-        Me.pnlMostrarContenedor.Controls.Add(Me.btnSeleccionarCliente)
-        Me.pnlMostrarContenedor.Controls.Add(Me.dtgMostrar)
-        Me.pnlMostrarContenedor.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlMostrarContenedor.Location = New System.Drawing.Point(0, 0)
-        Me.pnlMostrarContenedor.Name = "pnlMostrarContenedor"
-        Me.pnlMostrarContenedor.Size = New System.Drawing.Size(721, 469)
-        Me.pnlMostrarContenedor.TabIndex = 12
-        '
-        'btnSeleccionarCliente
-        '
-        Me.btnSeleccionarCliente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSeleccionarCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnSeleccionarCliente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSeleccionarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSeleccionarCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionarCliente.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(537, 424)
-        Me.btnSeleccionarCliente.Name = "btnSeleccionarCliente"
-        Me.btnSeleccionarCliente.Size = New System.Drawing.Size(172, 39)
-        Me.btnSeleccionarCliente.TabIndex = 13
-        Me.btnSeleccionarCliente.Text = "Seleccionar"
-        Me.btnSeleccionarCliente.UseVisualStyleBackColor = False
         '
         'dtgMostrar
         '
@@ -102,42 +73,35 @@ Partial Class mostar
         Me.dtgMostrar.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dtgMostrar.RowHeadersWidth = 25
         Me.dtgMostrar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgMostrar.Size = New System.Drawing.Size(721, 346)
-        Me.dtgMostrar.TabIndex = 12
+        Me.dtgMostrar.Size = New System.Drawing.Size(797, 346)
+        Me.dtgMostrar.TabIndex = 0
         '
-        'btnVolver
+        'btnSeleccionarCliente
         '
-        Me.btnVolver.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnVolver.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnVolver.Location = New System.Drawing.Point(359, 424)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(172, 39)
-        Me.btnVolver.TabIndex = 14
-        Me.btnVolver.Text = "Volver"
-        Me.btnVolver.UseVisualStyleBackColor = False
+        Me.btnSeleccionarCliente.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSeleccionarCliente.Location = New System.Drawing.Point(693, 352)
+        Me.btnSeleccionarCliente.Name = "btnSeleccionarCliente"
+        Me.btnSeleccionarCliente.Size = New System.Drawing.Size(75, 23)
+        Me.btnSeleccionarCliente.TabIndex = 1
+        Me.btnSeleccionarCliente.Text = "Seleccionar"
+        Me.btnSeleccionarCliente.UseVisualStyleBackColor = True
         '
         'mostar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(721, 469)
-        Me.Controls.Add(Me.pnlMostrarContenedor)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.ClientSize = New System.Drawing.Size(797, 387)
+        Me.Controls.Add(Me.btnSeleccionarCliente)
+        Me.Controls.Add(Me.dtgMostrar)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "mostar"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "mostar"
-        Me.pnlMostrarContenedor.ResumeLayout(False)
         CType(Me.dtgMostrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents pnlMostrarContenedor As System.Windows.Forms.Panel
-    Friend WithEvents btnSeleccionarCliente As System.Windows.Forms.Button
     Friend WithEvents dtgMostrar As System.Windows.Forms.DataGridView
-    Friend WithEvents btnVolver As System.Windows.Forms.Button
+    Friend WithEvents btnSeleccionarCliente As System.Windows.Forms.Button
 End Class
