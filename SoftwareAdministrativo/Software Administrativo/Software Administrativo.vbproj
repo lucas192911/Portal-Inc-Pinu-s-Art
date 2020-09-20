@@ -108,6 +108,12 @@
     <Compile Include="IngresarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Materiales.Designer.vb">
+      <DependentUpon>Materiales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mostar.Designer.vb">
       <DependentUpon>mostar.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarCliente.resx">
       <DependentUpon>IngresarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiales.resx">
+      <DependentUpon>Materiales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostar.resx">
       <DependentUpon>mostar.vb</DependentUpon>
