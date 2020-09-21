@@ -1,4 +1,4 @@
-﻿Public Class mostar
+﻿Public Class Clientes
 
     Private Sub mostar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 

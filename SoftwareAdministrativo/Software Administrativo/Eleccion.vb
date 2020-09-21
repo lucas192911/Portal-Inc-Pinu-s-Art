@@ -12,9 +12,9 @@
                                     direccion as Direccion 
                                     from cliente</a>
 
-        mostar.dtgMostrar.DataSource = Consulta(s)
+        Clientes.dtgMostrar.DataSource = Consulta(s)
         Me.Close()
-        AbrirFormEnPanel(Form1.pnlContenedor, mostar)
+        AbrirFormEnPanel(Form1.pnlContenedor, Clientes)
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click

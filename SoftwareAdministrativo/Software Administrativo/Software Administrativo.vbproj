@@ -76,12 +76,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar MAteriales.Designer.vb">
-      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Agregar MAteriales.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Eleccion.Designer.vb">
       <DependentUpon>Eleccion.vb</DependentUpon>
     </Compile>
@@ -106,6 +100,12 @@
       <DependentUpon>IngresarCliente.vb</DependentUpon>
     </Compile>
     <Compile Include="IngresarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarMateriales.Designer.vb">
+      <DependentUpon>IngresarMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarMateriales.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Materiales.Designer.vb">
@@ -137,9 +137,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Agregar MAteriales.resx">
-      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Eleccion.resx">
       <DependentUpon>Eleccion.vb</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarCliente.resx">
       <DependentUpon>IngresarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarMateriales.resx">
+      <DependentUpon>IngresarMateriales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Materiales.resx">
       <DependentUpon>Materiales.vb</DependentUpon>
