@@ -3,19 +3,17 @@
     Private Sub mostar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+    Dim x As Integer
 
+    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
 
-
-
-    
-    Private Sub btnSeleccionarCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionarCliente.Click
         dtgMostrar.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
-       
+
 
 
         If (dtgMostrar.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
 
-            Dim x As Integer
+
             'devuleve el valor de la priemra fila
             '   x = dtgMostrar.Rows(0).Cells(0).Value
 
@@ -29,5 +27,10 @@
 
             '   MsgBox(Clipboard.GetText())
         End If
+
+    End Sub
+
+    Private Sub btnVovler_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVovler.Click
+        Me.Close()
     End Sub
 End Class

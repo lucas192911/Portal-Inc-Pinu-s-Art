@@ -20,5 +20,4 @@ Public Class IngresarCliente
         End If
     End Sub
 
-    
 End Class

@@ -36,7 +36,7 @@ Partial Class IngresarCliente
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(68, 45)
+        Me.Label1.Location = New System.Drawing.Point(68, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(69, 20)
         Me.Label1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class IngresarCliente
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(179, 45)
+        Me.txtNombre.Location = New System.Drawing.Point(179, 26)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(166, 26)
         Me.txtNombre.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class IngresarCliente
         'txtTelefono
         '
         Me.txtTelefono.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefono.Location = New System.Drawing.Point(179, 98)
+        Me.txtTelefono.Location = New System.Drawing.Point(179, 76)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(166, 26)
         Me.txtTelefono.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class IngresarCliente
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(68, 101)
+        Me.Label2.Location = New System.Drawing.Point(68, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 20)
         Me.Label2.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class IngresarCliente
         'txtDireccion
         '
         Me.txtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(179, 140)
+        Me.txtDireccion.Location = New System.Drawing.Point(179, 118)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(166, 26)
         Me.txtDireccion.TabIndex = 3
@@ -80,7 +80,7 @@ Partial Class IngresarCliente
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(68, 143)
+        Me.Label3.Location = New System.Drawing.Point(68, 121)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(79, 20)
         Me.Label3.TabIndex = 4
@@ -88,16 +88,16 @@ Partial Class IngresarCliente
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(334, 189)
+        Me.btnGuardar.Location = New System.Drawing.Point(351, 179)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(125, 45)
+        Me.btnGuardar.Size = New System.Drawing.Size(99, 30)
         Me.btnGuardar.TabIndex = 4
-        Me.btnGuardar.Text = "Continuar"
+        Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(68, 200)
+        Me.Button1.Location = New System.Drawing.Point(68, 179)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 8
@@ -108,7 +108,7 @@ Partial Class IngresarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(462, 238)
+        Me.ClientSize = New System.Drawing.Size(462, 213)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txtDireccion)

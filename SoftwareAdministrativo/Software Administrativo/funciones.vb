@@ -1,8 +1,10 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Runtime.InteropServices
 
 Module funciones
     Dim conection As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema")
 
+    Dim adapter As MySqlDataAdapter
 
 
 
@@ -46,6 +48,28 @@ Module funciones
 
     End Function
 
-    
-    
+
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Public Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Public Sub SendMesagge(ByVal hWnd As Integer, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
+
+
+    Public Sub AbrirFormEnPanel(ByVal panel As Panel, ByVal FormHijo As Object)
+        '''''remover los controles del panel contennedor '''''
+        ' If panel.Controls.Count > 0 Then
+        'panel.Controls.RemoveAt(0)
+        ' End If
+        Dim fh As Form = TryCast(FormHijo, Form)
+        fh.TopLevel = False
+        fh.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+        fh.Dock = DockStyle.Fill
+        panel.Controls.Add(fh)
+        panel.Tag = fh
+        fh.Show()
+        fh.BringToFront()
+    End Sub
+
 End Module
