@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6CEE5D6-4FDF-4B48-B38B-B5D559008330}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Software_Administrativo.My.MyApplication</StartupObject>
+    <RootNamespace>Software_Administrativo</RootNamespace>
+    <AssemblyName>Software Administrativo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Software Administrativo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Software Administrativo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.6.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar MAteriales.Designer.vb">
+      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar MAteriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eleccion.Designer.vb">
+      <DependentUpon>Eleccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eleccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encargos.Designer.vb">
+      <DependentUpon>Encargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Encargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funciones.vb" />
+    <Compile Include="Ingresar Encargo.Designer.vb">
+      <DependentUpon>Ingresar Encargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Encargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarCliente.designer.vb">
+      <DependentUpon>IngresarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiales.Designer.vb">
+      <DependentUpon>Materiales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mostar.Designer.vb">
+      <DependentUpon>mostar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mostar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agregar MAteriales.resx">
+      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eleccion.resx">
+      <DependentUpon>Eleccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encargos.resx">
+      <DependentUpon>Encargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Encargo.resx">
+      <DependentUpon>Ingresar Encargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarCliente.resx">
+      <DependentUpon>IngresarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiales.resx">
+      <DependentUpon>Materiales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mostar.resx">
+      <DependentUpon>mostar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO PINUS.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pantalla de carga 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo uno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-abstracto-textura-metalica-oro-rosa_1048-7968.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-marco-lineas-doradas-hexagonales-premium_1017-26502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-abstracto-textura-metalica-oro-rosa_1048-79681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-marco-lineas-doradas-hexagonales-premium_1017-265021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Posible fondo claro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo para posible modo oscuro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-marco-lineas-doradas-hexagonales-premium_1017-265022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_clear_128_28306.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_clear_128_283061.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-09-15 at 5.39.57 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Restaurar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
