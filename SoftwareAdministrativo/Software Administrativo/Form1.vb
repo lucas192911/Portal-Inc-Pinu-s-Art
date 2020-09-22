@@ -11,7 +11,7 @@ Public Class Form1
 
 
     Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Clientes.ShowDialog()
+        mostar.ShowDialog()
     End Sub
 
     Private Sub btnEncargo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEncargo.Click
@@ -19,7 +19,7 @@ Public Class Form1
     End Sub
 
 
-    ''Programación de botones de barra de titulo
+
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -40,7 +40,15 @@ Public Class Form1
         Me.WindowState = FormWindowState.Normal
     End Sub
 
-    ''Eventos de botones de barra de titulo
+
+
+    Private Sub pnlTitleBar_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseMove
+        ReleaseCapture()
+        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+
+
     Private Sub btnClose_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.MouseHover
         lblCerrar.Visible = True
     End Sub
@@ -76,20 +84,6 @@ Public Class Form1
 
 
 
-    ''Llamada a los metodos de mover fromulario desde paneles de titulo y menu, con los dll de windows
-    Private Sub pnlTitleBar_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseMove
-        ReleaseCapture()
-        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-    Private Sub pnlMenu_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlMenu.MouseMove
-        ReleaseCapture()
-        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-
-
-   
-
-    ''Maximizar fromulario con evento click, en barra de titulo
     Private Sub pnlTitleBar_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseDoubleClick
 
         If (Me.WindowState = FormWindowState.Normal = True) Then
@@ -102,8 +96,7 @@ Public Class Form1
 
     End Sub
 
-
-    ''Programación de botones del menu
+    
     Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
         Dim s As String = <A>select id as ID, 
                                 nombre as Nombre, 
@@ -124,11 +117,8 @@ Public Class Form1
                                     direccion as Direccion 
                                     from cliente</a>
 
-        Clientes.dtgMostrar.DataSource = Consulta(s)
+        mostar.dtgMostrar.DataSource = Consulta(s)
 
-        AbrirFormEnPanel(Me.pnlContenedor, Clientes)
+        AbrirFormEnPanel(Me.pnlContenedor, mostar)
     End Sub
-
-  
-   
 End Class

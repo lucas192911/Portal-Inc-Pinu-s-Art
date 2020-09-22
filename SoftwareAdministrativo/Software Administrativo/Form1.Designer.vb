@@ -33,18 +33,18 @@ Partial Class Form1
         Me.btnPendiente = New System.Windows.Forms.Button()
         Me.btnEncargo = New System.Windows.Forms.Button()
         Me.pnlTitleBar = New System.Windows.Forms.Panel()
-        Me.btnRestaurar = New System.Windows.Forms.Button()
-        Me.btnMaximizar = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.lblCerrar = New System.Windows.Forms.Label()
         Me.lblMinimizar = New System.Windows.Forms.Label()
         Me.lblMaximizar = New System.Windows.Forms.Label()
         Me.lblRestaurar = New System.Windows.Forms.Label()
         Me.pnlContenedor = New System.Windows.Forms.Panel()
         Me.pnlContenedorMain = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.LabelFH = New System.Windows.Forms.Label()
+        Me.btnRestaurar = New System.Windows.Forms.Button()
+        Me.btnMaximizar = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnMinimizar = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlMenu.SuspendLayout()
         Me.pnlTitleBar.SuspendLayout()
         Me.pnlContenedor.SuspendLayout()
@@ -165,60 +165,6 @@ Partial Class Form1
         Me.pnlTitleBar.Size = New System.Drawing.Size(757, 29)
         Me.pnlTitleBar.TabIndex = 11
         '
-        'btnRestaurar
-        '
-        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRestaurar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Restaurar
-        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnRestaurar.FlatAppearance.BorderSize = 0
-        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRestaurar.Location = New System.Drawing.Point(679, 0)
-        Me.btnRestaurar.Name = "btnRestaurar"
-        Me.btnRestaurar.Size = New System.Drawing.Size(35, 29)
-        Me.btnRestaurar.TabIndex = 15
-        Me.btnRestaurar.UseVisualStyleBackColor = True
-        Me.btnRestaurar.Visible = False
-        '
-        'btnMaximizar
-        '
-        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMaximizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Maximizar
-        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnMaximizar.FlatAppearance.BorderSize = 0
-        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximizar.Location = New System.Drawing.Point(679, 0)
-        Me.btnMaximizar.Name = "btnMaximizar"
-        Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
-        Me.btnMaximizar.TabIndex = 9
-        Me.btnMaximizar.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
-        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Location = New System.Drawing.Point(714, 0)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(43, 29)
-        Me.btnClose.TabIndex = 7
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
-        'btnMinimizar
-        '
-        Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMinimizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnMinimizar.FlatAppearance.BorderSize = 0
-        Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimizar.Location = New System.Drawing.Point(638, 0)
-        Me.btnMinimizar.Name = "btnMinimizar"
-        Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
-        Me.btnMinimizar.TabIndex = 8
-        Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnMinimizar.UseVisualStyleBackColor = True
-        '
         'lblCerrar
         '
         Me.lblCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -297,17 +243,6 @@ Partial Class Form1
         Me.pnlContenedorMain.Size = New System.Drawing.Size(757, 498)
         Me.pnlContenedorMain.TabIndex = 0
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
-        Me.PictureBox2.Location = New System.Drawing.Point(201, 67)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(355, 352)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 12
-        Me.PictureBox2.TabStop = False
-        '
         'LabelFH
         '
         Me.LabelFH.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -319,6 +254,71 @@ Partial Class Form1
         Me.LabelFH.Name = "LabelFH"
         Me.LabelFH.Size = New System.Drawing.Size(0, 37)
         Me.LabelFH.TabIndex = 11
+        '
+        'btnRestaurar
+        '
+        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRestaurar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Restaurar
+        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnRestaurar.FlatAppearance.BorderSize = 0
+        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRestaurar.Location = New System.Drawing.Point(679, 0)
+        Me.btnRestaurar.Name = "btnRestaurar"
+        Me.btnRestaurar.Size = New System.Drawing.Size(35, 29)
+        Me.btnRestaurar.TabIndex = 15
+        Me.btnRestaurar.UseVisualStyleBackColor = True
+        Me.btnRestaurar.Visible = False
+        '
+        'btnMaximizar
+        '
+        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMaximizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Maximizar
+        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMaximizar.FlatAppearance.BorderSize = 0
+        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximizar.Location = New System.Drawing.Point(679, 0)
+        Me.btnMaximizar.Name = "btnMaximizar"
+        Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMaximizar.TabIndex = 9
+        Me.btnMaximizar.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(714, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(43, 29)
+        Me.btnClose.TabIndex = 7
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'btnMinimizar
+        '
+        Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMinimizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Minimizar
+        Me.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMinimizar.FlatAppearance.BorderSize = 0
+        Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimizar.Location = New System.Drawing.Point(638, 0)
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMinimizar.TabIndex = 8
+        Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnMinimizar.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
+        Me.PictureBox2.Location = New System.Drawing.Point(201, 67)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(355, 352)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
         '
         'Form1
         '
