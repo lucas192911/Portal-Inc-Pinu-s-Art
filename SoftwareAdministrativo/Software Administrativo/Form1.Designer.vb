@@ -45,6 +45,8 @@ Partial Class Form1
         Me.pnlContenedorMain = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.LabelFH = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.pnlMenu.SuspendLayout()
         Me.pnlTitleBar.SuspendLayout()
         Me.pnlContenedor.SuspendLayout()
@@ -60,6 +62,8 @@ Partial Class Form1
         'pnlMenu
         '
         Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlMenu.Controls.Add(Me.Button2)
+        Me.pnlMenu.Controls.Add(Me.Button1)
         Me.pnlMenu.Controls.Add(Me.Label1)
         Me.pnlMenu.Controls.Add(Me.btnCliente)
         Me.pnlMenu.Controls.Add(Me.btnPrecio)
@@ -77,22 +81,23 @@ Partial Class Form1
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(5, 505)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 17)
+        Me.Label1.Size = New System.Drawing.Size(48, 17)
         Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Ayuda"
+        Me.Label1.Text = "About"
         '
         'btnCliente
         '
         Me.btnCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCliente.FlatAppearance.BorderSize = 0
         Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCliente.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCliente.ForeColor = System.Drawing.Color.White
-        Me.btnCliente.Location = New System.Drawing.Point(0, 225)
+        Me.btnCliente.Location = New System.Drawing.Point(0, 279)
         Me.btnCliente.Name = "btnCliente"
         Me.btnCliente.Size = New System.Drawing.Size(172, 39)
         Me.btnCliente.TabIndex = 13
@@ -103,10 +108,11 @@ Partial Class Form1
         '
         Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrecio.FlatAppearance.BorderSize = 0
         Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrecio.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrecio.ForeColor = System.Drawing.Color.White
-        Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
+        Me.btnPrecio.Location = New System.Drawing.Point(0, 409)
         Me.btnPrecio.Name = "btnPrecio"
         Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
         Me.btnPrecio.TabIndex = 12
@@ -117,10 +123,11 @@ Partial Class Form1
         '
         Me.btnMateriales.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMateriales.FlatAppearance.BorderSize = 0
         Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMateriales.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMateriales.ForeColor = System.Drawing.Color.White
-        Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
+        Me.btnMateriales.Location = New System.Drawing.Point(0, 341)
         Me.btnMateriales.Name = "btnMateriales"
         Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
         Me.btnMateriales.TabIndex = 11
@@ -131,6 +138,7 @@ Partial Class Form1
         '
         Me.btnInicio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnInicio.FlatAppearance.BorderSize = 0
         Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnInicio.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnInicio.ForeColor = System.Drawing.Color.White
@@ -145,10 +153,11 @@ Partial Class Form1
         '
         Me.btnEncargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEncargo.FlatAppearance.BorderSize = 0
         Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEncargo.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEncargo.ForeColor = System.Drawing.Color.White
-        Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
+        Me.btnEncargo.Location = New System.Drawing.Point(0, 131)
         Me.btnEncargo.Name = "btnEncargo"
         Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
         Me.btnEncargo.TabIndex = 0
@@ -295,6 +304,7 @@ Partial Class Form1
         Me.pnlContenedorMain.Controls.Add(Me.PictureBox2)
         Me.pnlContenedorMain.Controls.Add(Me.LabelFH)
         Me.pnlContenedorMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContenedorMain.ForeColor = System.Drawing.Color.Black
         Me.pnlContenedorMain.Location = New System.Drawing.Point(0, 0)
         Me.pnlContenedorMain.Name = "pnlContenedorMain"
         Me.pnlContenedorMain.Size = New System.Drawing.Size(757, 498)
@@ -323,6 +333,36 @@ Partial Class Form1
         Me.LabelFH.Size = New System.Drawing.Size(0, 39)
         Me.LabelFH.TabIndex = 11
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(0, 210)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(172, 40)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Existente"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(0, 171)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(172, 40)
+        Me.Button2.TabIndex = 16
+        Me.Button2.Text = "Nuevo"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -336,7 +376,7 @@ Partial Class Form1
         Me.Controls.Add(Me.pnlTitleBar)
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.pnlContenedor)
-        Me.ForeColor = System.Drawing.Color.MediumVioletRed
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -374,5 +414,7 @@ Partial Class Form1
     Friend WithEvents pnlContenedorMain As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents LabelFH As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class

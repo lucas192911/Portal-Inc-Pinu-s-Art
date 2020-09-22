@@ -45,7 +45,7 @@ Partial Class Ingresar_Encargo
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(164, 57)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 75)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(231, 21)
         Me.TextBox1.TabIndex = 0
@@ -54,7 +54,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(17, 57)
+        Me.Label1.Location = New System.Drawing.Point(8, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(141, 21)
         Me.Label1.TabIndex = 1
@@ -65,7 +65,7 @@ Partial Class Ingresar_Encargo
         Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(199, 116)
+        Me.TextBox2.Location = New System.Drawing.Point(12, 146)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(231, 21)
         Me.TextBox2.TabIndex = 2
@@ -74,7 +74,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(10, 116)
+        Me.Label2.Location = New System.Drawing.Point(8, 113)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(203, 21)
         Me.Label2.TabIndex = 3
@@ -84,7 +84,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(10, 170)
+        Me.Label3.Location = New System.Drawing.Point(8, 185)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(290, 21)
         Me.Label3.TabIndex = 4
@@ -94,7 +94,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(17, 300)
+        Me.Label4.Location = New System.Drawing.Point(8, 341)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(130, 21)
         Me.Label4.TabIndex = 6
@@ -104,7 +104,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(17, 235)
+        Me.Label5.Location = New System.Drawing.Point(8, 264)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(95, 21)
         Me.Label5.TabIndex = 7
@@ -115,7 +115,7 @@ Partial Class Ingresar_Encargo
         Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.TextBox4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.ForeColor = System.Drawing.Color.White
-        Me.TextBox4.Location = New System.Drawing.Point(153, 300)
+        Me.TextBox4.Location = New System.Drawing.Point(12, 375)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(231, 21)
         Me.TextBox4.TabIndex = 8
@@ -126,7 +126,7 @@ Partial Class Ingresar_Encargo
         Me.ComboBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.ForeColor = System.Drawing.Color.White
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(118, 235)
+        Me.ComboBox1.Location = New System.Drawing.Point(12, 298)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(231, 24)
         Me.ComboBox1.TabIndex = 12
@@ -135,7 +135,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(35, 343)
+        Me.Label6.Location = New System.Drawing.Point(14, 445)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(89, 17)
         Me.Label6.TabIndex = 13
@@ -144,10 +144,11 @@ Partial Class Ingresar_Encargo
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(401, 331)
+        Me.Button1.Location = New System.Drawing.Point(304, 448)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 41)
         Me.Button1.TabIndex = 14
@@ -162,7 +163,7 @@ Partial Class Ingresar_Encargo
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(511, 25)
+        Me.Panel1.Size = New System.Drawing.Size(414, 25)
         Me.Panel1.TabIndex = 16
         '
         'Label7
@@ -171,11 +172,11 @@ Partial Class Ingresar_Encargo
         Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(196, 4)
+        Me.Label7.Location = New System.Drawing.Point(116, 4)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(116, 17)
+        Me.Label7.Size = New System.Drawing.Size(182, 17)
         Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Ingresar Encargo"
+        Me.Label7.Text = "Ingresar Datos del Encargo"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button5
@@ -186,7 +187,7 @@ Partial Class Ingresar_Encargo
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(476, 0)
+        Me.Button5.Location = New System.Drawing.Point(379, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 15
@@ -200,7 +201,7 @@ Partial Class Ingresar_Encargo
         Me.DateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.White
         Me.DateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.White
         Me.DateTimePicker1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(306, 170)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(12, 218)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(193, 21)
         Me.DateTimePicker1.TabIndex = 17
@@ -210,7 +211,7 @@ Partial Class Ingresar_Encargo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(511, 390)
+        Me.ClientSize = New System.Drawing.Size(414, 501)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button1)

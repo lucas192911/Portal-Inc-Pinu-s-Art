@@ -29,10 +29,9 @@ Partial Class IngresarCliente
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -99,6 +98,7 @@ Partial Class IngresarCliente
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.BorderSize = 0
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White
@@ -106,21 +106,8 @@ Partial Class IngresarCliente
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(105, 38)
         Me.btnGuardar.TabIndex = 4
-        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.Text = "Continuar"
         Me.btnGuardar.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(12, 212)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(77, 30)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Borrrar"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -132,6 +119,19 @@ Partial Class IngresarCliente
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(462, 25)
         Me.Panel1.TabIndex = 13
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(174, 4)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(108, 17)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Ingresar Cliente"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button5
         '
@@ -147,19 +147,6 @@ Partial Class IngresarCliente
         Me.Button5.TabIndex = 12
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(174, 4)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(108, 17)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "Ingresar Cliente"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'IngresarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -167,7 +154,6 @@ Partial Class IngresarCliente
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(462, 254)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.Label3)
@@ -192,7 +178,6 @@ Partial Class IngresarCliente
     Friend WithEvents txtDireccion As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label7 As System.Windows.Forms.Label

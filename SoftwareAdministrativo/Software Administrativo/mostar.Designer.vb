@@ -82,6 +82,7 @@ Partial Class mostar
         Me.btnSeleccionar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSeleccionar.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnSeleccionar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSeleccionar.FlatAppearance.BorderSize = 0
         Me.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSeleccionar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSeleccionar.ForeColor = System.Drawing.Color.White
@@ -97,6 +98,7 @@ Partial Class mostar
         Me.btnVovler.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnVovler.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnVovler.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnVovler.FlatAppearance.BorderSize = 0
         Me.btnVovler.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVovler.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVovler.ForeColor = System.Drawing.Color.White
