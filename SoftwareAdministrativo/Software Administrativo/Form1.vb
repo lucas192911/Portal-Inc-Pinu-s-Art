@@ -123,4 +123,14 @@ Public Class Form1
     Private Sub pnlTitleBar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlTitleBar.Paint
 
     End Sub
+
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+        FormAbout.Show()
+    End Sub
+
+    Private Sub btnInicio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInicio.Click
+        pnlContenedor.Controls.Clear()
+        pnlContenedor.Controls.Add(pnlContenedorMain)
+    End Sub
 End Class
