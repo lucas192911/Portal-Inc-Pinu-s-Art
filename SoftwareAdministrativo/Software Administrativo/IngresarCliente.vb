@@ -23,4 +23,18 @@ Public Class IngresarCliente
     Private Sub IngresarCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Panel1_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove
+        ReleaseCapture()
+        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub IngresarCliente_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove
+        ReleaseCapture()
+        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
 End Class
