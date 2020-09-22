@@ -22,258 +22,356 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.pnlMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnCliente = New System.Windows.Forms.Button()
+        Me.btnPrecio = New System.Windows.Forms.Button()
+        Me.btnMateriales = New System.Windows.Forms.Button()
+        Me.btnPendiente = New System.Windows.Forms.Button()
+        Me.btnEncargo = New System.Windows.Forms.Button()
+        Me.pnlTitleBar = New System.Windows.Forms.Panel()
+        Me.lblCerrar = New System.Windows.Forms.Label()
+        Me.lblMinimizar = New System.Windows.Forms.Label()
+        Me.lblMaximizar = New System.Windows.Forms.Label()
+        Me.lblRestaurar = New System.Windows.Forms.Label()
+        Me.pnlContenedor = New System.Windows.Forms.Panel()
+        Me.pnlContenedorMain = New System.Windows.Forms.Panel()
+        Me.LabelFH = New System.Windows.Forms.Label()
+        Me.btnRestaurar = New System.Windows.Forms.Button()
+        Me.btnMaximizar = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnMinimizar = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.pnlMenu.SuspendLayout()
+        Me.pnlTitleBar.SuspendLayout()
+        Me.pnlContenedor.SuspendLayout()
+        Me.pnlContenedorMain.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 1000
+        '
+        'pnlMenu
+        '
+        Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlMenu.Controls.Add(Me.Label1)
+        Me.pnlMenu.Controls.Add(Me.btnCliente)
+        Me.pnlMenu.Controls.Add(Me.btnPrecio)
+        Me.pnlMenu.Controls.Add(Me.btnMateriales)
+        Me.pnlMenu.Controls.Add(Me.btnPendiente)
+        Me.pnlMenu.Controls.Add(Me.btnEncargo)
+        Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
+        Me.pnlMenu.Name = "pnlMenu"
+        Me.pnlMenu.Size = New System.Drawing.Size(172, 527)
+        Me.pnlMenu.TabIndex = 5
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(341, 46)
+        Me.Label1.Location = New System.Drawing.Point(5, 505)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 24)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Portal Inc"
+        Me.Label1.Size = New System.Drawing.Size(49, 17)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Ayuda"
         '
-        'Label2
+        'btnCliente
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(38, 85)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(99, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Fundadores:"
+        Me.btnCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCliente.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCliente.ForeColor = System.Drawing.Color.White
+        Me.btnCliente.Location = New System.Drawing.Point(0, 225)
+        Me.btnCliente.Name = "btnCliente"
+        Me.btnCliente.Size = New System.Drawing.Size(172, 39)
+        Me.btnCliente.TabIndex = 13
+        Me.btnCliente.Text = "Clientes"
+        Me.btnCliente.UseVisualStyleBackColor = False
         '
-        'Label3
+        'btnPrecio
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(39, 120)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(127, 17)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "◆  Lucas Corbella."
+        Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPrecio.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrecio.ForeColor = System.Drawing.Color.White
+        Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
+        Me.btnPrecio.Name = "btnPrecio"
+        Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
+        Me.btnPrecio.TabIndex = 12
+        Me.btnPrecio.Text = "Precios"
+        Me.btnPrecio.UseVisualStyleBackColor = False
         '
-        'Label4
+        'btnMateriales
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(39, 137)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(129, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "♣ ️ Matias Martinez."
+        Me.btnMateriales.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMateriales.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMateriales.ForeColor = System.Drawing.Color.White
+        Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
+        Me.btnMateriales.Name = "btnMateriales"
+        Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
+        Me.btnMateriales.TabIndex = 11
+        Me.btnMateriales.Text = "Materiales"
+        Me.btnMateriales.UseVisualStyleBackColor = False
         '
-        'Label5
+        'btnPendiente
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(40, 154)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(144, 17)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "♥ ️ Cristina N. Olivera."
+        Me.btnPendiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPendiente.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPendiente.ForeColor = System.Drawing.Color.White
+        Me.btnPendiente.Location = New System.Drawing.Point(28, 46)
+        Me.btnPendiente.Name = "btnPendiente"
+        Me.btnPendiente.Size = New System.Drawing.Size(110, 36)
+        Me.btnPendiente.TabIndex = 10
+        Me.btnPendiente.Text = "Inicio"
+        Me.btnPendiente.UseVisualStyleBackColor = False
         '
-        'Label6
+        'btnEncargo
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(40, 171)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(105, 17)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "♠ ️ J. P. Baratta."
+        Me.btnEncargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEncargo.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEncargo.ForeColor = System.Drawing.Color.White
+        Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
+        Me.btnEncargo.Name = "btnEncargo"
+        Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
+        Me.btnEncargo.TabIndex = 0
+        Me.btnEncargo.Text = "Encargos"
+        Me.btnEncargo.UseVisualStyleBackColor = False
         '
-        'Label8
+        'pnlTitleBar
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(39, 215)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(769, 17)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Queremos darle un agradecimiento especial a la empresa Pinus´Art, por brindarnos " & _
-            "esta oportunidad de aprendizaje."
+        Me.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlTitleBar.Controls.Add(Me.btnRestaurar)
+        Me.pnlTitleBar.Controls.Add(Me.btnMaximizar)
+        Me.pnlTitleBar.Controls.Add(Me.btnClose)
+        Me.pnlTitleBar.Controls.Add(Me.btnMinimizar)
+        Me.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlTitleBar.Location = New System.Drawing.Point(172, 0)
+        Me.pnlTitleBar.Name = "pnlTitleBar"
+        Me.pnlTitleBar.Size = New System.Drawing.Size(757, 29)
+        Me.pnlTitleBar.TabIndex = 11
         '
-        'Label9
+        'lblCerrar
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(38, 251)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(79, 20)
-        Me.Label9.TabIndex = 8
-        Me.Label9.Text = "Founders:"
+        Me.lblCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCerrar.AutoSize = True
+        Me.lblCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCerrar.ForeColor = System.Drawing.Color.White
+        Me.lblCerrar.Location = New System.Drawing.Point(872, 20)
+        Me.lblCerrar.Name = "lblCerrar"
+        Me.lblCerrar.Size = New System.Drawing.Size(41, 15)
+        Me.lblCerrar.TabIndex = 12
+        Me.lblCerrar.Text = "Cerrar"
+        Me.lblCerrar.Visible = False
         '
-        'Label10
+        'lblMinimizar
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(40, 391)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(582, 17)
-        Me.Label10.TabIndex = 9
-        Me.Label10.Text = "We want to give a special thanks to Pinus´Art for bringing up this opportunity of" & _
-            " learning."
+        Me.lblMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMinimizar.AutoSize = True
+        Me.lblMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblMinimizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMinimizar.ForeColor = System.Drawing.Color.White
+        Me.lblMinimizar.Location = New System.Drawing.Point(829, 20)
+        Me.lblMinimizar.Name = "lblMinimizar"
+        Me.lblMinimizar.Size = New System.Drawing.Size(62, 15)
+        Me.lblMinimizar.TabIndex = 13
+        Me.lblMinimizar.Text = "Minimizar"
+        Me.lblMinimizar.Visible = False
         '
-        'Label14
+        'lblMaximizar
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(40, 346)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(105, 17)
-        Me.Label14.TabIndex = 16
-        Me.Label14.Text = "♠ ️ J. P. Baratta."
+        Me.lblMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMaximizar.AutoSize = True
+        Me.lblMaximizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblMaximizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMaximizar.ForeColor = System.Drawing.Color.White
+        Me.lblMaximizar.Location = New System.Drawing.Point(864, 20)
+        Me.lblMaximizar.Name = "lblMaximizar"
+        Me.lblMaximizar.Size = New System.Drawing.Size(65, 15)
+        Me.lblMaximizar.TabIndex = 14
+        Me.lblMaximizar.Text = "Maximizar"
+        Me.lblMaximizar.Visible = False
         '
-        'Label15
+        'lblRestaurar
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.Transparent
-        Me.Label15.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(40, 329)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(144, 17)
-        Me.Label15.TabIndex = 15
-        Me.Label15.Text = "♥ ️ Cristina N. Olivera."
+        Me.lblRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblRestaurar.AutoSize = True
+        Me.lblRestaurar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblRestaurar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRestaurar.ForeColor = System.Drawing.Color.White
+        Me.lblRestaurar.Location = New System.Drawing.Point(864, 20)
+        Me.lblRestaurar.Name = "lblRestaurar"
+        Me.lblRestaurar.Size = New System.Drawing.Size(61, 15)
+        Me.lblRestaurar.TabIndex = 15
+        Me.lblRestaurar.Text = "Restaurar"
+        Me.lblRestaurar.Visible = False
         '
-        'Label16
+        'pnlContenedor
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(40, 312)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(129, 17)
-        Me.Label16.TabIndex = 14
-        Me.Label16.Text = "♣ ️ Matias Martinez."
+        Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
+        Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
+        Me.pnlContenedor.Name = "pnlContenedor"
+        Me.pnlContenedor.Size = New System.Drawing.Size(757, 498)
+        Me.pnlContenedor.TabIndex = 16
         '
-        'Label17
+        'pnlContenedorMain
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(40, 295)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(127, 17)
-        Me.Label17.TabIndex = 13
-        Me.Label17.Text = "◆  Lucas Corbella."
+        Me.pnlContenedorMain.Controls.Add(Me.PictureBox2)
+        Me.pnlContenedorMain.Controls.Add(Me.LabelFH)
+        Me.pnlContenedorMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContenedorMain.Location = New System.Drawing.Point(0, 0)
+        Me.pnlContenedorMain.Name = "pnlContenedorMain"
+        Me.pnlContenedorMain.Size = New System.Drawing.Size(757, 498)
+        Me.pnlContenedorMain.TabIndex = 0
         '
-        'Label18
+        'LabelFH
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(545, 448)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(275, 17)
-        Me.Label18.TabIndex = 17
-        Me.Label18.Text = "Escuela Catalina Harriague De Castaños."
+        Me.LabelFH.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.LabelFH.AutoSize = True
+        Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFH.ForeColor = System.Drawing.Color.Black
+        Me.LabelFH.Location = New System.Drawing.Point(212, 417)
+        Me.LabelFH.Name = "LabelFH"
+        Me.LabelFH.Size = New System.Drawing.Size(0, 39)
+        Me.LabelFH.TabIndex = 11
         '
-        'Button5
+        'btnRestaurar
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(797, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(35, 25)
-        Me.Button5.TabIndex = 18
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRestaurar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Restaurar
+        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnRestaurar.FlatAppearance.BorderSize = 0
+        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRestaurar.Location = New System.Drawing.Point(679, 0)
+        Me.btnRestaurar.Name = "btnRestaurar"
+        Me.btnRestaurar.Size = New System.Drawing.Size(35, 29)
+        Me.btnRestaurar.TabIndex = 15
+        Me.btnRestaurar.UseVisualStyleBackColor = True
+        Me.btnRestaurar.Visible = False
         '
-        'Panel1
+        'btnMaximizar
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(798, 25)
-        Me.Panel1.TabIndex = 19
+        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMaximizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Maximizar
+        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMaximizar.FlatAppearance.BorderSize = 0
+        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximizar.Location = New System.Drawing.Point(679, 0)
+        Me.btnMaximizar.Name = "btnMaximizar"
+        Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMaximizar.TabIndex = 9
+        Me.btnMaximizar.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(714, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(43, 29)
+        Me.btnClose.TabIndex = 7
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'btnMinimizar
+        '
+        Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMinimizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Minimizar
+        Me.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMinimizar.FlatAppearance.BorderSize = 0
+        Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimizar.Location = New System.Drawing.Point(638, 0)
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMinimizar.TabIndex = 8
+        Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnMinimizar.UseVisualStyleBackColor = True
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
+        Me.PictureBox2.Location = New System.Drawing.Point(201, 67)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(355, 352)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(832, 474)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(929, 527)
+        Me.Controls.Add(Me.lblRestaurar)
+        Me.Controls.Add(Me.lblMaximizar)
+        Me.Controls.Add(Me.lblMinimizar)
+        Me.Controls.Add(Me.lblCerrar)
+        Me.Controls.Add(Me.pnlTitleBar)
+        Me.Controls.Add(Me.pnlMenu)
+        Me.Controls.Add(Me.pnlContenedor)
+        Me.ForeColor = System.Drawing.Color.MediumVioletRed
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "About"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "de"
+        Me.pnlMenu.ResumeLayout(False)
+        Me.pnlMenu.PerformLayout()
+        Me.pnlTitleBar.ResumeLayout(False)
+        Me.pnlContenedor.ResumeLayout(False)
+        Me.pnlContenedorMain.ResumeLayout(False)
+        Me.pnlContenedorMain.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents btnEncargo As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents pnlMenu As System.Windows.Forms.Panel
+    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents btnMinimizar As System.Windows.Forms.Button
+    Friend WithEvents btnMaximizar As System.Windows.Forms.Button
+    Friend WithEvents btnPendiente As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents btnCliente As System.Windows.Forms.Button
+    Friend WithEvents btnPrecio As System.Windows.Forms.Button
+    Friend WithEvents btnMateriales As System.Windows.Forms.Button
+    Friend WithEvents pnlTitleBar As System.Windows.Forms.Panel
+    Friend WithEvents lblCerrar As System.Windows.Forms.Label
+    Friend WithEvents lblMinimizar As System.Windows.Forms.Label
+    Friend WithEvents lblMaximizar As System.Windows.Forms.Label
+    Friend WithEvents btnRestaurar As System.Windows.Forms.Button
+    Friend WithEvents lblRestaurar As System.Windows.Forms.Label
+    Friend WithEvents pnlContenedor As System.Windows.Forms.Panel
+    Friend WithEvents pnlContenedorMain As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents LabelFH As System.Windows.Forms.Label
 
 End Class
