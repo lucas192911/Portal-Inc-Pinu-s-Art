@@ -29,4 +29,6 @@
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub
+
+
 End Class

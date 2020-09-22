@@ -8,8 +8,6 @@ Public Class Form1
         LabelFH.Text = Date.Now.ToLongTimeString & "   " & DateTime.Now.ToString("dd/MM/yyyy")
     End Sub
 
-
-
     Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         mostar.ShowDialog()
     End Sub
@@ -120,5 +118,9 @@ Public Class Form1
         mostar.dtgMostrar.DataSource = Consulta(s)
 
         AbrirFormEnPanel(Me.pnlContenedor, mostar)
+    End Sub
+
+    Private Sub pnlTitleBar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlTitleBar.Paint
+
     End Sub
 End Class

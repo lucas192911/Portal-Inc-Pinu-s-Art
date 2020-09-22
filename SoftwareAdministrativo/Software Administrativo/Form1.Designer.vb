@@ -76,9 +76,11 @@ Partial Class Form1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 511)
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(5, 505)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(37, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 17)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Ayuda"
         '
@@ -87,8 +89,8 @@ Partial Class Form1
         Me.btnCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCliente.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnCliente.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCliente.ForeColor = System.Drawing.Color.White
         Me.btnCliente.Location = New System.Drawing.Point(0, 225)
         Me.btnCliente.Name = "btnCliente"
         Me.btnCliente.Size = New System.Drawing.Size(172, 39)
@@ -101,8 +103,8 @@ Partial Class Form1
         Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrecio.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrecio.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnPrecio.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrecio.ForeColor = System.Drawing.Color.White
         Me.btnPrecio.Location = New System.Drawing.Point(0, 339)
         Me.btnPrecio.Name = "btnPrecio"
         Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
@@ -115,8 +117,8 @@ Partial Class Form1
         Me.btnMateriales.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnMateriales.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMateriales.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMateriales.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnMateriales.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMateriales.ForeColor = System.Drawing.Color.White
         Me.btnMateriales.Location = New System.Drawing.Point(0, 283)
         Me.btnMateriales.Name = "btnMateriales"
         Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
@@ -129,13 +131,13 @@ Partial Class Form1
         Me.btnPendiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPendiente.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPendiente.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.btnPendiente.Location = New System.Drawing.Point(0, 107)
+        Me.btnPendiente.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPendiente.ForeColor = System.Drawing.Color.White
+        Me.btnPendiente.Location = New System.Drawing.Point(28, 46)
         Me.btnPendiente.Name = "btnPendiente"
-        Me.btnPendiente.Size = New System.Drawing.Size(172, 39)
+        Me.btnPendiente.Size = New System.Drawing.Size(110, 36)
         Me.btnPendiente.TabIndex = 10
-        Me.btnPendiente.Text = "Pendientes"
+        Me.btnPendiente.Text = "Inicio"
         Me.btnPendiente.UseVisualStyleBackColor = False
         '
         'btnEncargo
@@ -143,8 +145,8 @@ Partial Class Form1
         Me.btnEncargo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnEncargo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEncargo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEncargo.ForeColor = System.Drawing.Color.DarkMagenta
+        Me.btnEncargo.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEncargo.ForeColor = System.Drawing.Color.White
         Me.btnEncargo.Location = New System.Drawing.Point(0, 164)
         Me.btnEncargo.Name = "btnEncargo"
         Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
@@ -248,11 +250,11 @@ Partial Class Form1
         Me.LabelFH.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LabelFH.AutoSize = True
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.LabelFH.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFH.ForeColor = System.Drawing.Color.MediumVioletRed
+        Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFH.ForeColor = System.Drawing.Color.Black
         Me.LabelFH.Location = New System.Drawing.Point(212, 417)
         Me.LabelFH.Name = "LabelFH"
-        Me.LabelFH.Size = New System.Drawing.Size(0, 37)
+        Me.LabelFH.Size = New System.Drawing.Size(0, 39)
         Me.LabelFH.TabIndex = 11
         '
         'btnRestaurar
