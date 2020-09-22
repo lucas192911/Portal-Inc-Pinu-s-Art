@@ -18,6 +18,9 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
+        Form1.pnlContenedor.Controls.Clear()
+        Form1.pnlContenedor.Controls.Add(Form1.pnlContenedorMain)
+        Me.Close()
         IngresarCliente.Show()
     End Sub
 

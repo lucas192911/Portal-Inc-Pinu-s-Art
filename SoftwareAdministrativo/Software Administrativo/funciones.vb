@@ -6,7 +6,7 @@ Module funciones
 
     Dim adapter As MySqlDataAdapter
 
-
+    Public num As Integer
 
     'Validación de registro antes de ingresarlo. 'sentenceValidation: consulta para validar, y sentence: consulta para ingresar'---
     Public Sub InsertRow(ByVal sentenceValidation As String, ByVal sentence As String)
@@ -18,10 +18,12 @@ Module funciones
 
             If searchInTable.Rows.Count > 0 Then
                 MsgBox("Ya existe", MsgBoxStyle.Critical)
+                num = 1
             Else
                 Dim Command As New MySqlCommand(sentence, conection)
                 Command.ExecuteNonQuery()
                 MsgBox("Datos guardados", MsgBoxStyle.Information)
+                num = 0
             End If
 
         Catch ex As Exception

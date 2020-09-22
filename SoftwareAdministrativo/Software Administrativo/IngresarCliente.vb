@@ -14,10 +14,15 @@ Public Class IngresarCliente
             Dim sql As String = String.Format("insert into cliente(nombre,telefono,direccion) values ('{0}',{1},'{2}');", txtNombre.Text, txtTelefono.Text, txtDireccion.Text)
 
             InsertRow(sqlValidation, sql)
-            Me.Hide()
-            Ingresar_Encargo.ShowDialog()
-            Me.Close()
+
+            If funciones.num = 0 Then
+                Me.Hide()
+                Ingresar_Encargo.ShowDialog()
+                Me.Close()
+            End If
+
         End If
+
     End Sub
 
     Private Sub IngresarCliente_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -34,6 +39,11 @@ Public Class IngresarCliente
     End Sub
 
     Private Sub IngresarCliente_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove
+        ReleaseCapture()
+        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub Label7_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Label7.MouseMove
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub

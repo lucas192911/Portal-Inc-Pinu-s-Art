@@ -29,7 +29,8 @@
 
             '   MsgBox(Clipboard.GetText())
         End If
-
+        Me.Close()
+        Ingresar_Encargo.Show()
     End Sub
 
     Private Sub btnVovler_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVovler.Click
