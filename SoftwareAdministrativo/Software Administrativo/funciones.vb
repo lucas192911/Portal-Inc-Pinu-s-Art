@@ -2,7 +2,7 @@
 Imports System.Runtime.InteropServices
 
 Module funciones
-    Dim conection As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema")
+    Dim conection As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema; convert zero datetime=True")
 
     Dim adapter As MySqlDataAdapter
 

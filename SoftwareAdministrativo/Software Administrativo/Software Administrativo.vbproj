@@ -82,10 +82,22 @@
     <Compile Include="Agregar MAteriales.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClientesParaEncargo.Designer.vb">
+      <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesParaEncargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Eleccion.Designer.vb">
       <DependentUpon>Eleccion.vb</DependentUpon>
     </Compile>
     <Compile Include="Eleccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encargo.Designer.vb">
+      <DependentUpon>Encargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Encargo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -146,8 +158,14 @@
     <EmbeddedResource Include="Agregar MAteriales.resx">
       <DependentUpon>Agregar MAteriales.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientesParaEncargo.resx">
+      <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eleccion.resx">
       <DependentUpon>Eleccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encargo.resx">
+      <DependentUpon>Encargo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -236,6 +254,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icono Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\0bf9f93d-cfca-4c90-b06a-0faed3d8896c_200x200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\a0859098-ea84-4cf9-8be6-91fd6c75577d_200x200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\6529b614-be4e-4e60-a0cd-e5359a046788_200x200.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

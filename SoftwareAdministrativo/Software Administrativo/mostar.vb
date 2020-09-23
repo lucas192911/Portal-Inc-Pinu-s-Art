@@ -5,11 +5,11 @@
     End Sub
 
 
-    Dim x As Integer
+    Public x As Integer
 
     Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
 
-        dtgMostrar.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
+        'dtgMostrar.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
 
 
 
@@ -29,11 +29,10 @@
 
             '   MsgBox(Clipboard.GetText())
         End If
+        Form1.Hide()
         Me.Close()
         Ingresar_Encargo.Show()
+
     End Sub
 
-    Private Sub btnVovler_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVovler.Click
-        Me.Close()
-    End Sub
 End Class

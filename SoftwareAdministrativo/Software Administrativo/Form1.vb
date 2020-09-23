@@ -8,12 +8,30 @@ Public Class Form1
         LabelFH.Text = Date.Now.ToLongTimeString & "   " & DateTime.Now.ToString("dd/MM/yyyy")
     End Sub
 
+
+    Private Sub pbxLogoMain_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.MouseHover
+
+        pbxLogoMain.Visible = False
+        pbxMouseHover.Visible = True
+    End Sub
+
+    Private Sub pbxMouseHover_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxMouseHover.MouseLeave
+
+        pbxMouseHover.Visible = False
+        pbxLogoMain.Visible = True
+    End Sub
+
     Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         mostar.ShowDialog()
     End Sub
 
-    Private Sub btnEncargo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEncargo.Click
-        Eleccion.Show()
+    Private Sub btnEncargo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEncargo.Click
+        'Eleccion.Show()
+        If pnlSubMenuEncargos.Visible = False Then
+            pnlSubMenuEncargos.Visible = True
+        Else
+            pnlSubMenuEncargos.Visible = False
+        End If
     End Sub
 
 
@@ -120,17 +138,38 @@ Public Class Form1
         AbrirFormEnPanel(Me.pnlContenedor, mostar)
     End Sub
 
-    Private Sub pnlTitleBar_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles pnlTitleBar.Paint
-
-    End Sub
-
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
         FormAbout.Show()
     End Sub
 
-    Private Sub btnInicio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInicio.Click
+
+
+    
+    Private Sub pbxLogoMain_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.Click
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
     End Sub
+
+  
+
+    Private Sub pbxMouseHover_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pbxMouseHover.MouseClick
+        pnlContenedor.Controls.Clear()
+        pnlContenedor.Controls.Add(pnlContenedorMain)
+    End Sub
+
+    
+
+    Private Sub subBtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnNuevo.Click
+        Me.Hide()
+        Eleccion.Show()
+    End Sub
+
+    Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnExistente.Click
+        AbrirFormEnPanel(Me.pnlContenedor, Encargo)
+    End Sub
+
+  
+
+
 End Class
