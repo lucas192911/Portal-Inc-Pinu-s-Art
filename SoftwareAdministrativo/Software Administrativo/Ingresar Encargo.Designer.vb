@@ -123,6 +123,7 @@ Partial Class Ingresar_Encargo
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ComboBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.ForeColor = System.Drawing.Color.White
         Me.ComboBox1.FormattingEnabled = True
@@ -144,6 +145,7 @@ Partial Class Ingresar_Encargo
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -200,6 +202,7 @@ Partial Class Ingresar_Encargo
         Me.DateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.DateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.White
         Me.DateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.White
+        Me.DateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DateTimePicker1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(12, 218)
         Me.DateTimePicker1.Name = "DateTimePicker1"

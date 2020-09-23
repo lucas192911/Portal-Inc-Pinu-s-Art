@@ -37,8 +37,8 @@ Partial Class FormAbout
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,6 +46,7 @@ Partial Class FormAbout
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(341, 46)
@@ -58,6 +59,7 @@ Partial Class FormAbout
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(38, 85)
@@ -70,6 +72,7 @@ Partial Class FormAbout
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(39, 120)
@@ -82,6 +85,7 @@ Partial Class FormAbout
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(39, 137)
@@ -94,6 +98,7 @@ Partial Class FormAbout
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(40, 154)
@@ -106,6 +111,7 @@ Partial Class FormAbout
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(40, 171)
@@ -118,6 +124,7 @@ Partial Class FormAbout
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(39, 215)
@@ -131,6 +138,7 @@ Partial Class FormAbout
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(38, 251)
@@ -143,6 +151,7 @@ Partial Class FormAbout
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(40, 391)
@@ -156,6 +165,7 @@ Partial Class FormAbout
         '
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
         Me.Label14.Location = New System.Drawing.Point(40, 346)
@@ -168,6 +178,7 @@ Partial Class FormAbout
         '
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label15.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
         Me.Label15.Location = New System.Drawing.Point(40, 329)
@@ -180,6 +191,7 @@ Partial Class FormAbout
         '
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label16.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
         Me.Label16.Location = New System.Drawing.Point(40, 312)
@@ -192,6 +204,7 @@ Partial Class FormAbout
         '
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label17.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
         Me.Label17.Location = New System.Drawing.Point(40, 295)
@@ -204,6 +217,7 @@ Partial Class FormAbout
         '
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Label18.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
         Me.Label18.Location = New System.Drawing.Point(545, 448)
@@ -221,19 +235,6 @@ Partial Class FormAbout
         Me.Panel1.Size = New System.Drawing.Size(798, 25)
         Me.Panel1.TabIndex = 19
         '
-        'btnClose
-        '
-        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_28306
-        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Location = New System.Drawing.Point(797, 0)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(35, 25)
-        Me.btnClose.TabIndex = 18
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -246,6 +247,19 @@ Partial Class FormAbout
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "About"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_28306
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(797, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(35, 25)
+        Me.btnClose.TabIndex = 18
+        Me.btnClose.UseVisualStyleBackColor = False
         '
         'FormAbout
         '

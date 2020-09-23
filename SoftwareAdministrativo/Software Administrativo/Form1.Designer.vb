@@ -214,6 +214,7 @@ Partial Class Form1
         '
         'pbxMouseHover
         '
+        Me.pbxMouseHover.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pbxMouseHover.Image = Global.Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
         Me.pbxMouseHover.Location = New System.Drawing.Point(12, 29)
         Me.pbxMouseHover.Name = "pbxMouseHover"

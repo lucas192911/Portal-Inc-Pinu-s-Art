@@ -26,14 +26,15 @@ Partial Class Eleccion
         Me.btnExistente = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnNuevo
         '
         Me.btnNuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNuevo.FlatAppearance.BorderSize = 0
         Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNuevo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -48,6 +49,7 @@ Partial Class Eleccion
         'btnExistente
         '
         Me.btnExistente.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnExistente.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnExistente.FlatAppearance.BorderSize = 0
         Me.btnExistente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExistente.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -78,19 +80,6 @@ Partial Class Eleccion
         Me.Panel1.Size = New System.Drawing.Size(356, 25)
         Me.Panel1.TabIndex = 11
         '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button5.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(318, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(35, 25)
-        Me.Button5.TabIndex = 10
-        Me.Button5.UseVisualStyleBackColor = False
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -103,6 +92,19 @@ Partial Class Eleccion
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Seleccione"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button5.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(318, 0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(35, 25)
+        Me.Button5.TabIndex = 10
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Eleccion
         '
