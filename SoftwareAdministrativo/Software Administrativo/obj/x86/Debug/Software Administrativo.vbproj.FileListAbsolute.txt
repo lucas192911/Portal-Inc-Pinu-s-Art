@@ -86,5 +86,4 @@ C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Softw
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\bin\Debug\Software Administrativo.xml
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Materiales.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Agregar_MAteriales.resources
-C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Encargos.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.FormAbout.resources
