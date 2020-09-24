@@ -1,7 +1,7 @@
 ﻿Public Class Ingresar_Encargo
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Me.Close()
+        ExitAlert.ShowDialog()
     End Sub
 
     Private Sub Panel1_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove

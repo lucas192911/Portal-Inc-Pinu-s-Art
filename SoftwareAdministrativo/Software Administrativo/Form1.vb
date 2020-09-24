@@ -140,7 +140,7 @@ Public Class Form1
 
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-        FormAbout.Show()
+        FormAbout.ShowDialog()
     End Sub
 
 
@@ -170,6 +170,5 @@ Public Class Form1
     End Sub
 
   
-
 
 End Class
