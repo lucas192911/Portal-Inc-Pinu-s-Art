@@ -57,6 +57,20 @@ Public Class Form1
     End Sub
 
 
+    Private Sub pnlTitleBar_DoubleClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pnlTitleBar.DoubleClick
+        If (Me.WindowState = FormWindowState.Normal = True) Then
+            Me.WindowState = FormWindowState.Maximized
+            btnMaximizar.Visible = False
+            btnRestaurar.Visible = True
+
+        Else
+            Me.WindowState = FormWindowState.Normal
+            btnRestaurar.Visible = False
+            btnMaximizar.Visible = True
+
+        End If
+    End Sub
+
 
     Private Sub pnlTitleBar_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseMove
         ReleaseCapture()
@@ -122,17 +136,6 @@ Public Class Form1
 
 
 
-    Private Sub pnlTitleBar_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseDoubleClick
-
-        If (Me.WindowState = FormWindowState.Normal = True) Then
-            Me.WindowState = FormWindowState.Maximized
-            btnRestaurar.Visible = True
-        Else
-            Me.WindowState = FormWindowState.Normal
-            btnRestaurar.Visible = False
-        End If
-
-    End Sub
 
     
     Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
@@ -179,6 +182,7 @@ Public Class Form1
         Me.pnlTitleBar.Controls.Clear()
         Me.pnlTitleBar.Controls.Add(btnClose)
         Me.pnlTitleBar.Controls.Add(btnMaximizar)
+        Me.pnlTitleBar.Controls.Add(btnRestaurar)
         Me.pnlTitleBar.Controls.Add(btnMinimizar)
     End Sub
 
@@ -215,5 +219,8 @@ Public Class Form1
         Me.pnlTitleBar.Controls.Add(lblEncargos)
         lblEncargos.Visible = True
     End Sub
+
+
+  
 
 End Class

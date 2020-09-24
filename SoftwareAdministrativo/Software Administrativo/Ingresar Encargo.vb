@@ -30,6 +30,7 @@
 
         Me.Close()
         AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
+        Form1.quitarLbl()
         Form1.pnlTitleBar.Controls.Add(Form1.lblEncargos)
         Form1.lblEncargos.Visible = True
 
