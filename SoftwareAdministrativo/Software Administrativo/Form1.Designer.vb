@@ -49,8 +49,8 @@ Partial Class Form1
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.pbxMouseHover = New System.Windows.Forms.PictureBox()
         Me.pbxLogoMain = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlMenu.SuspendLayout()
         Me.pnlSubMenuEncargos.SuspendLayout()
         Me.pnlLogo.SuspendLayout()
@@ -59,6 +59,7 @@ Partial Class Form1
         Me.pnlContenedorMain.SuspendLayout()
         CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -97,7 +98,7 @@ Partial Class Form1
         Me.btnPrecio.Name = "btnPrecio"
         Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
         Me.btnPrecio.TabIndex = 12
-        Me.btnPrecio.Text = "Precios"
+        Me.btnPrecio.Text = "Stock"
         Me.btnPrecio.UseVisualStyleBackColor = False
         '
         'btnMateriales
@@ -310,7 +311,7 @@ Partial Class Form1
         'pnlContenedorMain
         '
         Me.pnlContenedorMain.Controls.Add(Me.LabelFH)
-        Me.pnlContenedorMain.Controls.Add(Me.Panel1)
+        Me.pnlContenedorMain.Controls.Add(Me.PictureBox1)
         Me.pnlContenedorMain.Controls.Add(Me.PictureBox2)
         Me.pnlContenedorMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenedorMain.ForeColor = System.Drawing.Color.Black
@@ -408,6 +409,16 @@ Partial Class Form1
         Me.pbxLogoMain.TabIndex = 13
         Me.pbxLogoMain.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.Dibujo_sin_título2
+        Me.PictureBox1.Location = New System.Drawing.Point(177, 398)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(400, 61)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -418,14 +429,6 @@ Partial Class Form1
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 12
         Me.PictureBox2.TabStop = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(176, 398)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(403, 58)
-        Me.Panel1.TabIndex = 13
         '
         'Form1
         '
@@ -456,6 +459,7 @@ Partial Class Form1
         Me.pnlContenedorMain.PerformLayout()
         CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -487,6 +491,6 @@ Partial Class Form1
     Friend WithEvents pnlLogo As System.Windows.Forms.Panel
     Friend WithEvents pbxLogoMain As System.Windows.Forms.PictureBox
     Friend WithEvents pbxMouseHover As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class
