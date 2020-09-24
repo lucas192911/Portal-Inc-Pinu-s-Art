@@ -22,6 +22,7 @@ Partial Class Eleccion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Eleccion))
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnExistente = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -118,6 +119,7 @@ Partial Class Eleccion
         Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Eleccion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "?"

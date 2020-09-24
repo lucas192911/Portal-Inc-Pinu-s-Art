@@ -1,8 +1,14 @@
 ﻿Public Class Ingresar_Encargo
 
-    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Me.Close()
+   
+
+
+    Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
+        ExitAlert.ShowDialog()
+        ''sound
+
     End Sub
+
 
     Private Sub Panel1_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove
         ReleaseCapture()
@@ -19,9 +25,16 @@
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
+    
+    Private Sub btnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAceptar.Click
+
         Me.Close()
+        AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
+        Form1.pnlTitleBar.Controls.Add(Form1.lblEncargos)
+        Form1.lblEncargos.Visible = True
+
         Form1.Show()
     End Sub
+
+    
 End Class

@@ -76,12 +76,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar MAteriales.Designer.vb">
-      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Agregar MAteriales.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ClientesParaEncargo.Designer.vb">
       <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
     </Compile>
@@ -98,6 +92,12 @@
       <DependentUpon>Encargo.vb</DependentUpon>
     </Compile>
     <Compile Include="Encargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitAlert.Designer.vb">
+      <DependentUpon>ExitAlert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExitAlert.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -155,9 +155,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Agregar MAteriales.resx">
-      <DependentUpon>Agregar MAteriales.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ClientesParaEncargo.resx">
       <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Encargo.resx">
       <DependentUpon>Encargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitAlert.resx">
+      <DependentUpon>ExitAlert.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿Public Class Materiales
 
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
-        Agregar_MAteriales.Show()
+        ''---Llamar al metodo insertRow, y mandar parametro sql. Para agregar un registro---'
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
