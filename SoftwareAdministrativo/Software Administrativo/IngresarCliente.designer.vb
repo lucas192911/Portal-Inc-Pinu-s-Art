@@ -22,7 +22,6 @@ Partial Class IngresarCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IngresarCliente))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
@@ -54,7 +53,7 @@ Partial Class IngresarCliente
         Me.txtNombre.Location = New System.Drawing.Point(177, 57)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(166, 27)
-        Me.txtNombre.TabIndex = 0
+        Me.txtNombre.TabIndex = 1
         '
         'txtTelefono
         '
@@ -64,7 +63,7 @@ Partial Class IngresarCliente
         Me.txtTelefono.Location = New System.Drawing.Point(177, 104)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(166, 27)
-        Me.txtTelefono.TabIndex = 1
+        Me.txtTelefono.TabIndex = 2
         '
         'Label2
         '
@@ -84,7 +83,7 @@ Partial Class IngresarCliente
         Me.txtDireccion.Location = New System.Drawing.Point(177, 149)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(166, 27)
-        Me.txtDireccion.TabIndex = 2
+        Me.txtDireccion.TabIndex = 3
         '
         'Label3
         '
@@ -107,7 +106,7 @@ Partial Class IngresarCliente
         Me.btnGuardar.Location = New System.Drawing.Point(345, 204)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(105, 38)
-        Me.btnGuardar.TabIndex = 3
+        Me.btnGuardar.TabIndex = 4
         Me.btnGuardar.Text = "Continuar"
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
@@ -164,7 +163,6 @@ Partial Class IngresarCliente
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "IngresarCliente"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ingresar Datos del Cliente"

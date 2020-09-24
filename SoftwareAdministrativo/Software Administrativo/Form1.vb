@@ -57,47 +57,11 @@ Public Class Form1
     End Sub
 
 
-    Private Sub pnlTitleBar_DoubleClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pnlTitleBar.DoubleClick
-        If (Me.WindowState = FormWindowState.Normal = True) Then
-            Me.WindowState = FormWindowState.Maximized
-            btnMaximizar.Visible = False
-            btnRestaurar.Visible = True
-
-        Else
-            Me.WindowState = FormWindowState.Normal
-            btnRestaurar.Visible = False
-            btnMaximizar.Visible = True
-
-        End If
-    End Sub
-
 
     Private Sub pnlTitleBar_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseMove
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-    Private Sub lblClientes_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblClientes.MouseMove
-        ReleaseCapture()
-        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-
-    Private Sub lblEncargos_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblEncargos.MouseMove
-        ReleaseCapture()
-        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-
-    Private Sub lblMateriales_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblMateriales.MouseMove
-        ReleaseCapture()
-        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-
-    Private Sub lblPrecios_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles lblPrecios.MouseMove
-        ReleaseCapture()
-        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-
-
-
 
 
 
@@ -136,6 +100,17 @@ Public Class Form1
 
 
 
+    Private Sub pnlTitleBar_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseDoubleClick
+
+        If (Me.WindowState = FormWindowState.Normal = True) Then
+            Me.WindowState = FormWindowState.Maximized
+            btnRestaurar.Visible = True
+        Else
+            Me.WindowState = FormWindowState.Normal
+            btnRestaurar.Visible = False
+        End If
+
+    End Sub
 
     
     Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
@@ -149,9 +124,6 @@ Public Class Form1
         Materiales.dtgMostrar.DataSource = Consulta(s)
         AbrirFormEnPanel(Me.pnlContenedor, Materiales)
 
-        quitarLbl()
-        Me.pnlTitleBar.Controls.Add(lblMateriales)
-        lblMateriales.Visible = True
     End Sub
 
     Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
@@ -164,63 +136,40 @@ Public Class Form1
         mostar.dtgMostrar.DataSource = Consulta(s)
 
         AbrirFormEnPanel(Me.pnlContenedor, mostar)
-
-        quitarLbl()
-        Me.pnlTitleBar.Controls.Add(lblClientes)
-        lblClientes.Visible = True
     End Sub
 
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-        FormAbout.ShowDialog()
+        FormAbout.Show()
     End Sub
 
 
 
-
-    Public Sub quitarLbl()
-        Me.pnlTitleBar.Controls.Clear()
-        Me.pnlTitleBar.Controls.Add(btnClose)
-        Me.pnlTitleBar.Controls.Add(btnMaximizar)
-        Me.pnlTitleBar.Controls.Add(btnRestaurar)
-        Me.pnlTitleBar.Controls.Add(btnMinimizar)
-    End Sub
-
-
+    
     Private Sub pbxLogoMain_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.Click
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
-
-        quitarLbl()
-
     End Sub
 
-
+  
 
     Private Sub pbxMouseHover_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pbxMouseHover.MouseClick
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
-
-        quitarLbl()
     End Sub
 
-
+    
 
     Private Sub subBtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnNuevo.Click
-
-        Eleccion.Show()
         Me.Hide()
+        Eleccion.Show()
     End Sub
 
     Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnExistente.Click
         AbrirFormEnPanel(Me.pnlContenedor, Encargo)
-
-        quitarLbl()
-        Me.pnlTitleBar.Controls.Add(lblEncargos)
-        lblEncargos.Visible = True
     End Sub
 
-
   
+
 
 End Class

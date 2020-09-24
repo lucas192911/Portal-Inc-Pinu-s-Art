@@ -22,15 +22,12 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
         Form1.pnlContenedor.Controls.Clear()
         Form1.pnlContenedor.Controls.Add(Form1.pnlContenedorMain)
-        Form1.quitarLbl()
-
-        IngresarCliente.Show()
         Me.Close()
+        IngresarCliente.Show()
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         Me.Close()
-        Form1.Show()
     End Sub
 
     Private Sub Eleccion_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseMove

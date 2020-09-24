@@ -22,7 +22,6 @@ Partial Class Ingresar_Encargo
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ingresar_Encargo))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -33,11 +32,12 @@ Partial Class Ingresar_Encargo
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,7 +49,7 @@ Partial Class Ingresar_Encargo
         Me.TextBox1.Location = New System.Drawing.Point(12, 75)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(231, 21)
-        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.TabIndex = 0
         '
         'Label1
         '
@@ -119,7 +119,7 @@ Partial Class Ingresar_Encargo
         Me.TextBox4.Location = New System.Drawing.Point(12, 375)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(231, 21)
-        Me.TextBox4.TabIndex = 17
+        Me.TextBox4.TabIndex = 8
         '
         'ComboBox1
         '
@@ -128,7 +128,6 @@ Partial Class Ingresar_Encargo
         Me.ComboBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.ForeColor = System.Drawing.Color.White
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.ItemHeight = 16
         Me.ComboBox1.Location = New System.Drawing.Point(12, 298)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(231, 24)
@@ -144,26 +143,26 @@ Partial Class Ingresar_Encargo
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "Monto Total:"
         '
-        'btnAceptar
+        'Button1
         '
-        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAceptar.FlatAppearance.BorderSize = 0
-        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAceptar.ForeColor = System.Drawing.Color.White
-        Me.btnAceptar.Location = New System.Drawing.Point(304, 448)
-        Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(98, 41)
-        Me.btnAceptar.TabIndex = 18
-        Me.btnAceptar.Text = "Aceptar"
-        Me.btnAceptar.UseVisualStyleBackColor = False
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(304, 448)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(98, 41)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Aceptar"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.btnClose)
+        Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -183,20 +182,6 @@ Partial Class Ingresar_Encargo
         Me.Label7.Text = "Ingresar Datos del Encargo"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnClose
-        '
-        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
-        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnClose.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Location = New System.Drawing.Point(379, 0)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(35, 25)
-        Me.btnClose.TabIndex = 15
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
         'DateTimePicker1
         '
         Me.DateTimePicker1.CalendarForeColor = System.Drawing.Color.White
@@ -209,7 +194,36 @@ Partial Class Ingresar_Encargo
         Me.DateTimePicker1.Location = New System.Drawing.Point(12, 218)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(193, 21)
-        Me.DateTimePicker1.TabIndex = 3
+        Me.DateTimePicker1.TabIndex = 17
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(254, 296)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(68, 28)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "Editar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button5.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(379, 0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(35, 25)
+        Me.Button5.TabIndex = 15
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Ingresar_Encargo
         '
@@ -217,9 +231,10 @@ Partial Class Ingresar_Encargo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(414, 501)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnAceptar)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox4)
@@ -231,7 +246,6 @@ Partial Class Ingresar_Encargo
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Ingresar_Encargo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ingresar Datos del Encargo"
@@ -251,9 +265,10 @@ Partial Class Ingresar_Encargo
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents btnAceptar As System.Windows.Forms.Button
-    Friend WithEvents btnClose As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
