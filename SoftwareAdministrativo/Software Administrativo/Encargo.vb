@@ -29,4 +29,13 @@
         End If
 
     End Sub
+
+    Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
+        Dim frm As New EditarEncargo
+
+        frm.txtNombre.Text = dtgMostrar.CurrentRow.Cells(0).Value.ToString
+        frm.txtPresupuesto.Text = dtgMostrar.CurrentRow.Cells(2).Value.ToString
+        frm.txtDescripcion.Text = dtgMostrar.CurrentRow.Cells(3).Value.ToString
+        frm.ShowDialog()
+    End Sub
 End Class

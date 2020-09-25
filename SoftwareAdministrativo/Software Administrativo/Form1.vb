@@ -22,7 +22,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        mostar.ShowDialog()
+        Clientes.ShowDialog()
     End Sub
 
     Private Sub btnEncargo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEncargo.Click
@@ -112,7 +112,7 @@ Public Class Form1
 
     End Sub
 
-    
+
     Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
         Dim s As String = <A>select id as ID, 
                                 nombre as Nombre, 
@@ -134,9 +134,9 @@ Public Class Form1
                                     from cliente</a>
         Dim dtClientes As DataTable = Consulta(s)
 
-        mostar.dtgMostrar.DataSource = dtClientes
+        Clientes.dtgMostrar.DataSource = dtClientes
 
-        AbrirFormEnPanel(Me.pnlContenedor, mostar)
+        AbrirFormEnPanel(Me.pnlContenedor, Clientes)
     End Sub
 
 

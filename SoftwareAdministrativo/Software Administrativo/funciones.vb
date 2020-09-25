@@ -74,6 +74,24 @@ Module funciones
     End Sub
 
 
+    Public Sub Editar(ByVal sql As String)
+        conection.Open()
+
+        PreguntarParaEditar.ShowDialog()
+
+        If PreguntarParaEditar.num2 = 1 Then
+            Try
+                Dim cm As New MySqlCommand(sql, conection)
+                cm.ExecuteNonQuery()
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical)
+            End Try
+        End If
+
+
+        conection.Close()
+    End Sub
+
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Public Sub ReleaseCapture()
     End Sub

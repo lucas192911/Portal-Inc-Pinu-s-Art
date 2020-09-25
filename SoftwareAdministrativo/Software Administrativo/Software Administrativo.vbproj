@@ -88,6 +88,24 @@
     <Compile Include="ClientesParaEncargo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditarCliente.Designer.vb">
+      <DependentUpon>EditarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarEncargo.Designer.vb">
+      <DependentUpon>EditarEncargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEncargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarMaterial.Designer.vb">
+      <DependentUpon>EditarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Eleccion.Designer.vb">
       <DependentUpon>Eleccion.vb</DependentUpon>
     </Compile>
@@ -150,10 +168,10 @@
     <Compile Include="Materiales.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mostar.Designer.vb">
-      <DependentUpon>mostar.vb</DependentUpon>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="mostar.vb">
+    <Compile Include="Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -171,6 +189,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PreguntarParaEditar.Designer.vb">
+      <DependentUpon>PreguntarParaEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreguntarParaEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PreguntarParaElminar.Designer.vb">
       <DependentUpon>PreguntarParaElminar.vb</DependentUpon>
     </Compile>
@@ -184,6 +208,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientesParaEncargo.resx">
       <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCliente.resx">
+      <DependentUpon>EditarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarEncargo.resx">
+      <DependentUpon>EditarEncargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarMaterial.resx">
+      <DependentUpon>EditarMaterial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eleccion.resx">
       <DependentUpon>Eleccion.vb</DependentUpon>
@@ -215,14 +248,17 @@
     <EmbeddedResource Include="Materiales.resx">
       <DependentUpon>Materiales.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mostar.resx">
-      <DependentUpon>mostar.vb</DependentUpon>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreguntarParaEditar.resx">
+      <DependentUpon>PreguntarParaEditar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PreguntarParaElminar.resx">
       <DependentUpon>PreguntarParaElminar.vb</DependentUpon>

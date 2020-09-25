@@ -20,7 +20,7 @@
                                     direccion as Direccion 
                                     from cliente</a>
 
-                mostar.dtgMostrar.DataSource = Consulta(s)
+                Clientes.dtgMostrar.DataSource = Consulta(s)
                 Me.Close()
             End If
 

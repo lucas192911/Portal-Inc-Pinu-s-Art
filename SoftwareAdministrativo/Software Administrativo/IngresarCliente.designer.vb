@@ -105,7 +105,7 @@ Partial Class IngresarCliente
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
         Me.btnGuardar.TabIndex = 19
-        Me.btnGuardar.Text = "Continuar"
+        Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'txtDireccion
