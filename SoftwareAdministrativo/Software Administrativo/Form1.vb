@@ -132,8 +132,9 @@ Public Class Form1
                                     telefono as Telefono, 
                                     direccion as Direccion 
                                     from cliente</a>
+        Dim dtClientes As DataTable = Consulta(s)
 
-        mostar.dtgMostrar.DataSource = Consulta(s)
+        mostar.dtgMostrar.DataSource = dtClientes
 
         AbrirFormEnPanel(Me.pnlContenedor, mostar)
     End Sub
@@ -141,6 +142,7 @@ Public Class Form1
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
         FormAbout.ShowDialog()
+
     End Sub
 
 

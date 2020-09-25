@@ -7,32 +7,31 @@
 
     Public x As Integer
 
-    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSeleccionar.Click
+    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
 
-        'dtgMostrar.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText
-
-
-
-        If (dtgMostrar.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
-
-
-            'devuleve el valor de la priemra fila
-            '   x = dtgMostrar.Rows(0).Cells(0).Value
-
-            'devuelve el valor de la fila seleccionada ||UTILIZAR EN CONSULTA PARA AGREGAR ENCARGOS|| ...............
-            x = dtgMostrar.SelectedRows.Item(0).Cells(0).Value
-
-            MsgBox(x)
-
-            'mostrar todo el contenido
-            '   Clipboard.SetDataObject(dtgMostrar.GetClipboardContent())
-
-            '   MsgBox(Clipboard.GetText())
-        End If
-        Form1.Hide()
-        Me.Close()
-        Ingresar_Encargo.Show()
+        IngresarCliente.ShowDialog()
 
     End Sub
 
+
+    Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
+
+        If (dtgMostrar.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
+            Dim i As Integer = dtgMostrar.SelectedRows.Item(0).Cells(0).Value
+            Dim sql As String = String.Format("delete from cliente where id = {0}", i)
+
+            Dim s As String = <a>select id as ID, 
+                                    nombre as Nombre,
+                                    telefono as Telefono, 
+                                    direccion as Direccion 
+                                    from cliente</a>
+
+            Eliminar(sql)
+            dtgMostrar.DataSource = Consulta(s)
+        End If
+
+
+    End Sub
+
+    
 End Class

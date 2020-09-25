@@ -47,8 +47,31 @@ Module funciones
         End Try
 
         Return dt
-
+        conection.Close()
     End Function
+
+
+    Public Sub Eliminar(ByVal sql As String)
+        conection.Open()
+
+        PreguntarParaElminar.ShowDialog()
+
+        If PreguntarParaElminar.num = 1 Then
+            Try
+
+                Dim cm As New MySqlCommand(sql, conection)
+                cm.ExecuteNonQuery()
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical)
+            End Try
+
+
+
+        End If
+        
+
+        conection.Close()
+    End Sub
 
 
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>

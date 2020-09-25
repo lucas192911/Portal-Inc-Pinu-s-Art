@@ -26,6 +26,8 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Materiales.Show()
+        Agregar_MAteriales.ShowDialog()
     End Sub
+
+   
 End Class
