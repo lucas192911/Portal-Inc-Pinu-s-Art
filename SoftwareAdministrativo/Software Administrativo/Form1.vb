@@ -61,6 +61,11 @@ Public Class Form1
     Private Sub pnlTitleBar_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseMove
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
+
+        If (WindowState = FormWindowState.Normal) Then
+            btnRestaurar.Visible = False
+            btnMaximizar.Visible = True
+        End If
     End Sub
 
 
