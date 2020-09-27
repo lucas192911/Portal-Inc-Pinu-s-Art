@@ -20,6 +20,10 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Form1.currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        Form1.subBtnExistente.BackColor = Color.FromArgb(145, 89, 90)
+        Form1.currentBtn = Form1.subBtnExistente
+
         AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
         Me.Close()
         Form1.Show()

@@ -3,7 +3,7 @@
 Public Class Form1
 
     'boton seleccionado en menú
-    Dim currentBtn As New Button
+    Public currentBtn As New Button
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         LabelFH.Text = Date.Now.ToLongTimeString & "   " & DateTime.Now.ToString("dd/MM/yyyy")
@@ -188,7 +188,7 @@ Public Class Form1
 
         AbrirFormEnPanel(Me.pnlContenedor, Clientes) '-->método en funciones
     End Sub
-   
+
 
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
