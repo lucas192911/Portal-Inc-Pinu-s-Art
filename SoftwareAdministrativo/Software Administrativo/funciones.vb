@@ -50,7 +50,7 @@ Module funciones
         conection.Close()
     End Function
 
-
+    ''Eliminar si num de PreguntarParaEliminar es 1
     Public Sub Eliminar(ByVal sql As String)
         conection.Open()
 
@@ -73,7 +73,7 @@ Module funciones
         conection.Close()
     End Sub
 
-
+    'Editar si num2 de PreguntarParaEditar es 1
     Public Sub Editar(ByVal sql As String)
         conection.Open()
 
@@ -92,6 +92,7 @@ Module funciones
         conection.Close()
     End Sub
 
+    ''Utilización de libreria de windows para el panel de barra de titulo
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Public Sub ReleaseCapture()
     End Sub
@@ -99,13 +100,9 @@ Module funciones
     Public Sub SendMesagge(ByVal hWnd As Integer, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
-
+    ''Agrega form(FormHijo) al panel principal(pnlContenedor)
     Public Sub AbrirFormEnPanel(ByVal panel As Panel, ByVal FormHijo As Object)
-        '''''remover los controles del panel contennedor '''''
-        ' If panel.Controls.Count > 0 Then
-        'panel.Controls.RemoveAt(0)
-        ' End If
-        Dim fh As Form = TryCast(FormHijo, Form)
+       Dim fh As Form = TryCast(FormHijo, Form)
         fh.TopLevel = False
         fh.FormBorderStyle = Windows.Forms.FormBorderStyle.None
         fh.Dock = DockStyle.Fill

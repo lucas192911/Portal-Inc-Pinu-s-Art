@@ -2,13 +2,15 @@
 
 Public Class Form1
 
-
+    'boton seleccionado en menú
+    Dim currentBtn As New Button
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         LabelFH.Text = Date.Now.ToLongTimeString & "   " & DateTime.Now.ToString("dd/MM/yyyy")
     End Sub
 
 
+    'evento en icono de inicio
     Private Sub pbxLogoMain_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.MouseHover
 
         pbxLogoMain.Visible = False
@@ -21,12 +23,11 @@ Public Class Form1
         pbxLogoMain.Visible = True
     End Sub
 
-    Private Sub btnMostrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Clientes.ShowDialog()
-    End Sub
 
+
+
+    'Muestra panel de sub-menu de encargo
     Private Sub btnEncargo_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEncargo.Click
-        'Eleccion.Show()
         If pnlSubMenuEncargos.Visible = False Then
             pnlSubMenuEncargos.Visible = True
         Else
@@ -35,7 +36,7 @@ Public Class Form1
     End Sub
 
 
-
+    ''Botones cerrar, maximizar, minimizar y restaurar
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -57,19 +58,20 @@ Public Class Form1
     End Sub
 
 
-
+    ''Al arrastrar ventana desde panel de barra de titulo
     Private Sub pnlTitleBar_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseMove
+        If (WindowState = FormWindowState.Normal) Then
+            btnMaximizar.Visible = True
+            btnRestaurar.Visible = False
+        End If
+
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
 
-        If (WindowState = FormWindowState.Normal) Then
-            btnRestaurar.Visible = False
-            btnMaximizar.Visible = True
-        End If
     End Sub
 
 
-
+    'Mostrar label correspondientes a los botones max., min., rest. y cerrar
     Private Sub btnClose_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.MouseHover
         lblCerrar.Visible = True
     End Sub
@@ -104,7 +106,7 @@ Public Class Form1
 
 
 
-
+    'Maximizar y minimizar, por medio del panel de barra de titulo
     Private Sub pnlTitleBar_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pnlTitleBar.MouseDoubleClick
 
         If (Me.WindowState = FormWindowState.Normal = True) Then
@@ -117,8 +119,38 @@ Public Class Form1
 
     End Sub
 
+    ''Boton de encargos pendientes. Establece a boton actual(currentBtn), el color original, y establece
+    '' color de seleccion a boton encargos pendientes (subBtnExistente)--
+    Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnExistente.Click
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
 
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
+
+        subBtnExistente.BackColor = Color.FromArgb(145, 89, 90)
+        currentBtn = subBtnExistente
+
+        AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
+    End Sub
+
+
+    ''Boton de materiales. Establece a boton actual(currentBtn), el color original, y establece
+    '' color de seleccion a boton materiales (btnMateriales)--
     Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+
+            'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
+
+
+        btnMateriales.BackColor = Color.FromArgb(145, 89, 90)
+        currentBtn = btnMateriales
+
         Dim s As String = <A>select id as ID, 
                                 nombre as Nombre, 
                                 precio as Precio, 
@@ -127,11 +159,24 @@ Public Class Form1
                              from materiales</A>
 
         Materiales.dtgMostrar.DataSource = Consulta(s)
-        AbrirFormEnPanel(Me.pnlContenedor, Materiales)
+        AbrirFormEnPanel(Me.pnlContenedor, Materiales) '-->método en funciones
 
     End Sub
 
+
+    ''Boton de clientes. Establece a boton actual(currentBtn), el color original, y establece
+    '' color de seleccion a boton clientes (btnClientes)--
     Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
+
+        btnCliente.BackColor = Color.FromArgb(145, 89, 90)
+        currentBtn = btnCliente
         Dim s As String = <a>select id as ID, 
                                     nombre as Nombre,
                                     telefono as Telefono, 
@@ -141,8 +186,9 @@ Public Class Form1
 
         Clientes.dtgMostrar.DataSource = dtClientes
 
-        AbrirFormEnPanel(Me.pnlContenedor, Clientes)
+        AbrirFormEnPanel(Me.pnlContenedor, Clientes) '-->método en funciones
     End Sub
+   
 
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
@@ -152,30 +198,24 @@ Public Class Form1
 
 
 
-    
+    ''Quita todos los controles que estan en pnlContenedor, y le agrega pnlContenedorMain(Inicio)
     Private Sub pbxLogoMain_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.Click
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
     End Sub
-
-  
-
     Private Sub pbxMouseHover_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pbxMouseHover.MouseClick
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
     End Sub
 
     
-
+    ''Boton de nuevo encargo
     Private Sub subBtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnNuevo.Click
         Me.Hide()
         Eleccion.Show()
     End Sub
 
-    Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnExistente.Click
-        AbrirFormEnPanel(Me.pnlContenedor, Encargo)
-    End Sub
+    
 
   
-
 End Class
