@@ -443,7 +443,7 @@ Partial Class Form1
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.pnlContenedor)
         Me.ForeColor = System.Drawing.Color.Black
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

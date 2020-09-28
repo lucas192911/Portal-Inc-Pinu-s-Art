@@ -2,8 +2,22 @@
 
 Public Class Form1
 
+
     'boton seleccionado en menú
     Public currentBtn As New Button
+
+
+    Public Sub New()
+
+        ' Llamada necesaria para el diseñador.
+        InitializeComponent()
+
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+        Me.Text = String.Empty
+        Me.ControlBox = False
+        Me.DoubleBuffered = True
+        Me.MaximizedBounds = Screen.PrimaryScreen.WorkingArea
+    End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         LabelFH.Text = Date.Now.ToLongTimeString & "   " & DateTime.Now.ToString("dd/MM/yyyy")
@@ -217,5 +231,4 @@ Public Class Form1
 
     
 
-  
 End Class
