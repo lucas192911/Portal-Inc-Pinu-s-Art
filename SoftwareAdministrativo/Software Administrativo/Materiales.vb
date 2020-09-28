@@ -32,4 +32,8 @@
         frm.txtDescripcion.Text = dtgMostrar.CurrentRow.Cells(4).Value.ToString
         frm.ShowDialog()
     End Sub
+
+    Private Sub Materiales_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

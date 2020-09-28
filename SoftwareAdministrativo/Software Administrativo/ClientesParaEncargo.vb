@@ -36,4 +36,12 @@
         Me.Close()
         Ingresar_Encargo.Show()
     End Sub
+
+    Private Sub ClientesParaEncargo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub dtgMostrar_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dtgMostrar.CellContentClick
+
+    End Sub
 End Class

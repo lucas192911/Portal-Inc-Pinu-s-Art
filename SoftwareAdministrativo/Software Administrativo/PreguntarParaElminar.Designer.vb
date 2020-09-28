@@ -34,15 +34,15 @@ Partial Class PreguntarParaElminar
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(90, 8)
+        Me.Label1.Location = New System.Drawing.Point(72, 8)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(199, 21)
+        Me.Label1.Size = New System.Drawing.Size(234, 21)
         Me.Label1.TabIndex = 9
-        Me.Label1.Text = "¿Seguro quiere eliminar?"
+        Me.Label1.Text = "¿Seguro que quiere eliminar?"
         '
         'btnNo
         '
-        Me.btnNo.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnNo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnNo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNo.FlatAppearance.BorderSize = 0
         Me.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -57,7 +57,7 @@ Partial Class PreguntarParaElminar
         '
         'btnSI
         '
-        Me.btnSI.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnSI.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnSI.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSI.FlatAppearance.BorderSize = 0
         Me.btnSI.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -72,7 +72,7 @@ Partial Class PreguntarParaElminar
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.CausesValidation = False
         Me.Panel1.Controls.Add(Me.Label1)

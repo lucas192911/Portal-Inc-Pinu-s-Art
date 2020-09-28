@@ -31,7 +31,7 @@ Partial Class PreguntarParaEditar
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.CausesValidation = False
         Me.Panel1.Controls.Add(Me.Label1)
@@ -56,7 +56,7 @@ Partial Class PreguntarParaEditar
         '
         'btnNo
         '
-        Me.btnNo.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnNo.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnNo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNo.FlatAppearance.BorderSize = 0
         Me.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -71,7 +71,7 @@ Partial Class PreguntarParaEditar
         '
         'btnSI
         '
-        Me.btnSI.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnSI.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.btnSI.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSI.FlatAppearance.BorderSize = 0
         Me.btnSI.FlatStyle = System.Windows.Forms.FlatStyle.Flat
