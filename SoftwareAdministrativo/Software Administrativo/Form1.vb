@@ -217,12 +217,28 @@ Public Class Form1
     Private Sub pbxLogoMain_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.Click
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
-        currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+
+            'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
     End Sub
     Private Sub pbxMouseHover_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pbxMouseHover.MouseClick
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
-        currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+
+            'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
     End Sub
 
     
