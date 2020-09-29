@@ -29,7 +29,7 @@ Public Class Form1
 
         pbxLogoMain.Visible = False
         pbxMouseHover.Visible = True
-        currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+
     End Sub
 
     Private Sub pbxMouseHover_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxMouseHover.MouseLeave
@@ -217,10 +217,12 @@ Public Class Form1
     Private Sub pbxLogoMain_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.Click
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
+        currentBtn.BackColor = Color.FromArgb(149, 128, 127)
     End Sub
     Private Sub pbxMouseHover_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pbxMouseHover.MouseClick
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
+        currentBtn.BackColor = Color.FromArgb(149, 128, 127)
     End Sub
 
     
