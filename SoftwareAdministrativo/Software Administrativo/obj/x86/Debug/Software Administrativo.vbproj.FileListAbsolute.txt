@@ -70,7 +70,6 @@ C:\Users\user1\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Soft
 C:\Users\user1\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Eleccion.resources
 C:\Users\user1\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Ingresar_Encargo.resources
 C:\Users\user1\Documents\Visual Studio 2010\Projects\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Agregar_MAteriales.resources
-C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.vbprojResolveAssemblyReference.cache
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Eleccion.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Form1.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Ingresar_Encargo.resources
@@ -97,3 +96,7 @@ C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Softw
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.PreguntarParaEditar.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.EditarEncargo.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.EditarMaterial.resources
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\bin\Debug\MySql.Data.dll
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.vbprojAssemblyReference.cache
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.vbproj.CoreCompileInputs.cache
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.vbproj.CopyComplete

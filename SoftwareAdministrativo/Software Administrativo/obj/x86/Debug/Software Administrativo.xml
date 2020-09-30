@@ -2,102 +2,124 @@
 <doc>
 <assembly>
 <name>
-SoftwareAdministrativo
+Software Administrativo
 </name>
 </assembly>
 <members>
+<member name="T:Software_Administrativo.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
 <member name="P:Software_Administrativo.My.Resources.Resources.ResourceManager">
-	<summary>
+<summary>
   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Culture">
+<summary>
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources._0bf9f93d_cfca_4c90_b06a_0faed3d8896c_200x200">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources._0bf9f93d_cfca_4c90_b06a_0faed3d8896c_200x200">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources._6529b614_be4e_4e60_a0cd_e5359a046788_200x200">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources._6529b614_be4e_4e60_a0cd_e5359a046788_200x200">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Fondo_2">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Fondo_2">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_79681">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_79681">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.fondo_marco_lineas_doradas_hexagonales_premium_1017_26502">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.fondo_marco_lineas_doradas_hexagonales_premium_1017_26502">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.fondo_marco_lineas_doradas_hexagonales_premium_1017_265021">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.fondo_marco_lineas_doradas_hexagonales_premium_1017_265021">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.fondo_marco_lineas_doradas_hexagonales_premium_1017_265022">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.fondo_marco_lineas_doradas_hexagonales_premium_1017_265022">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Fondo_para_posible_modo_oscuro">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Fondo_para_posible_modo_oscuro">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Fondo_uno">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Fondo_uno">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.ic_clear_128_28306">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.ic_clear_128_28306">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.ic_clear_128_283061">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.ic_clear_128_283061">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Icono_Maximizar">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Icono_Maximizar">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Icono_Minimizar">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Icono_Minimizar">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Icono_Restaurar">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Icono_Restaurar">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.LOGO_PINUS">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.LOGO_PINUS">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Pantalla_de_carga_1">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Pantalla_de_carga_1">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.Posible_fondo_claro">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Posible_fondo_claro">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
-</member><member name="P:Software_Administrativo.My.Resources.Resources.WhatsApp_Image_2020_09_15_at_5_39_57_PM">
-	<summary>
+</member>
+<member name="P:Software_Administrativo.My.Resources.Resources.WhatsApp_Image_2020_09_15_at_5_39_57_PM">
+<summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member><member name="T:Software_Administrativo.My.Resources.Resources">
-	<summary>
-  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
 </summary>
 </member>
 </members>
