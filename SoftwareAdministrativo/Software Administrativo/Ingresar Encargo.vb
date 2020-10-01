@@ -9,7 +9,7 @@
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-   
+
     Private Sub Label7_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Label7.MouseMove
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
@@ -33,5 +33,5 @@
         Agregar_MAteriales.ShowDialog()
     End Sub
 
-   
+
 End Class

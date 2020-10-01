@@ -1,5 +1,20 @@
 ﻿Public Class Materiales
 
+    Private Sub Materiales_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim s As String = <A>select * from materiales</A>
+
+        Dim dtMateriales As DataTable = Consulta(s)
+
+        dtgMostrar.AutoGenerateColumns = False
+        dtgMostrar.DataSource = dtMateriales
+        dtgMostrar.Columns(0).DataPropertyName = "ID"
+        dtgMostrar.Columns(1).DataPropertyName = "Nombre"
+        dtgMostrar.Columns(2).DataPropertyName = "Precio"
+        dtgMostrar.Columns(3).DataPropertyName = "Cantidad"
+        dtgMostrar.Columns(4).DataPropertyName = "Descripcion"
+    End Sub
+
+
     Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
         IngresarMateriales.ShowDialog()
     End Sub
@@ -33,7 +48,5 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub Materiales_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-    End Sub
 End Class

@@ -13,9 +13,7 @@ Public Class Form1
         InitializeComponent()
 
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
-        Me.Text = String.Empty
-        Me.ControlBox = False
-        Me.DoubleBuffered = True
+
         Me.MaximizedBounds = Screen.PrimaryScreen.WorkingArea
     End Sub
 
@@ -166,14 +164,7 @@ Public Class Form1
         btnMateriales.BackColor = Color.FromArgb(145, 89, 90)
         currentBtn = btnMateriales
 
-        Dim s As String = <A>select id as ID, 
-                                nombre as Nombre, 
-                                precio as Precio, 
-                                cantidad as Cantidad, 
-                                descripcion as Descripcion 
-                             from materiales</A>
 
-        Materiales.dtgMostrar.DataSource = Consulta(s)
         AbrirFormEnPanel(Me.pnlContenedor, Materiales) '-->método en funciones
 
     End Sub

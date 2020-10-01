@@ -96,9 +96,11 @@ Partial Class Form1
         Me.btnPrecio.ForeColor = System.Drawing.Color.White
         Me.btnPrecio.Location = New System.Drawing.Point(0, 352)
         Me.btnPrecio.Name = "btnPrecio"
+        Me.btnPrecio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
         Me.btnPrecio.TabIndex = 12
         Me.btnPrecio.Text = "Stock"
+        Me.btnPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPrecio.UseVisualStyleBackColor = False
         '
         'btnMateriales
@@ -113,9 +115,11 @@ Partial Class Form1
         Me.btnMateriales.ForeColor = System.Drawing.Color.White
         Me.btnMateriales.Location = New System.Drawing.Point(0, 313)
         Me.btnMateriales.Name = "btnMateriales"
+        Me.btnMateriales.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
         Me.btnMateriales.TabIndex = 11
         Me.btnMateriales.Text = "Materiales"
+        Me.btnMateriales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnMateriales.UseVisualStyleBackColor = False
         '
         'btnCliente
@@ -130,9 +134,11 @@ Partial Class Form1
         Me.btnCliente.ForeColor = System.Drawing.Color.White
         Me.btnCliente.Location = New System.Drawing.Point(0, 274)
         Me.btnCliente.Name = "btnCliente"
+        Me.btnCliente.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnCliente.Size = New System.Drawing.Size(172, 39)
         Me.btnCliente.TabIndex = 13
         Me.btnCliente.Text = "Clientes"
+        Me.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCliente.UseVisualStyleBackColor = False
         '
         'pnlSubMenuEncargos
@@ -160,7 +166,7 @@ Partial Class Form1
         Me.subBtnNuevo.ForeColor = System.Drawing.Color.White
         Me.subBtnNuevo.Location = New System.Drawing.Point(0, 34)
         Me.subBtnNuevo.Name = "subBtnNuevo"
-        Me.subBtnNuevo.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.subBtnNuevo.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
         Me.subBtnNuevo.Size = New System.Drawing.Size(172, 34)
         Me.subBtnNuevo.TabIndex = 16
         Me.subBtnNuevo.Text = "Nuevo"
@@ -180,7 +186,7 @@ Partial Class Form1
         Me.subBtnExistente.ForeColor = System.Drawing.Color.White
         Me.subBtnExistente.Location = New System.Drawing.Point(0, 0)
         Me.subBtnExistente.Name = "subBtnExistente"
-        Me.subBtnExistente.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.subBtnExistente.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
         Me.subBtnExistente.Size = New System.Drawing.Size(172, 34)
         Me.subBtnExistente.TabIndex = 15
         Me.subBtnExistente.Text = "Pendientes"
@@ -199,9 +205,11 @@ Partial Class Form1
         Me.btnEncargo.ForeColor = System.Drawing.Color.White
         Me.btnEncargo.Location = New System.Drawing.Point(0, 166)
         Me.btnEncargo.Name = "btnEncargo"
+        Me.btnEncargo.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnEncargo.Size = New System.Drawing.Size(172, 40)
         Me.btnEncargo.TabIndex = 13
         Me.btnEncargo.Text = "Encargos"
+        Me.btnEncargo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEncargo.UseVisualStyleBackColor = False
         '
         'pnlLogo
@@ -375,8 +383,8 @@ Partial Class Form1
         'pnlContenedor
         '
         Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
         Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
@@ -443,7 +451,7 @@ Partial Class Form1
         Me.Controls.Add(Me.pnlMenu)
         Me.Controls.Add(Me.pnlContenedor)
         Me.ForeColor = System.Drawing.Color.Black
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

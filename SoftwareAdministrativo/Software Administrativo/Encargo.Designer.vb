@@ -23,11 +23,18 @@ Partial Class Encargo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dtgMostrar = New System.Windows.Forms.DataGridView()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Presupuesto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dtgMostrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -47,27 +54,29 @@ Partial Class Encargo
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgMostrar.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dtgMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dtgMostrar.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dtgMostrar.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Fecha, Me.Presupuesto, Me.Descripcion})
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dtgMostrar.DefaultCellStyle = DataGridViewCellStyle4
         Me.dtgMostrar.Dock = System.Windows.Forms.DockStyle.Top
         Me.dtgMostrar.EnableHeadersVisualStyles = False
         Me.dtgMostrar.Location = New System.Drawing.Point(0, 0)
         Me.dtgMostrar.Name = "dtgMostrar"
         Me.dtgMostrar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgMostrar.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgMostrar.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dtgMostrar.RowHeadersVisible = False
         Me.dtgMostrar.RowHeadersWidth = 20
         Me.dtgMostrar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dtgMostrar.Size = New System.Drawing.Size(757, 457)
@@ -105,6 +114,39 @@ Partial Class Encargo
         Me.btnEditar.Text = "Editar"
         Me.btnEditar.UseVisualStyleBackColor = False
         '
+        'ID
+        '
+        Me.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.ID.DefaultCellStyle = DataGridViewCellStyle2
+        Me.ID.HeaderText = "    ID"
+        Me.ID.Name = "ID"
+        Me.ID.Width = 61
+        '
+        'Nombre
+        '
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        '
+        'Fecha
+        '
+        DataGridViewCellStyle3.Format = "d"
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Fecha.HeaderText = "Fecha"
+        Me.Fecha.Name = "Fecha"
+        '
+        'Presupuesto
+        '
+        Me.Presupuesto.HeaderText = "Presupuesto"
+        Me.Presupuesto.Name = "Presupuesto"
+        Me.Presupuesto.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Descripcion
+        '
+        Me.Descripcion.HeaderText = "Descripción"
+        Me.Descripcion.Name = "Descripcion"
+        '
         'Encargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -125,4 +167,9 @@ Partial Class Encargo
     Friend WithEvents dtgMostrar As System.Windows.Forms.DataGridView
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnEditar As System.Windows.Forms.Button
+    Friend WithEvents ID As DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Fecha As DataGridViewTextBoxColumn
+    Friend WithEvents Presupuesto As DataGridViewTextBoxColumn
+    Friend WithEvents Descripcion As DataGridViewTextBoxColumn
 End Class
