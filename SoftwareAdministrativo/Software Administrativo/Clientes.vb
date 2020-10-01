@@ -1,7 +1,19 @@
 ﻿Public Class Clientes
 
     Private Sub mostar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim s As String = <a>select id , 
+                                    nombre,
+                                    telefono, 
+                                    direccion
+                                    from cliente</a>
+        Dim dtClientes As DataTable = Consulta(s)
 
+        dtgMostrar.AutoGenerateColumns = False
+        dtgMostrar.DataSource = dtClientes
+        dtgMostrar.Columns(0).DataPropertyName = "ID"
+        dtgMostrar.Columns(1).DataPropertyName = "Nombre"
+        dtgMostrar.Columns(2).DataPropertyName = "Telefono"
+        dtgMostrar.Columns(3).DataPropertyName = "Direccion"
     End Sub
 
 
@@ -43,7 +55,5 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
 
-    End Sub
 End Class

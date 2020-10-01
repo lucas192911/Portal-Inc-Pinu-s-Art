@@ -192,14 +192,6 @@ Public Class Form1
 
         btnCliente.BackColor = Color.FromArgb(145, 89, 90)
         currentBtn = btnCliente
-        Dim s As String = <a>select id as ID, 
-                                    nombre as Nombre,
-                                    telefono as Telefono, 
-                                    direccion as Direccion 
-                                    from cliente</a>
-        Dim dtClientes As DataTable = Consulta(s)
-
-        Clientes.dtgMostrar.DataSource = dtClientes
 
         AbrirFormEnPanel(Me.pnlContenedor, Clientes) '-->método en funciones
     End Sub
