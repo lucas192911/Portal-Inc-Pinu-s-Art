@@ -1,31 +1,49 @@
 ﻿Public Class Encargo
 
     Private Sub Encargo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim s As String = <a>select * from encargo</a>
+        Dim s As String = <a>   select encargo.id, 
+                                encargo.nombre, 
+                                fecha, presupuesto, 
+                                descripcion, 
+                                cliente.nombre as nombreCliente
+                                from encargo join cliente
+                                on id_Cliente = cliente.id</a>
 
         dtgMostrar.AutoGenerateColumns = False
         dtgMostrar.DataSource = Consulta(s)
-        dtgMostrar.Columns(0).DataPropertyName = "ID"
-        dtgMostrar.Columns(1).DataPropertyName = "Nombre"
-        dtgMostrar.Columns(2).DataPropertyName = "Fecha"
-        dtgMostrar.Columns(3).DataPropertyName = "Presupuesto"
-        dtgMostrar.Columns(4).DataPropertyName = "Descripcion"
+        dtgMostrar.Columns(0).DataPropertyName = "id"
+        dtgMostrar.Columns(1).DataPropertyName = "nombre"
+        dtgMostrar.Columns(2).DataPropertyName = "fecha"
+        dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
+        dtgMostrar.Columns(4).DataPropertyName = "descripcion"
+        dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
     End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
 
         If (dtgMostrar.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
             Dim i As String = dtgMostrar.SelectedRows.Item(0).Cells(0).Value.ToString
-            Dim sql As String = String.Format("delete from encargo where nombre = '{0}'", i)
+            Dim sql As String = String.Format("delete from encargo where id = '{0}'", i)
 
-            Dim s As String = <a>select nombre as Nombre, 
-                                    fecha as Fecha,
-                                    presupuesto as Presupuesto, 
-                                    descripcion as Descripcion 
-                                    from encargo</a>
+            Dim s As String = <a>   select encargo.id, 
+                                encargo.nombre, 
+                                fecha, presupuesto, 
+                                descripcion, 
+                                cliente.nombre as nombreCliente
+                                from encargo join cliente
+                                on id_Cliente = cliente.id</a>
 
             Eliminar(sql)
+
+            dtgMostrar.AutoGenerateColumns = False
             dtgMostrar.DataSource = Consulta(s)
+            dtgMostrar.Columns(0).DataPropertyName = "id"
+            dtgMostrar.Columns(1).DataPropertyName = "nombre"
+            dtgMostrar.Columns(2).DataPropertyName = "fecha"
+            dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
+            dtgMostrar.Columns(4).DataPropertyName = "descripcion"
+            dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+
         End If
 
     End Sub

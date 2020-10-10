@@ -1,5 +1,7 @@
 ﻿Public Class Clientes
 
+    Public id_Cliente As Integer
+
     Private Sub mostar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim s As String = <a>select id , 
                                     nombre,
@@ -17,7 +19,7 @@
     End Sub
 
 
-    Public x As Integer
+
 
     Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
 

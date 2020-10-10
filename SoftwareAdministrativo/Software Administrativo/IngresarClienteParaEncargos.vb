@@ -17,6 +17,8 @@ Public Class IngresarClienteParaEncargos
 
             If funciones.num = 0 Then
                 Me.Hide()
+                Ingresar_Encargo.nombre = txtNombre.Text
+                Ingresar_Encargo.telefono = txtTelefono.Text
                 Ingresar_Encargo.ShowDialog()
                 Me.Close()
             End If

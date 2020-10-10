@@ -24,9 +24,9 @@
             '   x = dtgMostrar.Rows(0).Cells(0).Value
 
             'devuelve el valor de la fila seleccionada ||UTILIZAR EN CONSULTA PARA AGREGAR ENCARGOS|| ...............
-            Clientes.x = dtgMostrar.SelectedRows.Item(0).Cells(0).Value
+            Ingresar_Encargo.id = dtgMostrar.SelectedRows.Item(0).Cells(0).Value
 
-            MsgBox(Clientes.x)
+            MsgBox(Ingresar_Encargo.id)
 
             'mostrar todo el contenido
             '   Clipboard.SetDataObject(dtgMostrar.GetClipboardContent())
