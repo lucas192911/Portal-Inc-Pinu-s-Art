@@ -337,25 +337,19 @@
     <None Include="Resources\icons\6529b614-be4e-4e60-a0cd-e5359a046788_200x200.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dibujo sin título.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ic_clear_128_283062.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\a0859098-ea84-4cf9-8be6-91fd6c75577d_200x200.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dibujo sin título1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Reloj.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dibujo sin título2.png" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <None Include="Resources\Dibujo_sin_título.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

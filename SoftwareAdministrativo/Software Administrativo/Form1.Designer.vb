@@ -307,8 +307,8 @@ Partial Class Form1
         'pnlContenedor
         '
         Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
         Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
@@ -419,10 +419,11 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.Dibujo_sin_título
-        Me.PictureBox1.Location = New System.Drawing.Point(239, 431)
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.Dibujo_sin_título1
+        Me.PictureBox1.Location = New System.Drawing.Point(240, 435)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(400, 61)
+        Me.PictureBox1.Size = New System.Drawing.Size(437, 58)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
@@ -431,7 +432,7 @@ Partial Class Form1
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
-        Me.PictureBox2.Location = New System.Drawing.Point(261, 40)
+        Me.PictureBox2.Location = New System.Drawing.Point(265, 40)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(355, 352)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -499,6 +500,5 @@ Partial Class Form1
     Friend WithEvents pnlLogo As System.Windows.Forms.Panel
     Friend WithEvents pbxLogoMain As System.Windows.Forms.PictureBox
     Friend WithEvents pbxMouseHover As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -29,17 +29,17 @@
         Form1.subBtnExistente.BackColor = Color.FromArgb(145, 89, 90)
         Form1.currentBtn = Form1.subBtnExistente
 
-        Dim val As String = String.Format("select * from encargo where nombre = '{0}' and descripcion = '{1}'", txtNombre.Text, txtDescripción.Text)
+        Dim val As String = String.Format("select * from encargo where nombre = '{0}' and descripcion = '{1}'", txtNombre.Text, txtBxDescripcion.Text)
 
         If id = 0 Then
             Dim dt As DataTable = Consulta("select id from cliente")
             Dim row As DataRow = dt.Rows(dt.Rows.Count - 1)
             Dim s As Integer = CStr(row("id"))
-            Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente) values ('{0}',now(),'{1}', {2})", txtNombre.Text, txtDescripción.Text, s)
+            Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente) values ('{0}',now(),'{1}', {2})", txtNombre.Text, txtBxDescripcion.Text, s)
             InsertRow(val, sql)
 
         Else
-            Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente) values ('{0}',now(),'{1}', {2})", txtNombre.Text, txtDescripción.Text, id)
+            Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente) values ('{0}',now(),'{1}', {2})", txtNombre.Text, txtBxDescripcion.Text, id)
             InsertRow(val, s)
         End If
 

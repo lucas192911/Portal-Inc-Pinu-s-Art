@@ -37,7 +37,7 @@ Partial Class Ingresar_Encargo
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.txtBxDescripcion = New System.Windows.Forms.RichTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -199,17 +199,17 @@ Partial Class Ingresar_Encargo
         Me.TextBox1.Size = New System.Drawing.Size(231, 21)
         Me.TextBox1.TabIndex = 19
         '
-        'RichTextBox1
+        'txtBxDescripcion
         '
-        Me.RichTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBox1.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 146)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(286, 96)
-        Me.RichTextBox1.TabIndex = 20
-        Me.RichTextBox1.Text = ""
+        Me.txtBxDescripcion.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.txtBxDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtBxDescripcion.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBxDescripcion.ForeColor = System.Drawing.Color.White
+        Me.txtBxDescripcion.Location = New System.Drawing.Point(12, 146)
+        Me.txtBxDescripcion.Name = "txtBxDescripcion"
+        Me.txtBxDescripcion.Size = New System.Drawing.Size(286, 96)
+        Me.txtBxDescripcion.TabIndex = 20
+        Me.txtBxDescripcion.Text = ""
         '
         'Ingresar_Encargo
         '
@@ -217,7 +217,7 @@ Partial Class Ingresar_Encargo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(387, 574)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.txtBxDescripcion)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel1)
@@ -255,5 +255,5 @@ Partial Class Ingresar_Encargo
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents txtBxDescripcion As System.Windows.Forms.RichTextBox
 End Class
