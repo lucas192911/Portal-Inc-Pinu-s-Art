@@ -49,7 +49,7 @@ Partial Class ExitAlert
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.Color.White
-        Me.btnCancelar.Location = New System.Drawing.Point(193, 129)
+        Me.btnCancelar.Location = New System.Drawing.Point(214, 139)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(119, 30)
         Me.btnCancelar.TabIndex = 1
@@ -66,7 +66,7 @@ Partial Class ExitAlert
         Me.btnCerrar.ForeColor = System.Drawing.Color.White
         Me.btnCerrar.Location = New System.Drawing.Point(35, 129)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(119, 30)
+        Me.btnCerrar.Size = New System.Drawing.Size(155, 50)
         Me.btnCerrar.TabIndex = 2
         Me.btnCerrar.Text = "Cerrar de todos modos"
         Me.btnCerrar.UseVisualStyleBackColor = False

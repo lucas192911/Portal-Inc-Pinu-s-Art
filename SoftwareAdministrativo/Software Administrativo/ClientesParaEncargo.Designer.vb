@@ -109,9 +109,9 @@ Partial Class ClientesParaEncargo
         Me.btnVovler.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnVovler.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVovler.ForeColor = System.Drawing.Color.White
-        Me.btnVovler.Location = New System.Drawing.Point(12, 453)
+        Me.btnVovler.Location = New System.Drawing.Point(12, 458)
         Me.btnVovler.Name = "btnVovler"
-        Me.btnVovler.Size = New System.Drawing.Size(132, 36)
+        Me.btnVovler.Size = New System.Drawing.Size(132, 31)
         Me.btnVovler.TabIndex = 15
         Me.btnVovler.Text = "Volver"
         Me.btnVovler.UseVisualStyleBackColor = False
@@ -125,9 +125,9 @@ Partial Class ClientesParaEncargo
         Me.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSeleccionar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSeleccionar.ForeColor = System.Drawing.Color.White
-        Me.btnSeleccionar.Location = New System.Drawing.Point(611, 450)
+        Me.btnSeleccionar.Location = New System.Drawing.Point(611, 458)
         Me.btnSeleccionar.Name = "btnSeleccionar"
-        Me.btnSeleccionar.Size = New System.Drawing.Size(134, 39)
+        Me.btnSeleccionar.Size = New System.Drawing.Size(134, 31)
         Me.btnSeleccionar.TabIndex = 14
         Me.btnSeleccionar.Text = "Seleccionar"
         Me.btnSeleccionar.UseVisualStyleBackColor = False
