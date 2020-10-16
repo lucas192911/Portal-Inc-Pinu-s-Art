@@ -45,7 +45,7 @@ Partial Class EditarCliente
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(310, 25)
+        Me.Panel2.Size = New System.Drawing.Size(347, 25)
         Me.Panel2.TabIndex = 21
         '
         'Label7
@@ -69,7 +69,7 @@ Partial Class EditarCliente
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(275, 0)
+        Me.Button5.Location = New System.Drawing.Point(312, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 12
@@ -90,7 +90,7 @@ Partial Class EditarCliente
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(312, 277)
+        Me.Panel1.Size = New System.Drawing.Size(349, 299)
         Me.Panel1.TabIndex = 1
         '
         'btnGuardar
@@ -101,9 +101,9 @@ Partial Class EditarCliente
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White
-        Me.btnGuardar.Location = New System.Drawing.Point(218, 238)
+        Me.btnGuardar.Location = New System.Drawing.Point(231, 247)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
+        Me.btnGuardar.Size = New System.Drawing.Size(105, 39)
         Me.btnGuardar.TabIndex = 19
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -113,7 +113,7 @@ Partial Class EditarCliente
         Me.txtDireccion.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtDireccion.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDireccion.ForeColor = System.Drawing.Color.White
-        Me.txtDireccion.Location = New System.Drawing.Point(27, 189)
+        Me.txtDireccion.Location = New System.Drawing.Point(27, 204)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(192, 27)
         Me.txtDireccion.TabIndex = 18
@@ -122,7 +122,7 @@ Partial Class EditarCliente
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(23, 165)
+        Me.Label3.Location = New System.Drawing.Point(23, 180)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 21)
         Me.Label3.TabIndex = 20
@@ -133,7 +133,7 @@ Partial Class EditarCliente
         Me.txtTelefono.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtTelefono.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTelefono.ForeColor = System.Drawing.Color.White
-        Me.txtTelefono.Location = New System.Drawing.Point(27, 122)
+        Me.txtTelefono.Location = New System.Drawing.Point(27, 137)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(192, 27)
         Me.txtTelefono.TabIndex = 17
@@ -142,7 +142,7 @@ Partial Class EditarCliente
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 98)
+        Me.Label2.Location = New System.Drawing.Point(23, 113)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 21)
         Me.Label2.TabIndex = 16
@@ -153,7 +153,7 @@ Partial Class EditarCliente
         Me.txtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.Color.White
-        Me.txtNombre.Location = New System.Drawing.Point(27, 58)
+        Me.txtNombre.Location = New System.Drawing.Point(27, 73)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(192, 27)
         Me.txtNombre.TabIndex = 15
@@ -162,7 +162,7 @@ Partial Class EditarCliente
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(23, 34)
+        Me.Label1.Location = New System.Drawing.Point(23, 49)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 21)
         Me.Label1.TabIndex = 14
@@ -172,7 +172,7 @@ Partial Class EditarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(312, 277)
+        Me.ClientSize = New System.Drawing.Size(349, 299)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "EditarCliente"

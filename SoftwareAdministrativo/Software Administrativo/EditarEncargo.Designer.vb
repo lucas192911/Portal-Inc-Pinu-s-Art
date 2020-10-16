@@ -45,9 +45,9 @@ Partial Class EditarEncargo
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White
-        Me.btnGuardar.Location = New System.Drawing.Point(218, 238)
+        Me.btnGuardar.Location = New System.Drawing.Point(256, 276)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
+        Me.btnGuardar.Size = New System.Drawing.Size(105, 39)
         Me.btnGuardar.TabIndex = 19
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -57,7 +57,7 @@ Partial Class EditarEncargo
         Me.txtPresupuesto.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtPresupuesto.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPresupuesto.ForeColor = System.Drawing.Color.White
-        Me.txtPresupuesto.Location = New System.Drawing.Point(27, 122)
+        Me.txtPresupuesto.Location = New System.Drawing.Point(29, 149)
         Me.txtPresupuesto.Name = "txtPresupuesto"
         Me.txtPresupuesto.Size = New System.Drawing.Size(192, 27)
         Me.txtPresupuesto.TabIndex = 18
@@ -77,7 +77,7 @@ Partial Class EditarEncargo
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(312, 277)
+        Me.Panel1.Size = New System.Drawing.Size(374, 328)
         Me.Panel1.TabIndex = 2
         '
         'txtDescripcion
@@ -85,7 +85,7 @@ Partial Class EditarEncargo
         Me.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtDescripcion.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDescripcion.ForeColor = System.Drawing.Color.White
-        Me.txtDescripcion.Location = New System.Drawing.Point(27, 186)
+        Me.txtDescripcion.Location = New System.Drawing.Point(29, 219)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(192, 27)
         Me.txtDescripcion.TabIndex = 22
@@ -94,7 +94,7 @@ Partial Class EditarEncargo
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(23, 162)
+        Me.Label4.Location = New System.Drawing.Point(25, 195)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 21)
         Me.Label4.TabIndex = 23
@@ -108,7 +108,7 @@ Partial Class EditarEncargo
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(310, 25)
+        Me.Panel2.Size = New System.Drawing.Size(372, 25)
         Me.Panel2.TabIndex = 21
         '
         'Label7
@@ -132,7 +132,7 @@ Partial Class EditarEncargo
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(275, 0)
+        Me.Button5.Location = New System.Drawing.Point(337, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 12
@@ -142,7 +142,7 @@ Partial Class EditarEncargo
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(23, 98)
+        Me.Label3.Location = New System.Drawing.Point(25, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(104, 21)
         Me.Label3.TabIndex = 20
@@ -153,7 +153,7 @@ Partial Class EditarEncargo
         Me.txtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.Color.White
-        Me.txtNombre.Location = New System.Drawing.Point(27, 58)
+        Me.txtNombre.Location = New System.Drawing.Point(29, 80)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(192, 27)
         Me.txtNombre.TabIndex = 15
@@ -162,7 +162,7 @@ Partial Class EditarEncargo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(23, 34)
+        Me.Label1.Location = New System.Drawing.Point(25, 56)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 21)
         Me.Label1.TabIndex = 14
@@ -172,7 +172,7 @@ Partial Class EditarEncargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(312, 277)
+        Me.ClientSize = New System.Drawing.Size(374, 328)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "EditarEncargo"

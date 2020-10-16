@@ -34,14 +34,8 @@ Partial Class Form1
         Me.subBtnExistente = New System.Windows.Forms.Button()
         Me.btnEncargo = New System.Windows.Forms.Button()
         Me.pnlLogo = New System.Windows.Forms.Panel()
-        Me.pbxMouseHover = New System.Windows.Forms.PictureBox()
-        Me.pbxLogoMain = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlTitleBar = New System.Windows.Forms.Panel()
-        Me.btnRestaurar = New System.Windows.Forms.Button()
-        Me.btnMaximizar = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.lblCerrar = New System.Windows.Forms.Label()
         Me.lblMinimizar = New System.Windows.Forms.Label()
         Me.lblMaximizar = New System.Windows.Forms.Label()
@@ -49,16 +43,22 @@ Partial Class Form1
         Me.pnlContenedor = New System.Windows.Forms.Panel()
         Me.pnlContenedorMain = New System.Windows.Forms.Panel()
         Me.LabelFH = New System.Windows.Forms.Label()
+        Me.btnRestaurar = New System.Windows.Forms.Button()
+        Me.btnMaximizar = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnMinimizar = New System.Windows.Forms.Button()
+        Me.pbxMouseHover = New System.Windows.Forms.PictureBox()
+        Me.pbxLogoMain = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlMenu.SuspendLayout()
         Me.pnlSubMenuEncargos.SuspendLayout()
         Me.pnlLogo.SuspendLayout()
-        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTitleBar.SuspendLayout()
         Me.pnlContenedor.SuspendLayout()
         Me.pnlContenedorMain.SuspendLayout()
+        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -222,28 +222,6 @@ Partial Class Form1
         Me.pnlLogo.Size = New System.Drawing.Size(172, 166)
         Me.pnlLogo.TabIndex = 13
         '
-        'pbxMouseHover
-        '
-        Me.pbxMouseHover.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pbxMouseHover.Image = Global.Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
-        Me.pbxMouseHover.Location = New System.Drawing.Point(12, 29)
-        Me.pbxMouseHover.Name = "pbxMouseHover"
-        Me.pbxMouseHover.Size = New System.Drawing.Size(140, 114)
-        Me.pbxMouseHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbxMouseHover.TabIndex = 14
-        Me.pbxMouseHover.TabStop = False
-        Me.pbxMouseHover.Visible = False
-        '
-        'pbxLogoMain
-        '
-        Me.pbxLogoMain.Image = Global.Software_Administrativo.My.Resources.Resources._0bf9f93d_cfca_4c90_b06a_0faed3d8896c_200x200
-        Me.pbxLogoMain.Location = New System.Drawing.Point(12, 29)
-        Me.pbxLogoMain.Name = "pbxLogoMain"
-        Me.pbxLogoMain.Size = New System.Drawing.Size(140, 114)
-        Me.pbxLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbxLogoMain.TabIndex = 13
-        Me.pbxLogoMain.TabStop = False
-        '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -269,60 +247,6 @@ Partial Class Form1
         Me.pnlTitleBar.Name = "pnlTitleBar"
         Me.pnlTitleBar.Size = New System.Drawing.Size(878, 29)
         Me.pnlTitleBar.TabIndex = 11
-        '
-        'btnRestaurar
-        '
-        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRestaurar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Restaurar
-        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnRestaurar.FlatAppearance.BorderSize = 0
-        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRestaurar.Location = New System.Drawing.Point(800, 0)
-        Me.btnRestaurar.Name = "btnRestaurar"
-        Me.btnRestaurar.Size = New System.Drawing.Size(35, 29)
-        Me.btnRestaurar.TabIndex = 15
-        Me.btnRestaurar.UseVisualStyleBackColor = True
-        Me.btnRestaurar.Visible = False
-        '
-        'btnMaximizar
-        '
-        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMaximizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Maximizar
-        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnMaximizar.FlatAppearance.BorderSize = 0
-        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximizar.Location = New System.Drawing.Point(800, 0)
-        Me.btnMaximizar.Name = "btnMaximizar"
-        Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
-        Me.btnMaximizar.TabIndex = 9
-        Me.btnMaximizar.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
-        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Location = New System.Drawing.Point(835, 0)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(43, 29)
-        Me.btnClose.TabIndex = 7
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
-        'btnMinimizar
-        '
-        Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnMinimizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnMinimizar.FlatAppearance.BorderSize = 0
-        Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimizar.Location = New System.Drawing.Point(759, 0)
-        Me.btnMinimizar.Name = "btnMinimizar"
-        Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
-        Me.btnMinimizar.TabIndex = 8
-        Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnMinimizar.UseVisualStyleBackColor = True
         '
         'lblCerrar
         '
@@ -383,8 +307,8 @@ Partial Class Form1
         'pnlContenedor
         '
         Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
         Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
@@ -412,14 +336,91 @@ Partial Class Form1
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFH.ForeColor = System.Drawing.Color.White
-        Me.LabelFH.Location = New System.Drawing.Point(261, 443)
+        Me.LabelFH.Location = New System.Drawing.Point(273, 442)
         Me.LabelFH.Name = "LabelFH"
         Me.LabelFH.Size = New System.Drawing.Size(0, 39)
         Me.LabelFH.TabIndex = 11
         '
+        'btnRestaurar
+        '
+        Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRestaurar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Restaurar
+        Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnRestaurar.FlatAppearance.BorderSize = 0
+        Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRestaurar.Location = New System.Drawing.Point(800, 0)
+        Me.btnRestaurar.Name = "btnRestaurar"
+        Me.btnRestaurar.Size = New System.Drawing.Size(35, 29)
+        Me.btnRestaurar.TabIndex = 15
+        Me.btnRestaurar.UseVisualStyleBackColor = True
+        Me.btnRestaurar.Visible = False
+        '
+        'btnMaximizar
+        '
+        Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMaximizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Maximizar
+        Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMaximizar.FlatAppearance.BorderSize = 0
+        Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximizar.Location = New System.Drawing.Point(800, 0)
+        Me.btnMaximizar.Name = "btnMaximizar"
+        Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMaximizar.TabIndex = 9
+        Me.btnMaximizar.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnClose.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(835, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(43, 29)
+        Me.btnClose.TabIndex = 7
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'btnMinimizar
+        '
+        Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMinimizar.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.Icono_Minimizar
+        Me.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMinimizar.FlatAppearance.BorderSize = 0
+        Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimizar.Location = New System.Drawing.Point(759, 0)
+        Me.btnMinimizar.Name = "btnMinimizar"
+        Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
+        Me.btnMinimizar.TabIndex = 8
+        Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnMinimizar.UseVisualStyleBackColor = True
+        '
+        'pbxMouseHover
+        '
+        Me.pbxMouseHover.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbxMouseHover.Image = Global.Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
+        Me.pbxMouseHover.Location = New System.Drawing.Point(12, 29)
+        Me.pbxMouseHover.Name = "pbxMouseHover"
+        Me.pbxMouseHover.Size = New System.Drawing.Size(140, 114)
+        Me.pbxMouseHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbxMouseHover.TabIndex = 14
+        Me.pbxMouseHover.TabStop = False
+        Me.pbxMouseHover.Visible = False
+        '
+        'pbxLogoMain
+        '
+        Me.pbxLogoMain.Image = Global.Software_Administrativo.My.Resources.Resources._0bf9f93d_cfca_4c90_b06a_0faed3d8896c_200x200
+        Me.pbxLogoMain.Location = New System.Drawing.Point(12, 29)
+        Me.pbxLogoMain.Name = "pbxLogoMain"
+        Me.pbxLogoMain.Size = New System.Drawing.Size(140, 114)
+        Me.pbxLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbxLogoMain.TabIndex = 13
+        Me.pbxLogoMain.TabStop = False
+        '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(177, 398)
+        Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.Dibujo_sin_título
+        Me.PictureBox1.Location = New System.Drawing.Point(239, 431)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(400, 61)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -460,12 +461,12 @@ Partial Class Form1
         Me.pnlMenu.PerformLayout()
         Me.pnlSubMenuEncargos.ResumeLayout(False)
         Me.pnlLogo.ResumeLayout(False)
-        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTitleBar.ResumeLayout(False)
         Me.pnlContenedor.ResumeLayout(False)
         Me.pnlContenedorMain.ResumeLayout(False)
         Me.pnlContenedorMain.PerformLayout()
+        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

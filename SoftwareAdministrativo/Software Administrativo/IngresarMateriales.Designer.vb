@@ -56,7 +56,7 @@ Partial Class IngresarMateriales
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(312, 337)
+        Me.Panel1.Size = New System.Drawing.Size(398, 434)
         Me.Panel1.TabIndex = 0
         '
         'txtDescripcion
@@ -64,7 +64,7 @@ Partial Class IngresarMateriales
         Me.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtDescripcion.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDescripcion.ForeColor = System.Drawing.Color.White
-        Me.txtDescripcion.Location = New System.Drawing.Point(27, 250)
+        Me.txtDescripcion.Location = New System.Drawing.Point(30, 343)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(192, 27)
         Me.txtDescripcion.TabIndex = 27
@@ -73,7 +73,7 @@ Partial Class IngresarMateriales
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(23, 226)
+        Me.Label4.Location = New System.Drawing.Point(26, 310)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 21)
         Me.Label4.TabIndex = 31
@@ -87,7 +87,7 @@ Partial Class IngresarMateriales
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(310, 25)
+        Me.Panel2.Size = New System.Drawing.Size(396, 25)
         Me.Panel2.TabIndex = 29
         '
         'Label7
@@ -111,7 +111,7 @@ Partial Class IngresarMateriales
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(275, 0)
+        Me.Button5.Location = New System.Drawing.Point(361, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 12
@@ -125,9 +125,9 @@ Partial Class IngresarMateriales
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White
-        Me.btnGuardar.Location = New System.Drawing.Point(218, 297)
+        Me.btnGuardar.Location = New System.Drawing.Point(282, 380)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
+        Me.btnGuardar.Size = New System.Drawing.Size(103, 41)
         Me.btnGuardar.TabIndex = 28
         Me.btnGuardar.Text = "Continuar"
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -137,7 +137,7 @@ Partial Class IngresarMateriales
         Me.txtCantidad.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtCantidad.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCantidad.ForeColor = System.Drawing.Color.White
-        Me.txtCantidad.Location = New System.Drawing.Point(27, 183)
+        Me.txtCantidad.Location = New System.Drawing.Point(30, 255)
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(192, 27)
         Me.txtCantidad.TabIndex = 26
@@ -146,7 +146,7 @@ Partial Class IngresarMateriales
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(23, 159)
+        Me.Label3.Location = New System.Drawing.Point(26, 222)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 21)
         Me.Label3.TabIndex = 28
@@ -157,7 +157,7 @@ Partial Class IngresarMateriales
         Me.txtPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtPrecio.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPrecio.ForeColor = System.Drawing.Color.White
-        Me.txtPrecio.Location = New System.Drawing.Point(27, 116)
+        Me.txtPrecio.Location = New System.Drawing.Point(30, 162)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(192, 27)
         Me.txtPrecio.TabIndex = 25
@@ -166,7 +166,7 @@ Partial Class IngresarMateriales
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 92)
+        Me.Label2.Location = New System.Drawing.Point(26, 129)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 21)
         Me.Label2.TabIndex = 24
@@ -177,7 +177,7 @@ Partial Class IngresarMateriales
         Me.txtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.Color.White
-        Me.txtNombre.Location = New System.Drawing.Point(27, 52)
+        Me.txtNombre.Location = New System.Drawing.Point(30, 76)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(192, 27)
         Me.txtNombre.TabIndex = 23
@@ -186,7 +186,7 @@ Partial Class IngresarMateriales
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(23, 28)
+        Me.Label1.Location = New System.Drawing.Point(26, 40)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 21)
         Me.Label1.TabIndex = 22
@@ -196,7 +196,7 @@ Partial Class IngresarMateriales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(312, 337)
+        Me.ClientSize = New System.Drawing.Size(398, 434)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "IngresarMateriales"

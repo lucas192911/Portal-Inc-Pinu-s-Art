@@ -40,7 +40,7 @@ Partial Class Eleccion
         Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNuevo.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNuevo.ForeColor = System.Drawing.Color.White
-        Me.btnNuevo.Location = New System.Drawing.Point(44, 94)
+        Me.btnNuevo.Location = New System.Drawing.Point(58, 105)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(106, 37)
         Me.btnNuevo.TabIndex = 0
@@ -55,7 +55,7 @@ Partial Class Eleccion
         Me.btnExistente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExistente.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExistente.ForeColor = System.Drawing.Color.White
-        Me.btnExistente.Location = New System.Drawing.Point(203, 94)
+        Me.btnExistente.Location = New System.Drawing.Point(232, 105)
         Me.btnExistente.Name = "btnExistente"
         Me.btnExistente.Size = New System.Drawing.Size(106, 37)
         Me.btnExistente.TabIndex = 1
@@ -66,7 +66,7 @@ Partial Class Eleccion
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(66, 44)
+        Me.Label1.Location = New System.Drawing.Point(79, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(227, 21)
         Me.Label1.TabIndex = 2
@@ -80,7 +80,7 @@ Partial Class Eleccion
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(354, 25)
+        Me.Panel1.Size = New System.Drawing.Size(379, 25)
         Me.Panel1.TabIndex = 11
         '
         'Button5
@@ -91,7 +91,7 @@ Partial Class Eleccion
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(319, 0)
+        Me.Button5.Location = New System.Drawing.Point(344, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 10
@@ -115,7 +115,7 @@ Partial Class Eleccion
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(354, 164)
+        Me.ClientSize = New System.Drawing.Size(379, 184)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnExistente)
         Me.Controls.Add(Me.btnNuevo)
