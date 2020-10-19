@@ -34,8 +34,14 @@ Partial Class Form1
         Me.subBtnExistente = New System.Windows.Forms.Button()
         Me.btnEncargo = New System.Windows.Forms.Button()
         Me.pnlLogo = New System.Windows.Forms.Panel()
+        Me.pbxMouseHover = New System.Windows.Forms.PictureBox()
+        Me.pbxLogoMain = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlTitleBar = New System.Windows.Forms.Panel()
+        Me.btnRestaurar = New System.Windows.Forms.Button()
+        Me.btnMaximizar = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.lblCerrar = New System.Windows.Forms.Label()
         Me.lblMinimizar = New System.Windows.Forms.Label()
         Me.lblMaximizar = New System.Windows.Forms.Label()
@@ -43,22 +49,16 @@ Partial Class Form1
         Me.pnlContenedor = New System.Windows.Forms.Panel()
         Me.pnlContenedorMain = New System.Windows.Forms.Panel()
         Me.LabelFH = New System.Windows.Forms.Label()
-        Me.btnRestaurar = New System.Windows.Forms.Button()
-        Me.btnMaximizar = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnMinimizar = New System.Windows.Forms.Button()
-        Me.pbxMouseHover = New System.Windows.Forms.PictureBox()
-        Me.pbxLogoMain = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.pnlMenu.SuspendLayout()
         Me.pnlSubMenuEncargos.SuspendLayout()
         Me.pnlLogo.SuspendLayout()
+        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTitleBar.SuspendLayout()
         Me.pnlContenedor.SuspendLayout()
         Me.pnlContenedorMain.SuspendLayout()
-        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -222,6 +222,28 @@ Partial Class Form1
         Me.pnlLogo.Size = New System.Drawing.Size(172, 166)
         Me.pnlLogo.TabIndex = 13
         '
+        'pbxMouseHover
+        '
+        Me.pbxMouseHover.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbxMouseHover.Image = Global.Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
+        Me.pbxMouseHover.Location = New System.Drawing.Point(12, 29)
+        Me.pbxMouseHover.Name = "pbxMouseHover"
+        Me.pbxMouseHover.Size = New System.Drawing.Size(140, 114)
+        Me.pbxMouseHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbxMouseHover.TabIndex = 14
+        Me.pbxMouseHover.TabStop = False
+        Me.pbxMouseHover.Visible = False
+        '
+        'pbxLogoMain
+        '
+        Me.pbxLogoMain.Image = Global.Software_Administrativo.My.Resources.Resources._0bf9f93d_cfca_4c90_b06a_0faed3d8896c_200x200
+        Me.pbxLogoMain.Location = New System.Drawing.Point(12, 29)
+        Me.pbxLogoMain.Name = "pbxLogoMain"
+        Me.pbxLogoMain.Size = New System.Drawing.Size(140, 114)
+        Me.pbxLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbxLogoMain.TabIndex = 13
+        Me.pbxLogoMain.TabStop = False
+        '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -247,99 +269,6 @@ Partial Class Form1
         Me.pnlTitleBar.Name = "pnlTitleBar"
         Me.pnlTitleBar.Size = New System.Drawing.Size(878, 29)
         Me.pnlTitleBar.TabIndex = 11
-        '
-        'lblCerrar
-        '
-        Me.lblCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblCerrar.AutoSize = True
-        Me.lblCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCerrar.ForeColor = System.Drawing.Color.White
-        Me.lblCerrar.Location = New System.Drawing.Point(993, 20)
-        Me.lblCerrar.Name = "lblCerrar"
-        Me.lblCerrar.Size = New System.Drawing.Size(41, 15)
-        Me.lblCerrar.TabIndex = 12
-        Me.lblCerrar.Text = "Cerrar"
-        Me.lblCerrar.Visible = False
-        '
-        'lblMinimizar
-        '
-        Me.lblMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblMinimizar.AutoSize = True
-        Me.lblMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblMinimizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMinimizar.ForeColor = System.Drawing.Color.White
-        Me.lblMinimizar.Location = New System.Drawing.Point(950, 20)
-        Me.lblMinimizar.Name = "lblMinimizar"
-        Me.lblMinimizar.Size = New System.Drawing.Size(62, 15)
-        Me.lblMinimizar.TabIndex = 13
-        Me.lblMinimizar.Text = "Minimizar"
-        Me.lblMinimizar.Visible = False
-        '
-        'lblMaximizar
-        '
-        Me.lblMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblMaximizar.AutoSize = True
-        Me.lblMaximizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblMaximizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMaximizar.ForeColor = System.Drawing.Color.White
-        Me.lblMaximizar.Location = New System.Drawing.Point(985, 20)
-        Me.lblMaximizar.Name = "lblMaximizar"
-        Me.lblMaximizar.Size = New System.Drawing.Size(65, 15)
-        Me.lblMaximizar.TabIndex = 14
-        Me.lblMaximizar.Text = "Maximizar"
-        Me.lblMaximizar.Visible = False
-        '
-        'lblRestaurar
-        '
-        Me.lblRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblRestaurar.AutoSize = True
-        Me.lblRestaurar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
-        Me.lblRestaurar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRestaurar.ForeColor = System.Drawing.Color.White
-        Me.lblRestaurar.Location = New System.Drawing.Point(985, 20)
-        Me.lblRestaurar.Name = "lblRestaurar"
-        Me.lblRestaurar.Size = New System.Drawing.Size(61, 15)
-        Me.lblRestaurar.TabIndex = 15
-        Me.lblRestaurar.Text = "Restaurar"
-        Me.lblRestaurar.Visible = False
-        '
-        'pnlContenedor
-        '
-        Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
-        Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
-        Me.pnlContenedor.Name = "pnlContenedor"
-        Me.pnlContenedor.Size = New System.Drawing.Size(878, 571)
-        Me.pnlContenedor.TabIndex = 16
-        '
-        'pnlContenedorMain
-        '
-        Me.pnlContenedorMain.Controls.Add(Me.LabelFH)
-        Me.pnlContenedorMain.Controls.Add(Me.PictureBox1)
-        Me.pnlContenedorMain.Controls.Add(Me.PictureBox2)
-        Me.pnlContenedorMain.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContenedorMain.ForeColor = System.Drawing.Color.Black
-        Me.pnlContenedorMain.Location = New System.Drawing.Point(0, 0)
-        Me.pnlContenedorMain.Name = "pnlContenedorMain"
-        Me.pnlContenedorMain.Size = New System.Drawing.Size(878, 571)
-        Me.pnlContenedorMain.TabIndex = 0
-        '
-        'LabelFH
-        '
-        Me.LabelFH.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.LabelFH.AutoSize = True
-        Me.LabelFH.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFH.ForeColor = System.Drawing.Color.White
-        Me.LabelFH.Location = New System.Drawing.Point(273, 442)
-        Me.LabelFH.Name = "LabelFH"
-        Me.LabelFH.Size = New System.Drawing.Size(0, 39)
-        Me.LabelFH.TabIndex = 11
         '
         'btnRestaurar
         '
@@ -395,27 +324,98 @@ Partial Class Form1
         Me.btnMinimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnMinimizar.UseVisualStyleBackColor = True
         '
-        'pbxMouseHover
+        'lblCerrar
         '
-        Me.pbxMouseHover.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pbxMouseHover.Image = Global.Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
-        Me.pbxMouseHover.Location = New System.Drawing.Point(12, 29)
-        Me.pbxMouseHover.Name = "pbxMouseHover"
-        Me.pbxMouseHover.Size = New System.Drawing.Size(140, 114)
-        Me.pbxMouseHover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbxMouseHover.TabIndex = 14
-        Me.pbxMouseHover.TabStop = False
-        Me.pbxMouseHover.Visible = False
+        Me.lblCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCerrar.AutoSize = True
+        Me.lblCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCerrar.ForeColor = System.Drawing.Color.White
+        Me.lblCerrar.Location = New System.Drawing.Point(993, 29)
+        Me.lblCerrar.Name = "lblCerrar"
+        Me.lblCerrar.Size = New System.Drawing.Size(41, 15)
+        Me.lblCerrar.TabIndex = 12
+        Me.lblCerrar.Text = "Cerrar"
+        Me.lblCerrar.Visible = False
         '
-        'pbxLogoMain
+        'lblMinimizar
         '
-        Me.pbxLogoMain.Image = Global.Software_Administrativo.My.Resources.Resources._0bf9f93d_cfca_4c90_b06a_0faed3d8896c_200x200
-        Me.pbxLogoMain.Location = New System.Drawing.Point(12, 29)
-        Me.pbxLogoMain.Name = "pbxLogoMain"
-        Me.pbxLogoMain.Size = New System.Drawing.Size(140, 114)
-        Me.pbxLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbxLogoMain.TabIndex = 13
-        Me.pbxLogoMain.TabStop = False
+        Me.lblMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMinimizar.AutoSize = True
+        Me.lblMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblMinimizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMinimizar.ForeColor = System.Drawing.Color.White
+        Me.lblMinimizar.Location = New System.Drawing.Point(950, 29)
+        Me.lblMinimizar.Name = "lblMinimizar"
+        Me.lblMinimizar.Size = New System.Drawing.Size(62, 15)
+        Me.lblMinimizar.TabIndex = 13
+        Me.lblMinimizar.Text = "Minimizar"
+        Me.lblMinimizar.Visible = False
+        '
+        'lblMaximizar
+        '
+        Me.lblMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblMaximizar.AutoSize = True
+        Me.lblMaximizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblMaximizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMaximizar.ForeColor = System.Drawing.Color.White
+        Me.lblMaximizar.Location = New System.Drawing.Point(985, 29)
+        Me.lblMaximizar.Name = "lblMaximizar"
+        Me.lblMaximizar.Size = New System.Drawing.Size(65, 15)
+        Me.lblMaximizar.TabIndex = 14
+        Me.lblMaximizar.Text = "Maximizar"
+        Me.lblMaximizar.Visible = False
+        '
+        'lblRestaurar
+        '
+        Me.lblRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblRestaurar.AutoSize = True
+        Me.lblRestaurar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
+        Me.lblRestaurar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRestaurar.ForeColor = System.Drawing.Color.White
+        Me.lblRestaurar.Location = New System.Drawing.Point(985, 29)
+        Me.lblRestaurar.Name = "lblRestaurar"
+        Me.lblRestaurar.Size = New System.Drawing.Size(61, 15)
+        Me.lblRestaurar.TabIndex = 15
+        Me.lblRestaurar.Text = "Restaurar"
+        Me.lblRestaurar.Visible = False
+        '
+        'pnlContenedor
+        '
+        Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
+        Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
+        Me.pnlContenedor.Name = "pnlContenedor"
+        Me.pnlContenedor.Size = New System.Drawing.Size(878, 571)
+        Me.pnlContenedor.TabIndex = 16
+        '
+        'pnlContenedorMain
+        '
+        Me.pnlContenedorMain.Controls.Add(Me.LabelFH)
+        Me.pnlContenedorMain.Controls.Add(Me.PictureBox1)
+        Me.pnlContenedorMain.Controls.Add(Me.PictureBox2)
+        Me.pnlContenedorMain.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContenedorMain.ForeColor = System.Drawing.Color.Black
+        Me.pnlContenedorMain.Location = New System.Drawing.Point(0, 0)
+        Me.pnlContenedorMain.Name = "pnlContenedorMain"
+        Me.pnlContenedorMain.Size = New System.Drawing.Size(878, 571)
+        Me.pnlContenedorMain.TabIndex = 0
+        '
+        'LabelFH
+        '
+        Me.LabelFH.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.LabelFH.AutoSize = True
+        Me.LabelFH.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelFH.ForeColor = System.Drawing.Color.White
+        Me.LabelFH.Location = New System.Drawing.Point(273, 442)
+        Me.LabelFH.Name = "LabelFH"
+        Me.LabelFH.Size = New System.Drawing.Size(0, 39)
+        Me.LabelFH.TabIndex = 11
         '
         'PictureBox1
         '
@@ -462,12 +462,12 @@ Partial Class Form1
         Me.pnlMenu.PerformLayout()
         Me.pnlSubMenuEncargos.ResumeLayout(False)
         Me.pnlLogo.ResumeLayout(False)
+        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTitleBar.ResumeLayout(False)
         Me.pnlContenedor.ResumeLayout(False)
         Me.pnlContenedorMain.ResumeLayout(False)
         Me.pnlContenedorMain.PerformLayout()
-        CType(Me.pbxMouseHover, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbxLogoMain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
