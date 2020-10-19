@@ -52,6 +52,7 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.pnlMenu.SuspendLayout()
         Me.pnlSubMenuEncargos.SuspendLayout()
         Me.pnlLogo.SuspendLayout()
@@ -95,7 +96,7 @@ Partial Class Form1
         Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrecio.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrecio.ForeColor = System.Drawing.Color.White
-        Me.btnPrecio.Location = New System.Drawing.Point(0, 386)
+        Me.btnPrecio.Location = New System.Drawing.Point(0, 422)
         Me.btnPrecio.Name = "btnPrecio"
         Me.btnPrecio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
@@ -114,7 +115,7 @@ Partial Class Form1
         Me.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMateriales.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMateriales.ForeColor = System.Drawing.Color.White
-        Me.btnMateriales.Location = New System.Drawing.Point(0, 347)
+        Me.btnMateriales.Location = New System.Drawing.Point(0, 383)
         Me.btnMateriales.Name = "btnMateriales"
         Me.btnMateriales.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnMateriales.Size = New System.Drawing.Size(172, 39)
@@ -133,7 +134,7 @@ Partial Class Form1
         Me.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCliente.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCliente.ForeColor = System.Drawing.Color.White
-        Me.btnCliente.Location = New System.Drawing.Point(0, 308)
+        Me.btnCliente.Location = New System.Drawing.Point(0, 344)
         Me.btnCliente.Name = "btnCliente"
         Me.btnCliente.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.btnCliente.Size = New System.Drawing.Size(172, 39)
@@ -146,12 +147,13 @@ Partial Class Form1
         '
         Me.pnlSubMenuEncargos.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.pnlSubMenuEncargos.Controls.Add(Me.Button1)
+        Me.pnlSubMenuEncargos.Controls.Add(Me.Button2)
         Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnExistente)
         Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnNuevo)
         Me.pnlSubMenuEncargos.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlSubMenuEncargos.Location = New System.Drawing.Point(0, 206)
         Me.pnlSubMenuEncargos.Name = "pnlSubMenuEncargos"
-        Me.pnlSubMenuEncargos.Size = New System.Drawing.Size(172, 102)
+        Me.pnlSubMenuEncargos.Size = New System.Drawing.Size(172, 138)
         Me.pnlSubMenuEncargos.TabIndex = 18
         Me.pnlSubMenuEncargos.Visible = False
         '
@@ -452,7 +454,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 68)
+        Me.Button1.Location = New System.Drawing.Point(0, 102)
         Me.Button1.Name = "Button1"
         Me.Button1.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
         Me.Button1.Size = New System.Drawing.Size(172, 34)
@@ -460,6 +462,26 @@ Partial Class Form1
         Me.Button1.Text = "Estadisticas"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(0, 68)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
+        Me.Button2.Size = New System.Drawing.Size(172, 34)
+        Me.Button2.TabIndex = 17
+        Me.Button2.Text = "Finalizados"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -524,4 +546,5 @@ Partial Class Form1
     Friend WithEvents pbxMouseHover As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
