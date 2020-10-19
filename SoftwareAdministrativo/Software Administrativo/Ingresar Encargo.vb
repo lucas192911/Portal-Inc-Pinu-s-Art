@@ -31,21 +31,43 @@
 
         Dim val As String = String.Format("select * from encargo where nombre = '{0}' and descripcion = '{1}'", txtNombre.Text, txtBxDescripcion.Text)
 
+
         If id = 0 Then
             Dim dt As DataTable = Consulta("select id from cliente")
             Dim row As DataRow = dt.Rows(dt.Rows.Count - 1)
             Dim s As Integer = CStr(row("id"))
-            Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente) values ('{0}',now(),'{1}', {2})", txtNombre.Text, txtBxDescripcion.Text, s)
+            Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, s)
             InsertRow(val, sql)
 
         Else
-            Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente) values ('{0}',now(),'{1}', {2})", txtNombre.Text, txtBxDescripcion.Text, id)
+            Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, id)
             InsertRow(val, s)
         End If
+        If funciones.num = 0 Then
 
-        AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
-        Me.Close()
-        Form1.Show()
+            Dim s As String = <a>  select encargo.id, 
+                                encargo.nombre, 
+                                fecha, presupuesto, 
+                                descripcion, 
+                                cliente.nombre as nombreCliente
+                                from encargo join cliente
+                                on id_Cliente = cliente.id
+                                where estado = 1</a>
+
+            Encargo.dtgMostrar.AutoGenerateColumns = False
+            Encargo.dtgMostrar.DataSource = Consulta(s)
+            Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
+            Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
+            Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
+            Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
+            Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
+            Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+
+            AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
+            Me.Close()
+            Form1.Show()
+        End If
+
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
