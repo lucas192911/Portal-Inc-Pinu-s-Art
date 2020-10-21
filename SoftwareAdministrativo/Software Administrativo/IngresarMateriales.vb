@@ -4,7 +4,7 @@
         Dim vld As String = String.Format("select * from materiales where nombre = '{0}'", txtNombre.Text)
         Dim sql As String = String.Format("insert into materiales (nombre,precio,cantidad,descripcion) values ('{0}',{1},{2},'{3}')", txtNombre.Text, txtPrecio.Text, txtCantidad.Text, txtDescripcion.Text)
 
-        InsertRow(vld, sql)
+        IngresarRegistro(vld, sql)
 
         If funciones.num = 0 Then
             Dim s As String = <a>select id as ID, 

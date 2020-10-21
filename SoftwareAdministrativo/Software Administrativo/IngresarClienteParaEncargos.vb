@@ -13,7 +13,7 @@ Public Class IngresarClienteParaEncargos
             Dim sqlValidation As String = "select * from cliente where telefono=" & txtTelefono.Text & ";"
             Dim sql As String = String.Format("insert into cliente(nombre,telefono,direccion) values ('{0}',{1},'{2}');", txtNombre.Text, txtTelefono.Text, txtDireccion.Text)
 
-            InsertRow(sqlValidation, sql)
+            IngresarRegistro(sqlValidation, sql)
 
             If funciones.num = 0 Then
                 Me.Hide()

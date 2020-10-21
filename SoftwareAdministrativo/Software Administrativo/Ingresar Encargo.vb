@@ -27,8 +27,8 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Form1.currentBtn.BackColor = Color.FromArgb(149, 128, 127)
-        Form1.subBtnExistente.BackColor = Color.FromArgb(145, 89, 90)
-        Form1.currentBtn = Form1.subBtnExistente
+        Form1.subBtnPendiente.BackColor = Color.FromArgb(145, 89, 90)
+        Form1.currentBtn = Form1.subBtnPendiente
 
         Dim val As String = String.Format("select * from encargo where nombre = '{0}' and descripcion = '{1}'", txtNombre.Text, txtBxDescripcion.Text)
 
@@ -38,11 +38,11 @@
             Dim row As DataRow = dt.Rows(dt.Rows.Count - 1)
             Dim s As Integer = CStr(row("id"))
             Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, s)
-            InsertRow(val, sql)
+            IngresarRegistro(val, sql)
 
         Else
             Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, id)
-            InsertRow(val, s)
+            IngresarRegistro(val, s)
         End If
         If funciones.num = 0 Then
 

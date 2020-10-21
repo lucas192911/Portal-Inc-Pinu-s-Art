@@ -9,7 +9,7 @@ Module funciones
     Public num As Integer
 
     'Validación de registro antes de ingresarlo. 'sentenceValidation: consulta para validar, y sentence: consulta para ingresar'---
-    Public Sub InsertRow(ByVal sentenceValidation As String, ByVal sentence As String)
+    Public Sub IngresarRegistro(ByVal sentenceValidation As String, ByVal sentence As String)
         conection.Open()
         Dim dtValidation As New DataTable
         Dim searchInTable As DataTable = Consulta(sentenceValidation)

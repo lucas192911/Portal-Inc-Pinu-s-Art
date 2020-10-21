@@ -30,9 +30,9 @@ Partial Class Form1
         Me.btnMateriales = New System.Windows.Forms.Button()
         Me.btnCliente = New System.Windows.Forms.Button()
         Me.pnlSubMenuEncargos = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.subBtnExistente = New System.Windows.Forms.Button()
+        Me.subBtnEstadistica = New System.Windows.Forms.Button()
+        Me.subBtnFinalizado = New System.Windows.Forms.Button()
+        Me.subBtnPendiente = New System.Windows.Forms.Button()
         Me.subBtnNuevo = New System.Windows.Forms.Button()
         Me.btnEncargo = New System.Windows.Forms.Button()
         Me.pnlLogo = New System.Windows.Forms.Panel()
@@ -146,9 +146,9 @@ Partial Class Form1
         'pnlSubMenuEncargos
         '
         Me.pnlSubMenuEncargos.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.pnlSubMenuEncargos.Controls.Add(Me.Button1)
-        Me.pnlSubMenuEncargos.Controls.Add(Me.Button2)
-        Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnExistente)
+        Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnEstadistica)
+        Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnFinalizado)
+        Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnPendiente)
         Me.pnlSubMenuEncargos.Controls.Add(Me.subBtnNuevo)
         Me.pnlSubMenuEncargos.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlSubMenuEncargos.Location = New System.Drawing.Point(0, 206)
@@ -157,65 +157,65 @@ Partial Class Form1
         Me.pnlSubMenuEncargos.TabIndex = 18
         Me.pnlSubMenuEncargos.Visible = False
         '
-        'Button1
+        'subBtnEstadistica
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(0, 102)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
-        Me.Button1.Size = New System.Drawing.Size(172, 34)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Estadisticas"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.subBtnEstadistica.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.subBtnEstadistica.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.subBtnEstadistica.Dock = System.Windows.Forms.DockStyle.Top
+        Me.subBtnEstadistica.FlatAppearance.BorderSize = 0
+        Me.subBtnEstadistica.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.subBtnEstadistica.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.subBtnEstadistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.subBtnEstadistica.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.subBtnEstadistica.ForeColor = System.Drawing.Color.White
+        Me.subBtnEstadistica.Location = New System.Drawing.Point(0, 102)
+        Me.subBtnEstadistica.Name = "subBtnEstadistica"
+        Me.subBtnEstadistica.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
+        Me.subBtnEstadistica.Size = New System.Drawing.Size(172, 34)
+        Me.subBtnEstadistica.TabIndex = 16
+        Me.subBtnEstadistica.Text = "Estadisticas"
+        Me.subBtnEstadistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.subBtnEstadistica.UseVisualStyleBackColor = False
         '
-        'Button2
+        'subBtnFinalizado
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(0, 68)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
-        Me.Button2.Size = New System.Drawing.Size(172, 34)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "Finalizados"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.subBtnFinalizado.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.subBtnFinalizado.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.subBtnFinalizado.Dock = System.Windows.Forms.DockStyle.Top
+        Me.subBtnFinalizado.FlatAppearance.BorderSize = 0
+        Me.subBtnFinalizado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.subBtnFinalizado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.subBtnFinalizado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.subBtnFinalizado.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.subBtnFinalizado.ForeColor = System.Drawing.Color.White
+        Me.subBtnFinalizado.Location = New System.Drawing.Point(0, 68)
+        Me.subBtnFinalizado.Name = "subBtnFinalizado"
+        Me.subBtnFinalizado.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
+        Me.subBtnFinalizado.Size = New System.Drawing.Size(172, 34)
+        Me.subBtnFinalizado.TabIndex = 17
+        Me.subBtnFinalizado.Text = "Finalizados"
+        Me.subBtnFinalizado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.subBtnFinalizado.UseVisualStyleBackColor = False
         '
-        'subBtnExistente
+        'subBtnPendiente
         '
-        Me.subBtnExistente.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.subBtnExistente.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.subBtnExistente.Dock = System.Windows.Forms.DockStyle.Top
-        Me.subBtnExistente.FlatAppearance.BorderSize = 0
-        Me.subBtnExistente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.subBtnExistente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
-        Me.subBtnExistente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.subBtnExistente.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.subBtnExistente.ForeColor = System.Drawing.Color.White
-        Me.subBtnExistente.Location = New System.Drawing.Point(0, 34)
-        Me.subBtnExistente.Name = "subBtnExistente"
-        Me.subBtnExistente.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
-        Me.subBtnExistente.Size = New System.Drawing.Size(172, 34)
-        Me.subBtnExistente.TabIndex = 15
-        Me.subBtnExistente.Text = "Pendientes"
-        Me.subBtnExistente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.subBtnExistente.UseVisualStyleBackColor = False
+        Me.subBtnPendiente.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.subBtnPendiente.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.subBtnPendiente.Dock = System.Windows.Forms.DockStyle.Top
+        Me.subBtnPendiente.FlatAppearance.BorderSize = 0
+        Me.subBtnPendiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.subBtnPendiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.subBtnPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.subBtnPendiente.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.subBtnPendiente.ForeColor = System.Drawing.Color.White
+        Me.subBtnPendiente.Location = New System.Drawing.Point(0, 34)
+        Me.subBtnPendiente.Name = "subBtnPendiente"
+        Me.subBtnPendiente.Padding = New System.Windows.Forms.Padding(32, 0, 0, 0)
+        Me.subBtnPendiente.Size = New System.Drawing.Size(172, 34)
+        Me.subBtnPendiente.TabIndex = 15
+        Me.subBtnPendiente.Text = "Pendientes"
+        Me.subBtnPendiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.subBtnPendiente.UseVisualStyleBackColor = False
         '
         'subBtnNuevo
         '
@@ -539,12 +539,12 @@ Partial Class Form1
     Friend WithEvents LabelFH As System.Windows.Forms.Label
     Friend WithEvents pnlSubMenuEncargos As System.Windows.Forms.Panel
     Friend WithEvents subBtnNuevo As System.Windows.Forms.Button
-    Friend WithEvents subBtnExistente As System.Windows.Forms.Button
+    Friend WithEvents subBtnPendiente As System.Windows.Forms.Button
     Friend WithEvents btnEncargo As System.Windows.Forms.Button
     Friend WithEvents pnlLogo As System.Windows.Forms.Panel
     Friend WithEvents pbxLogoMain As System.Windows.Forms.PictureBox
     Friend WithEvents pbxMouseHover As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents subBtnEstadistica As Button
+    Friend WithEvents subBtnFinalizado As Button
 End Class

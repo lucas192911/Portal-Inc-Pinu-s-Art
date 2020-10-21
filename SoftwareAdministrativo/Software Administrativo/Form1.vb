@@ -134,14 +134,14 @@ Public Class Form1
 
     ''Boton de encargos pendientes. Establece a boton actual(currentBtn), el color original, y establece
     '' color de seleccion a boton encargos pendientes (subBtnExistente)--
-    Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnExistente.Click
+    Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnPendiente.Click
         If (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
 
             currentBtn.BackColor = Color.FromArgb(149, 128, 127)
         End If
 
-        subBtnExistente.BackColor = Color.FromArgb(145, 89, 90)
-        currentBtn = subBtnExistente
+        subBtnPendiente.BackColor = Color.FromArgb(145, 89, 90)
+        currentBtn = subBtnPendiente
 
         AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
     End Sub
