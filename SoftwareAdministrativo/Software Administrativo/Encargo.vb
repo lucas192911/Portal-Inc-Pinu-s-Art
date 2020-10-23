@@ -1,26 +1,5 @@
 ﻿Public Class Encargo
 
-    Private Sub Encargo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-
-        Dim s As String = <a>   select encargo.id, 
-                                encargo.nombre, 
-                                fecha, presupuesto, 
-                                descripcion, 
-                                cliente.nombre as nombreCliente
-                                from encargo join cliente
-                                on id_Cliente = cliente.id
-                                where estado = 1</a>
-
-        dtgMostrar.AutoGenerateColumns = False
-        dtgMostrar.DataSource = Consulta(s)
-        dtgMostrar.Columns(0).DataPropertyName = "id"
-        dtgMostrar.Columns(1).DataPropertyName = "nombre"
-        dtgMostrar.Columns(2).DataPropertyName = "fecha"
-        dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
-        dtgMostrar.Columns(4).DataPropertyName = "descripcion"
-        dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
-    End Sub
 
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
 

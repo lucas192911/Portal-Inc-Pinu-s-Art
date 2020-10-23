@@ -143,6 +143,22 @@ Public Class Form1
         subBtnPendiente.BackColor = Color.FromArgb(145, 89, 90)
         currentBtn = subBtnPendiente
 
+        Dim s As String = <a>   select encargo.id, 
+                                encargo.nombre, 
+                                fecha, presupuesto, 
+                                descripcion, 
+                                cliente.nombre as nombreCliente
+                                from encargo join cliente
+                                on id_Cliente = cliente.id
+                                where estado = 1</a>
+        Encargo.dtgMostrar.AutoGenerateColumns = False
+        Encargo.dtgMostrar.DataSource = Consulta(s)
+        Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
+        Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
+        Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
+        Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
+        Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
+        Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
         AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
     End Sub
 
@@ -224,7 +240,7 @@ Public Class Form1
         End If
     End Sub
 
-    
+
     ''Boton de nuevo encargo
     Private Sub subBtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnNuevo.Click
         Me.Hide()
@@ -235,4 +251,17 @@ Public Class Form1
         Estadisticas.ShowDialog()
     End Sub
 
+    Private Sub subBtnFinalizado_Click(sender As Object, e As EventArgs) Handles subBtnFinalizado.Click
+        Dim s As String = "select encargo.id, encargo.nombre, fecha, presupuesto,descripcion,cliente.nombre As nombreCliente From encargo Join cliente On id_Cliente = cliente.id Where estado <> 1"
+        Encargo.dtgMostrar.AutoGenerateColumns = False
+        Encargo.dtgMostrar.DataSource = Consulta(s)
+        Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
+        Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
+        Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
+        Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
+        Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
+        Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+        AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
+
+    End Sub
 End Class
