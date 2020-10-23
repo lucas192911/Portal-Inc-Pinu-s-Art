@@ -119,6 +119,12 @@
     <Compile Include="Encargo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Estadisticas.Designer.vb">
+      <DependentUpon>Estadisticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ExitAlert.Designer.vb">
       <DependentUpon>ExitAlert.vb</DependentUpon>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Encargo.resx">
       <DependentUpon>Encargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas.resx">
+      <DependentUpon>Estadisticas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitAlert.resx">
       <DependentUpon>ExitAlert.vb</DependentUpon>

@@ -231,5 +231,8 @@ Public Class Form1
         Eleccion.Show()
     End Sub
 
-    
+    Private Sub subBtnEstadistica_Click(sender As Object, e As EventArgs) Handles subBtnEstadistica.Click
+        Estadisticas.ShowDialog()
+    End Sub
+
 End Class
