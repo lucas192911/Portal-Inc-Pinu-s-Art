@@ -27,6 +27,7 @@ Partial Class Estadisticas
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -52,6 +53,7 @@ Partial Class Estadisticas
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -73,6 +75,19 @@ Partial Class Estadisticas
         Me.Button5.TabIndex = 15
         Me.Button5.UseVisualStyleBackColor = False
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(315, 4)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(120, 17)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Encargos Por Mes"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Estadisticas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -87,10 +102,12 @@ Partial Class Estadisticas
         Me.Text = "chy"
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Button5 As Button
+    Friend WithEvents Label7 As Label
 End Class
