@@ -11,6 +11,14 @@
         Me.Close()
     End Sub
 
+    Private Sub txtNombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNombre.KeyPress
+        SoloDigitos(e)
+    End Sub
+
+    Private Sub txtTelefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTelefono.KeyPress
+        SoloNumeros(e)
+    End Sub
+
     Private Sub btnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Dim sql As String = String.Format("update cliente set telefono ={0}, nombre = '{1}', direccion =  '{2}' where id = {3}", txtTelefono.Text, txtNombre.Text, txtDireccion.Text, Clientes.dtgMostrar.CurrentRow.Cells(0).Value.ToString)
 

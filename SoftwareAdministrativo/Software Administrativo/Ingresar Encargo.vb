@@ -21,9 +21,10 @@
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub Ingresar_Encargo_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+    Private Sub txtNombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNombre.KeyPress
+        SoloDigitos(e)
     End Sub
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Form1.currentBtn.BackColor = Color.FromArgb(149, 128, 127)

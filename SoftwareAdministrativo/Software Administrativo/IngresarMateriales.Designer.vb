@@ -96,7 +96,7 @@ Partial Class IngresarMateriales
         Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(97, 4)
+        Me.Label7.Location = New System.Drawing.Point(150, 4)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(114, 17)
         Me.Label7.TabIndex = 17
