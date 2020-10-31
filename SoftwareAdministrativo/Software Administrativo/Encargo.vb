@@ -16,7 +16,8 @@
                                 on id_Cliente = cliente.id
                                 where estado = 1</a>
 
-            Eliminar(sql)
+
+            Consulta(sql)
 
             dtgMostrar.AutoGenerateColumns = False
             dtgMostrar.DataSource = Consulta(s)

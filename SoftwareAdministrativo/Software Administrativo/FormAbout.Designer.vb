@@ -131,8 +131,8 @@ Partial Class FormAbout
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(769, 17)
         Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Queremos darle un agradecimiento especial a la empresa Pinus´Art, por brindarnos " & _
-            "esta oportunidad de aprendizaje."
+        Me.Label8.Text = "Queremos darle un agradecimiento especial a la empresa Pinus´Art, por brindarnos " &
+    "esta oportunidad de aprendizaje."
         '
         'Label9
         '
@@ -158,8 +158,8 @@ Partial Class FormAbout
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(582, 17)
         Me.Label10.TabIndex = 9
-        Me.Label10.Text = "We want to give a special thanks to Pinus´Art for bringing up this opportunity of" & _
-            " learning."
+        Me.Label10.Text = "We want to give a special thanks to Pinus´Art for bringing up this opportunity of" &
+    " learning."
         '
         'Label14
         '
@@ -285,7 +285,7 @@ Partial Class FormAbout
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FormAbout"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "0."
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

@@ -133,8 +133,11 @@ Public Class Form1
     ''Boton de encargos pendientes. Establece a boton actual(currentBtn), el color original, y establece
     '' color de seleccion a boton encargos pendientes (subBtnExistente)--
     Private Sub subBtnExistente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles subBtnPendiente.Click
-        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Finalizados") Then
 
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
             currentBtn.BackColor = Color.FromArgb(149, 128, 127)
         End If
 
@@ -157,7 +160,11 @@ Public Class Form1
         Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
         Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
         Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
-        AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
+        AbrirFormEnPanel(Me.pnlContenedor, Encargo)
+
+        If Encargo.Contains(Encargo.btnEliminar) = False Then
+            Encargo.Controls.Add(Encargo.btnEliminar)
+        End If
     End Sub
 
 
@@ -187,6 +194,7 @@ Public Class Form1
     ''Boton de clientes. Establece a boton actual(currentBtn), el color original, y establece
     '' color de seleccion a boton clientes (btnClientes)--
     Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
+        AbrirFormEnPanel(Me.pnlContenedor, Clientes)
         If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
 
             currentBtn.BackColor = Color.FromArgb(46, 40, 40)
@@ -198,14 +206,13 @@ Public Class Form1
         btnCliente.BackColor = Color.FromArgb(145, 89, 90)
         currentBtn = btnCliente
 
-        AbrirFormEnPanel(Me.pnlContenedor, Clientes) '-->método en funciones
+
     End Sub
 
 
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
         FormAbout.ShowDialog()
-
     End Sub
 
 
@@ -227,7 +234,7 @@ Public Class Form1
     Private Sub pbxMouseHover_MouseClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles pbxMouseHover.MouseClick
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
-        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes" Or currentBtn.Text = "Finalizados") Then
 
             'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
             currentBtn.BackColor = Color.FromArgb(46, 40, 40)
@@ -261,7 +268,18 @@ Public Class Form1
         Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
         AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
 
-    End Sub
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
 
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
+
+        Encargo.Controls.Remove(Encargo.btnEliminar)
+
+        subBtnFinalizado.BackColor = Color.FromArgb(145, 89, 90)
+        currentBtn = subBtnFinalizado
+    End Sub
 
 End Class

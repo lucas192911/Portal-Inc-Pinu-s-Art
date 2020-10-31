@@ -101,8 +101,8 @@ Module funciones
     End Sub
 
     ''Agrega form(FormHijo) al panel principal(pnlContenedor)
-    Public Sub AbrirFormEnPanel(ByVal panel As Panel, ByVal FormHijo As Object)
-       Dim fh As Form = TryCast(FormHijo, Form)
+    Public Sub AbrirFormEnPanel(ByVal panel As Panel, ByVal FormHijo As Form)
+        Dim fh As Form = FormHijo
         fh.TopLevel = False
         fh.FormBorderStyle = Windows.Forms.FormBorderStyle.None
         fh.Dock = DockStyle.Fill
