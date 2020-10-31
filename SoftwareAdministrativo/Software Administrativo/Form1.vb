@@ -23,11 +23,9 @@ Public Class Form1
 
 
     'evento en icono de inicio
-    Private Sub pbxLogoMain_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.MouseHover
-
+    Private Sub pbxLogoMain_MouseEnter(sender As Object, e As EventArgs) Handles pbxLogoMain.MouseEnter
         pbxLogoMain.Visible = False
         pbxMouseHover.Visible = True
-
     End Sub
 
     Private Sub pbxMouseHover_MouseLeave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxMouseHover.MouseLeave
@@ -264,4 +262,6 @@ Public Class Form1
         AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
 
     End Sub
+
+
 End Class
