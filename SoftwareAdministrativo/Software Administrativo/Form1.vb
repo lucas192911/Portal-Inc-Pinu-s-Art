@@ -282,12 +282,4 @@ Public Class Form1
         currentBtn = subBtnFinalizado
     End Sub
 
-    Private Sub btnCliente_MouseDown(sender As Object, e As MouseEventArgs) Handles btnCliente.MouseDown
-        btnCliente.ForeColor = Color.Green
-    End Sub
-
-    Private Sub btnCliente_Leave(sender As Object, e As EventArgs) Handles btnCliente.Leave
-        btnCliente.ForeColor = Color.Red
-
-    End Sub
 End Class
