@@ -6,7 +6,7 @@
 
         IngresarRegistro(vld, sql)
 
-        If funciones.num = 0 Then
+        If Modulo.num = 0 Then
             Dim s As String = <a>select id as ID, 
                                     nombre as Nombre, 
                                     precio as Precio,

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Agregar_MAteriales
+Partial Class AgregarMaterialesParaEncargos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -31,6 +31,7 @@ Partial Class Agregar_MAteriales
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnFinalizar = New System.Windows.Forms.Button()
         CType(Me.dtgMostrarMateriales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,7 +62,7 @@ Partial Class Agregar_MAteriales
         Me.dtgMostrarMateriales.DefaultCellStyle = DataGridViewCellStyle2
         Me.dtgMostrarMateriales.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.dtgMostrarMateriales.EnableHeadersVisualStyles = False
-        Me.dtgMostrarMateriales.Location = New System.Drawing.Point(0, 70)
+        Me.dtgMostrarMateriales.Location = New System.Drawing.Point(0, 53)
         Me.dtgMostrarMateriales.Name = "dtgMostrarMateriales"
         Me.dtgMostrarMateriales.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -74,7 +75,7 @@ Partial Class Agregar_MAteriales
         Me.dtgMostrarMateriales.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dtgMostrarMateriales.RowHeadersWidth = 25
         Me.dtgMostrarMateriales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgMostrarMateriales.Size = New System.Drawing.Size(571, 376)
+        Me.dtgMostrarMateriales.Size = New System.Drawing.Size(654, 393)
         Me.dtgMostrarMateriales.TabIndex = 2
         '
         'Button5
@@ -85,7 +86,7 @@ Partial Class Agregar_MAteriales
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(536, 0)
+        Me.Button5.Location = New System.Drawing.Point(619, 0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(35, 25)
         Me.Button5.TabIndex = 15
@@ -99,7 +100,7 @@ Partial Class Agregar_MAteriales
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(571, 25)
+        Me.Panel1.Size = New System.Drawing.Size(654, 25)
         Me.Panel1.TabIndex = 17
         '
         'Label7
@@ -108,7 +109,7 @@ Partial Class Agregar_MAteriales
         Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(216, 4)
+        Me.Label7.Location = New System.Drawing.Point(252, 4)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(138, 17)
         Me.Label7.TabIndex = 16
@@ -117,12 +118,11 @@ Partial Class Agregar_MAteriales
         '
         'txtBuscar
         '
-        Me.txtBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.txtBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtBuscar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscar.ForeColor = System.Drawing.Color.White
-        Me.txtBuscar.Location = New System.Drawing.Point(0, 50)
+        Me.txtBuscar.Location = New System.Drawing.Point(114, 27)
         Me.txtBuscar.Multiline = True
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(195, 20)
@@ -140,18 +140,28 @@ Partial Class Agregar_MAteriales
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Buscar Material"
         '
-        'Agregar_MAteriales
+        'btnFinalizar
+        '
+        Me.btnFinalizar.Location = New System.Drawing.Point(403, 27)
+        Me.btnFinalizar.Name = "btnFinalizar"
+        Me.btnFinalizar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFinalizar.TabIndex = 18
+        Me.btnFinalizar.Text = "Finalizar"
+        Me.btnFinalizar.UseVisualStyleBackColor = True
+        '
+        'AgregarMaterialesParaEncargos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(571, 446)
+        Me.ClientSize = New System.Drawing.Size(654, 446)
+        Me.Controls.Add(Me.btnFinalizar)
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtgMostrarMateriales)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Agregar_MAteriales"
+        Me.Name = "AgregarMaterialesParaEncargos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Agregar Mteriales"
         CType(Me.dtgMostrarMateriales, System.ComponentModel.ISupportInitialize).EndInit()
@@ -167,4 +177,5 @@ Partial Class Agregar_MAteriales
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnFinalizar As Button
 End Class

@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Runtime.InteropServices
 
-Module funciones
+Module Modulo
     Dim conection As New MySqlConnection("server=localhost; user id=root; password=userpass; database=bdsistema; convert zero datetime=True")
 
     Dim adapter As MySqlDataAdapter

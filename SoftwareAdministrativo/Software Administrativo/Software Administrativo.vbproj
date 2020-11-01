@@ -144,7 +144,7 @@
     <Compile Include="FormAbout.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="funciones.vb" />
+    <Compile Include="Modulo.vb" />
     <Compile Include="Ingresar Encargo.Designer.vb">
       <DependentUpon>Ingresar Encargo.vb</DependentUpon>
     </Compile>

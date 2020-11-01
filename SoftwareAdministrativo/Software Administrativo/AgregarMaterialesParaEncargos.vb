@@ -1,4 +1,4 @@
-﻿Public Class Agregar_MAteriales
+﻿Public Class AgregarMaterialesParaEncargos
 
 
     Private Sub Panel1_MouseMove(ByVal sender As System.Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove

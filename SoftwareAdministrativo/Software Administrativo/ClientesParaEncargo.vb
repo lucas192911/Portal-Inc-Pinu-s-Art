@@ -20,16 +20,18 @@
         If (dtgMostrar.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
 
 
-            'devuleve el valor de la priemra fila
+            'devuleve el valor de la priemra fila 
             '   x = dtgMostrar.Rows(0).Cells(0).Value
 
             'devuelve el valor de la fila seleccionada ||UTILIZAR EN CONSULTA PARA AGREGAR ENCARGOS|| ...............
+
             Ingresar_Encargo.id = dtgMostrar.SelectedRows.Item(0).Cells(0).Value
+
 
             'mostrar todo el contenido
             '   Clipboard.SetDataObject(dtgMostrar.GetClipboardContent())
 
-            '   MsgBox(Clipboard.GetText())
+            'MsgBox(Ingresar_Encargo.id)
         End If
         Me.Close()
         Ingresar_Encargo.Show()

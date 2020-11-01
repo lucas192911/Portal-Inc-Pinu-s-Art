@@ -45,7 +45,8 @@
             Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, id)
             IngresarRegistro(val, s)
         End If
-        If funciones.num = 0 Then
+
+        If Modulo.num = 0 Then
 
             Dim s As String = <a>  select encargo.id, 
                                 encargo.nombre, 
@@ -73,7 +74,7 @@
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Agregar_MAteriales.ShowDialog()
+        AgregarMaterialesParaEncargos.ShowDialog()
     End Sub
 
 

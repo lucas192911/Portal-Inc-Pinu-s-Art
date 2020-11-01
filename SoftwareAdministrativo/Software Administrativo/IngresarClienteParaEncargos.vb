@@ -15,7 +15,7 @@ Public Class IngresarClienteParaEncargos
 
             IngresarRegistro(sqlValidation, sql)
 
-            If funciones.num = 0 Then
+            If Modulo.num = 0 Then
                 Me.Hide()
                 Ingresar_Encargo.nombre = txtNombre.Text
                 Ingresar_Encargo.telefono = txtTelefono.Text

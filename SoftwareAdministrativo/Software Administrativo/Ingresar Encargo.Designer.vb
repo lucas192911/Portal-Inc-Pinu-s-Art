@@ -38,7 +38,9 @@ Partial Class Ingresar_Encargo
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.txtBxDescripcion = New System.Windows.Forms.RichTextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtNombre
@@ -129,7 +131,7 @@ Partial Class Ingresar_Encargo
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(269, 521)
+        Me.Button1.Location = New System.Drawing.Point(268, 520)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 41)
         Me.Button1.TabIndex = 14
@@ -211,6 +213,17 @@ Partial Class Ingresar_Encargo
         Me.txtBxDescripcion.TabIndex = 20
         Me.txtBxDescripcion.Text = ""
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(387, 574)
+        Me.Panel2.TabIndex = 21
+        '
         'Ingresar_Encargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -221,7 +234,6 @@ Partial Class Ingresar_Encargo
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label5)
@@ -230,6 +242,7 @@ Partial Class Ingresar_Encargo
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Ingresar_Encargo"
@@ -237,6 +250,7 @@ Partial Class Ingresar_Encargo
         Me.Text = "Ingresar Datos del Encargo"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -256,4 +270,5 @@ Partial Class Ingresar_Encargo
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents txtBxDescripcion As System.Windows.Forms.RichTextBox
+    Friend WithEvents Panel2 As Panel
 End Class
