@@ -144,6 +144,12 @@
     <Compile Include="FormAbout.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulo.vb" />
     <Compile Include="Ingresar Encargo.Designer.vb">
       <DependentUpon>Ingresar Encargo.vb</DependentUpon>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarMateriales.resx">
       <DependentUpon>IngresarMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Materiales.resx">
       <DependentUpon>Materiales.vb</DependentUpon>
