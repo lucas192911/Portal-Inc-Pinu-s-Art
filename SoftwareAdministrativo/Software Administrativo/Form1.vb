@@ -49,6 +49,7 @@ Public Class Form1
 
     ''Botones cerrar, maximizar, minimizar y restaurar
     Private Sub btnClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClose.Click
+        Login.Close()
         Me.Close()
     End Sub
 

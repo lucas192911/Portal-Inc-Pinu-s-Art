@@ -101,3 +101,4 @@ C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Softw
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.vbproj.CopyComplete
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Estadisticas.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.AgregarMaterialesParaEncargos.resources
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Login.resources

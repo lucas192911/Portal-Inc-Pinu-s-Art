@@ -24,14 +24,14 @@ Partial Class Login
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -49,43 +49,21 @@ Partial Class Login
         Me.Button1.Text = "Aceptar"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'txtPassword
         '
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(430, 28)
-        Me.Panel1.TabIndex = 2
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button2.BackgroundImage = Global.Ingreso_De_Usuario.My.Resources.Resources.ic_clear_128_28306
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(395, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(35, 28)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "X"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(61, 300)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(299, 21)
-        Me.TextBox2.TabIndex = 4
+        Me.txtPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.txtPassword.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.ForeColor = System.Drawing.Color.White
+        Me.txtPassword.Location = New System.Drawing.Point(61, 300)
+        Me.txtPassword.Multiline = True
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(310, 30)
+        Me.txtPassword.TabIndex = 4
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Ingreso_De_Usuario.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
+        Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.a0859098_ea84_4cf9_8be6_91fd6c75577d_200x200
         Me.PictureBox1.Location = New System.Drawing.Point(111, 43)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(199, 191)
@@ -115,34 +93,58 @@ Partial Class Login
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "¿Olvido su contraseña?"
         '
-        'Form1
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button5.BackgroundImage = Global.Software_Administrativo.My.Resources.Resources.ic_clear_128_283061
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Location = New System.Drawing.Point(395, 0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(35, 25)
+        Me.Button5.TabIndex = 15
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Button5)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(430, 25)
+        Me.Panel1.TabIndex = 17
+        '
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 448)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form1"
+        Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtPassword As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Panel1 As Panel
 End Class
