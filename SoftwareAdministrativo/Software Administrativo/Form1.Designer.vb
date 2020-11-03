@@ -425,11 +425,9 @@ Partial Class Form1
         '
         'pnlContenedor
         '
-        Me.pnlContenedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pnlContenedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.pnlContenedor.Controls.Add(Me.pnlContenedorMain)
+        Me.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
         Me.pnlContenedor.Name = "pnlContenedor"
         Me.pnlContenedor.Size = New System.Drawing.Size(878, 571)
@@ -488,13 +486,13 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1050, 600)
+        Me.Controls.Add(Me.pnlContenedor)
         Me.Controls.Add(Me.lblRestaurar)
         Me.Controls.Add(Me.lblMaximizar)
         Me.Controls.Add(Me.lblMinimizar)
         Me.Controls.Add(Me.lblCerrar)
         Me.Controls.Add(Me.pnlTitleBar)
         Me.Controls.Add(Me.pnlMenu)
-        Me.Controls.Add(Me.pnlContenedor)
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

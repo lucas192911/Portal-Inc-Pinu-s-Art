@@ -34,6 +34,7 @@ Partial Class Login
         Me.TimerDesplegar = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,12 +144,24 @@ Partial Class Login
         Me.PictureBox2.TabStop = False
         Me.PictureBox2.Visible = False
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.CheckBox1.Location = New System.Drawing.Point(63, 336)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(61, 17)
+        Me.CheckBox1.TabIndex = 19
+        Me.CheckBox1.Text = "Mostrar"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 448)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label2)
@@ -178,4 +191,5 @@ Partial Class Login
     Friend WithEvents TimerDesplegar As Timer
     Friend WithEvents Timer2 As Timer
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

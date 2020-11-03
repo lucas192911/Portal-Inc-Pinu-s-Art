@@ -1,5 +1,6 @@
 ﻿Imports System.Runtime.InteropServices
 
+
 Public Class Form1
 
 
@@ -187,7 +188,7 @@ Public Class Form1
         currentBtn = btnMateriales
 
 
-        AbrirFormEnPanel(Me.pnlContenedor, Materiales) '-->método en funciones
+        AbrirFormEnPanel(Me.pnlContenedor, Materiales)
 
     End Sub
 
@@ -267,7 +268,7 @@ Public Class Form1
         Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
         Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
         Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
-        AbrirFormEnPanel(Me.pnlContenedor, Encargo) '-->método en funciones
+        AbrirFormEnPanel(Me.pnlContenedor, Encargo)
 
         If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
 
