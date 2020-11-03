@@ -106,6 +106,7 @@ Module Modulo
         fh.TopLevel = False
         fh.FormBorderStyle = Windows.Forms.FormBorderStyle.None
         fh.Dock = DockStyle.Fill
+        panel.Controls.Clear()
         panel.Controls.Add(fh)
         panel.Tag = fh
         fh.Show()
