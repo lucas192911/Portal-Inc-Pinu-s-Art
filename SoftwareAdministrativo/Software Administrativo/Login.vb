@@ -29,14 +29,14 @@ Public Class Login
 
     Dim x As Integer
     Dim z As Integer
-
+    Dim ancho As Integer
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         x = 266
         z = 280
+        ancho = Me.Width
         Timer2.Start()
-
         Me.ClientSize = New System.Drawing.Size(430, x)
-        Me.Location = New Point(465, z)
+        Me.Location = New Point(ancho, z)
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -62,7 +62,7 @@ Public Class Login
 
         If z > 145 Then
             z -= 20
-            Me.Location = New Point(465, z)
+            Me.Location = New Point(ancho, z)
         End If
     End Sub
 
