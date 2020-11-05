@@ -173,7 +173,7 @@ Public Class Form1
     ''Boton de materiales. Establece a boton actual(currentBtn), el color original, y establece
     '' color de seleccion a boton materiales (btnMateriales)--
     Private Sub btnMateriales_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMateriales.Click
-        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes" Or currentBtn.Text = "Finalizados") Then
 
             'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
             currentBtn.BackColor = Color.FromArgb(46, 40, 40)
@@ -197,7 +197,7 @@ Public Class Form1
     '' color de seleccion a boton clientes (btnClientes)--
     Private Sub btnCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCliente.Click
         AbrirFormEnPanel(Me.pnlContenedor, Clientes)
-        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes" Or currentBtn.Text = "Finalizados") Then
 
             currentBtn.BackColor = Color.FromArgb(46, 40, 40)
 
@@ -223,7 +223,7 @@ Public Class Form1
     Private Sub pbxLogoMain_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxLogoMain.Click
         pnlContenedor.Controls.Clear()
         pnlContenedor.Controls.Add(pnlContenedorMain)
-        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes" Or currentBtn.Text = "Finalizados") Then
 
             'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
             currentBtn.BackColor = Color.FromArgb(46, 40, 40)
@@ -284,4 +284,23 @@ Public Class Form1
         currentBtn = subBtnFinalizado
     End Sub
 
+    Private Sub btnPrecio_Click(sender As Object, e As EventArgs) Handles btnPrecio.Click
+        If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes" Or currentBtn.Text = "Finalizados") Then
+
+            'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
+            currentBtn.BackColor = Color.FromArgb(46, 40, 40)
+
+
+        ElseIf (currentBtn.BackColor = Color.FromArgb(145, 89, 90)) Then
+            currentBtn.BackColor = Color.FromArgb(149, 128, 127)
+        End If
+
+
+        btnMateriales.BackColor = Color.FromArgb(145, 89, 90)
+        currentBtn = btnPrecio
+    End Sub
+
+    Private Sub pbxMouseHover_Click(sender As Object, e As EventArgs) Handles pbxMouseHover.Click
+
+    End Sub
 End Class

@@ -32,4 +32,13 @@
     Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
         SoloNumeros(e)
     End Sub
+
+    Private Sub Panel2_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel2.MouseMove
+        ReleaseCapture()
+        SendMesagge(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.Close()
+    End Sub
 End Class

@@ -39,6 +39,7 @@ Partial Class FormAbout
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -261,12 +262,28 @@ Partial Class FormAbout
         Me.btnClose.TabIndex = 18
         Me.btnClose.UseVisualStyleBackColor = False
         '
+        'btnGuardar
+        '
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnGuardar.FlatAppearance.BorderSize = 0
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.White
+        Me.btnGuardar.Location = New System.Drawing.Point(1, 449)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(68, 24)
+        Me.btnGuardar.TabIndex = 20
+        Me.btnGuardar.Text = "Manual"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
         'FormAbout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(832, 474)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label18)
@@ -310,5 +327,5 @@ Partial Class FormAbout
     Friend WithEvents btnClose As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label7 As System.Windows.Forms.Label
-
+    Friend WithEvents btnGuardar As Button
 End Class

@@ -43,16 +43,18 @@ Partial Class Login
         'btnAceptar
         '
         Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnAceptar.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnAceptar.FlatAppearance.BorderSize = 0
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAceptar.ForeColor = System.Drawing.Color.White
-        Me.btnAceptar.Location = New System.Drawing.Point(0, 409)
+        Me.btnAceptar.Location = New System.Drawing.Point(0, 410)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(430, 38)
         Me.btnAceptar.TabIndex = 2
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = False
+        Me.btnAceptar.Visible = False
         '
         'txtPassword
         '
@@ -128,7 +130,7 @@ Partial Class Login
         '
         'TimerDesplegar
         '
-        Me.TimerDesplegar.Interval = 2
+        Me.TimerDesplegar.Interval = 1
         '
         'Timer2
         '
