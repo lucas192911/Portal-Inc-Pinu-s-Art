@@ -28,8 +28,8 @@ Partial Class Ingresar_Encargo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtManoObra = New System.Windows.Forms.TextBox()
+        Me.lblMonto = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class Ingresar_Encargo
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txtBxDescripcion = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtGastos = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -93,25 +93,25 @@ Partial Class Ingresar_Encargo
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Materiales:"
         '
-        'TextBox4
+        'txtManoObra
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.TextBox4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.ForeColor = System.Drawing.Color.White
-        Me.TextBox4.Location = New System.Drawing.Point(12, 449)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(231, 21)
-        Me.TextBox4.TabIndex = 8
+        Me.txtManoObra.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.txtManoObra.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtManoObra.ForeColor = System.Drawing.Color.White
+        Me.txtManoObra.Location = New System.Drawing.Point(12, 449)
+        Me.txtManoObra.Name = "txtManoObra"
+        Me.txtManoObra.Size = New System.Drawing.Size(231, 21)
+        Me.txtManoObra.TabIndex = 8
         '
-        'Label6
+        'lblMonto
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(14, 510)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 17)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Monto Total:"
+        Me.lblMonto.AutoSize = True
+        Me.lblMonto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMonto.Location = New System.Drawing.Point(14, 510)
+        Me.lblMonto.Name = "lblMonto"
+        Me.lblMonto.Size = New System.Drawing.Size(89, 17)
+        Me.lblMonto.TabIndex = 13
+        Me.lblMonto.Text = "Monto Total:"
         '
         'Button1
         '
@@ -197,7 +197,7 @@ Partial Class Ingresar_Encargo
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.txtGastos)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.Button2)
@@ -208,15 +208,15 @@ Partial Class Ingresar_Encargo
         Me.Panel2.Size = New System.Drawing.Size(387, 574)
         Me.Panel2.TabIndex = 21
         '
-        'TextBox1
+        'txtGastos
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.TextBox1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(11, 378)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(231, 21)
-        Me.TextBox1.TabIndex = 23
+        Me.txtGastos.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.txtGastos.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGastos.ForeColor = System.Drawing.Color.White
+        Me.txtGastos.Location = New System.Drawing.Point(11, 378)
+        Me.txtGastos.Name = "txtGastos"
+        Me.txtGastos.Size = New System.Drawing.Size(231, 21)
+        Me.txtGastos.TabIndex = 23
         '
         'Label3
         '
@@ -236,8 +236,8 @@ Partial Class Ingresar_Encargo
         Me.ClientSize = New System.Drawing.Size(387, 574)
         Me.Controls.Add(Me.txtBxDescripcion)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.lblMonto)
+        Me.Controls.Add(Me.txtManoObra)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblNombre)
@@ -261,8 +261,8 @@ Partial Class Ingresar_Encargo
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtManoObra As System.Windows.Forms.TextBox
+    Friend WithEvents lblMonto As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -270,6 +270,6 @@ Partial Class Ingresar_Encargo
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents txtBxDescripcion As System.Windows.Forms.RichTextBox
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtGastos As TextBox
     Friend WithEvents Label3 As Label
 End Class

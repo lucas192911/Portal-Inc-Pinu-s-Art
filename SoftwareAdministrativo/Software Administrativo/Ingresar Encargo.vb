@@ -70,7 +70,9 @@
             Me.Close()
             Form1.Show()
         End If
-
+        Dim num1 As Integer = txtManoObra.Text
+        Dim num2 As Integer = txtGastos.Text
+        lblMonto.Text = num1 + num2
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click

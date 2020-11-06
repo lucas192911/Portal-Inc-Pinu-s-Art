@@ -124,6 +124,12 @@
     <Compile Include="ClientesParaEncargo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Correo.Designer.vb">
+      <DependentUpon>Correo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Correo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EditarCliente.Designer.vb">
       <DependentUpon>EditarCliente.vb</DependentUpon>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientesParaEncargo.resx">
       <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correo.resx">
+      <DependentUpon>Correo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarCliente.resx">
       <DependentUpon>EditarCliente.vb</DependentUpon>
