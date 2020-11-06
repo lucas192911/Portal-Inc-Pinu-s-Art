@@ -14,7 +14,7 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
-        Dim s As String = String.Format("select * from user where aes_decrypt(clave,'portalinc') = '{0}'", txtPassword.Text)
+        Dim s As String = String.Format("select (aes_decrypt(clave, 'portalinc')) from password where aes_decrypt(clave,'portalinc') = '{0}'", txtPassword.Text)
         Dim dt As DataTable = Consulta(s)
 
         If dt.Rows.Count > 0 Then
@@ -38,6 +38,12 @@ Public Class Login
         'Timer2.Start() '---tst
         Me.ClientSize = New System.Drawing.Size(430, x)
         Me.Location = New Point(ancho, z)
+
+        Dim dt As DataTable = Consulta("select * from user")
+        If dt.Rows.Count = 0 Then          ''''si no hay un usuario, mostrar formulario---------\\\\\\\
+            Formulario.ShowDialog()
+        End If
+        'Form1.ShowDialog()
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -93,7 +99,7 @@ Public Class Login
         Dim key As System.Windows.Forms.KeyPressEventArgs = e
 
         If key.KeyChar = ChrW(Keys.Enter) Then
-            Dim s As String = String.Format("select * from user where aes_decrypt(clave,'portalinc') = '{0}'", txtPassword.Text)
+            Dim s As String = String.Format("select (aes_decrypt(clave, 'portalinc')) from password where aes_decrypt(clave,'portalinc') = '{0}'", txtPassword.Text)
             Dim dt As DataTable = Consulta(s)
 
             If dt.Rows.Count > 0 Then

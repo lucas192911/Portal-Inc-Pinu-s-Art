@@ -106,3 +106,4 @@ C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Softw
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\bin\Debug\Software Administrativo.application
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.exe.manifest
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software Administrativo.application
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Formulario.resources

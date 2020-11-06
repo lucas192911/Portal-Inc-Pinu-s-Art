@@ -8,6 +8,22 @@ Module Modulo
 
     Public num As Integer
 
+
+    Public Sub IngresarRegistro(ByVal sentence As String)
+        conection.Open()
+        Dim dtValidation As New DataTable
+
+        Try
+
+            Dim Command As New MySqlCommand(sentence, conection)
+            Command.ExecuteNonQuery()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        conection.Close()
+    End Sub
+
     'Validación de registro antes de ingresarlo. 'sentenceValidation: consulta para validar, y sentence: consulta para ingresar'---
     Public Sub IngresarRegistro(ByVal sentenceValidation As String, ByVal sentence As String)
         conection.Open()

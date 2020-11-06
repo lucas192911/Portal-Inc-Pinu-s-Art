@@ -26,7 +26,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pnlMenu = New System.Windows.Forms.Panel()
-        Me.btnPrecio = New System.Windows.Forms.Button()
+        Me.btnStock = New System.Windows.Forms.Button()
         Me.btnMateriales = New System.Windows.Forms.Button()
         Me.btnCliente = New System.Windows.Forms.Button()
         Me.pnlSubMenuEncargos = New System.Windows.Forms.Panel()
@@ -72,7 +72,7 @@ Partial Class Form1
         'pnlMenu
         '
         Me.pnlMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.pnlMenu.Controls.Add(Me.btnPrecio)
+        Me.pnlMenu.Controls.Add(Me.btnStock)
         Me.pnlMenu.Controls.Add(Me.btnMateriales)
         Me.pnlMenu.Controls.Add(Me.btnCliente)
         Me.pnlMenu.Controls.Add(Me.pnlSubMenuEncargos)
@@ -85,24 +85,24 @@ Partial Class Form1
         Me.pnlMenu.Size = New System.Drawing.Size(172, 600)
         Me.pnlMenu.TabIndex = 5
         '
-        'btnPrecio
+        'btnStock
         '
-        Me.btnPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnPrecio.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnPrecio.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnPrecio.FlatAppearance.BorderSize = 0
-        Me.btnPrecio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPrecio.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrecio.ForeColor = System.Drawing.Color.White
-        Me.btnPrecio.Location = New System.Drawing.Point(0, 420)
-        Me.btnPrecio.Name = "btnPrecio"
-        Me.btnPrecio.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
-        Me.btnPrecio.Size = New System.Drawing.Size(172, 39)
-        Me.btnPrecio.TabIndex = 12
-        Me.btnPrecio.Text = "Stock"
-        Me.btnPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnPrecio.UseVisualStyleBackColor = False
+        Me.btnStock.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnStock.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnStock.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnStock.FlatAppearance.BorderSize = 0
+        Me.btnStock.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnStock.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStock.ForeColor = System.Drawing.Color.White
+        Me.btnStock.Location = New System.Drawing.Point(0, 420)
+        Me.btnStock.Name = "btnStock"
+        Me.btnStock.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
+        Me.btnStock.Size = New System.Drawing.Size(172, 39)
+        Me.btnStock.TabIndex = 12
+        Me.btnStock.Text = "Stock"
+        Me.btnStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnStock.UseVisualStyleBackColor = False
         '
         'btnMateriales
         '
@@ -453,7 +453,7 @@ Partial Class Form1
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFH.ForeColor = System.Drawing.Color.White
-        Me.LabelFH.Location = New System.Drawing.Point(273, 442)
+        Me.LabelFH.Location = New System.Drawing.Point(255, 442)
         Me.LabelFH.Name = "LabelFH"
         Me.LabelFH.Size = New System.Drawing.Size(0, 39)
         Me.LabelFH.TabIndex = 11
@@ -462,7 +462,7 @@ Partial Class Form1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.Dibujo_sin_título1
-        Me.PictureBox1.Location = New System.Drawing.Point(240, 435)
+        Me.PictureBox1.Location = New System.Drawing.Point(231, 434)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(437, 58)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -522,7 +522,7 @@ Partial Class Form1
     Friend WithEvents btnMaximizar As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnCliente As System.Windows.Forms.Button
-    Friend WithEvents btnPrecio As System.Windows.Forms.Button
+    Friend WithEvents btnStock As System.Windows.Forms.Button
     Friend WithEvents btnMateriales As System.Windows.Forms.Button
     Friend WithEvents pnlTitleBar As System.Windows.Forms.Panel
     Friend WithEvents lblCerrar As System.Windows.Forms.Label
