@@ -132,6 +132,11 @@ Software Administrativo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Software_Administrativo.My.Resources.Resources.Ventana_Inicial">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Software_Administrativo.My.Resources.Resources.WhatsApp_Image_2020_09_15_at_5_39_57_PM">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

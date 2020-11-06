@@ -61,7 +61,8 @@ Public Class Correo
 
         Dim mensaje As String = "Contraseñas " + vbCrLf + result + " || " + vbCrLf + " || " + result2 + vbCrLf + " || " + resul3
 
-        enviarCorreo(txbRemitente.Text, "prog@2020", mensaje, "Claves", correo1, correo2)
+        enviarCorreo("programacion@edusalto.uy", "prog@2020", mensaje, "Claves", correo1, correo2)
+        Me.Close()
     End Sub
 
 

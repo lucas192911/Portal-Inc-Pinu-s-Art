@@ -118,6 +118,12 @@
     <Compile Include="AgregarMaterialesParaEncargos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Bienvenida.Designer.vb">
+      <DependentUpon>Bienvenida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bienvenida.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClientesParaEncargo.Designer.vb">
       <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
     </Compile>
@@ -265,6 +271,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AgregarMaterialesParaEncargos.resx">
       <DependentUpon>AgregarMaterialesParaEncargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bienvenida.resx">
+      <DependentUpon>Bienvenida.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientesParaEncargo.resx">
       <DependentUpon>ClientesParaEncargo.vb</DependentUpon>
@@ -439,6 +448,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="a0859098-ea84-4cf9-8be6-91fd6c75577d_200x200.ico" />
+    <None Include="Resources\Ventana Inicial.png" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="a0859098-ea84-4cf9-8be6-91fd6c75577d_200x200.ico">

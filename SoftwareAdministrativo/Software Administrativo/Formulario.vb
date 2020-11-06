@@ -39,4 +39,9 @@
     Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs)
         SoloNumeros(e)
     End Sub
+
+    Private Sub Formulario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Hide()
+        Bienvenida.ShowDialog()
+    End Sub
 End Class
