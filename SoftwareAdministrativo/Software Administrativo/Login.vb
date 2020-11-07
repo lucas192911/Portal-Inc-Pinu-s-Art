@@ -14,6 +14,7 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+
         Dim s As String = String.Format("select (aes_decrypt(clave, 'portalinc')) from password where aes_decrypt(clave,'portalinc') = '{0}'", txtPassword.Text)
         Dim dt As DataTable = Consulta(s)
 
@@ -22,7 +23,7 @@ Public Class Login
             Me.Hide()
         Else
             MsgBox("Contraseña incorrecta")
-            txtPassword.Text = ""
+            txtPassword.Clear()
         End If
     End Sub
 
@@ -95,10 +96,14 @@ Public Class Login
         End If
     End Sub
 
-    Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
-        Dim key As System.Windows.Forms.KeyPressEventArgs = e
 
-        If key.KeyChar = ChrW(Keys.Enter) Then
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Correo.ShowDialog()
+    End Sub
+
+    Private Sub txtPassword_KeyDown(sender As Object, e As KeyEventArgs) Handles txtPassword.KeyDown
+        If e.KeyCode = Keys.Enter Then
+
             Dim s As String = String.Format("select (aes_decrypt(clave, 'portalinc')) from password where aes_decrypt(clave,'portalinc') = '{0}'", txtPassword.Text)
             Dim dt As DataTable = Consulta(s)
 
@@ -106,13 +111,11 @@ Public Class Login
                 Form1.Show()
                 Me.Hide()
             Else
+                e.SuppressKeyPress = True
                 MsgBox("Contraseña incorrecta")
-                txtPassword.Text = ""
+                txtPassword.Clear()
             End If
-        End If
-    End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-        Correo.ShowDialog()
+        End If
     End Sub
 End Class
