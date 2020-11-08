@@ -29,6 +29,7 @@ Partial Class Clientes
         Me.dtgMostrar = New System.Windows.Forms.DataGridView()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnIngresar = New System.Windows.Forms.Button()
@@ -58,7 +59,7 @@ Partial Class Clientes
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgMostrar.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dtgMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dtgMostrar.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Telefono, Me.Direccion})
+        Me.dtgMostrar.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Apellido, Me.Telefono, Me.Direccion})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -102,6 +103,12 @@ Partial Class Clientes
         Me.Nombre.HeaderText = "Nombre"
         Me.Nombre.Name = "Nombre"
         Me.Nombre.ReadOnly = True
+        '
+        'Apellido
+        '
+        Me.Apellido.HeaderText = "Apellido"
+        Me.Apellido.Name = "Apellido"
+        Me.Apellido.ReadOnly = True
         '
         'Telefono
         '
@@ -198,6 +205,7 @@ Partial Class Clientes
     Friend WithEvents dtgMostrar As DataGridView
     Friend WithEvents ID As DataGridViewTextBoxColumn
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
+    Friend WithEvents Apellido As DataGridViewTextBoxColumn
     Friend WithEvents Telefono As DataGridViewTextBoxColumn
     Friend WithEvents Direccion As DataGridViewTextBoxColumn
 End Class

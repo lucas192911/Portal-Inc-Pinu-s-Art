@@ -2,8 +2,6 @@
 
 Public Class Login
 
-    Dim pass As String = "123"
-
     Private Sub Panel1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel1.MouseMove
         ReleaseCapture()
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)

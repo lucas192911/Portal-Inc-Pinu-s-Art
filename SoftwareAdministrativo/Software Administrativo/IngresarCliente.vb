@@ -9,15 +9,16 @@
         Else
 
             Dim sqlValidation As String = "select * from cliente where telefono=" & txtTelefono.Text & ";"
-            Dim sql As String = String.Format("insert into cliente(nombre,telefono,direccion) values ('{0}',{1},'{2}');", txtNombre.Text, txtTelefono.Text, txtDireccion.Text)
+            Dim sql As String = String.Format("insert into cliente(nombre,apellido,telefono,direccion) values ('{0}','{1}',{2},'{3}');", txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtDireccion.Text)
 
             IngresarRegistro(sqlValidation, sql)
 
             If Modulo.num = 0 Then
                 Dim s As String = <a>select id as ID, 
                                     nombre as Nombre,
-                                    telefono as Telefono, 
-                                    direccion as Direccion 
+                                    apellido as Apellido,
+                                    telefono as Telefono,       
+                                    direccion as Direccion      
                                     from cliente</a>
 
                 Clientes.dtgMostrar.DataSource = Consulta(s)

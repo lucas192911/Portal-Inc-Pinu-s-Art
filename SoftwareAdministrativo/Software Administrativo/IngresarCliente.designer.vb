@@ -23,6 +23,8 @@ Partial Class IngresarCliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -41,6 +43,8 @@ Partial Class IngresarCliente
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.txtApellido)
+        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.btnGuardar)
         Me.Panel1.Controls.Add(Me.txtDireccion)
@@ -52,8 +56,28 @@ Partial Class IngresarCliente
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(374, 277)
+        Me.Panel1.Size = New System.Drawing.Size(374, 314)
         Me.Panel1.TabIndex = 0
+        '
+        'txtApellido
+        '
+        Me.txtApellido.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.txtApellido.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtApellido.ForeColor = System.Drawing.Color.White
+        Me.txtApellido.Location = New System.Drawing.Point(48, 129)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(192, 27)
+        Me.txtApellido.TabIndex = 23
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(44, 105)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(74, 21)
+        Me.Label4.TabIndex = 22
+        Me.Label4.Text = "Apellido"
         '
         'Panel2
         '
@@ -101,7 +125,7 @@ Partial Class IngresarCliente
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White
-        Me.btnGuardar.Location = New System.Drawing.Point(280, 238)
+        Me.btnGuardar.Location = New System.Drawing.Point(280, 277)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
         Me.btnGuardar.TabIndex = 19
@@ -113,7 +137,7 @@ Partial Class IngresarCliente
         Me.txtDireccion.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtDireccion.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDireccion.ForeColor = System.Drawing.Color.White
-        Me.txtDireccion.Location = New System.Drawing.Point(48, 205)
+        Me.txtDireccion.Location = New System.Drawing.Point(48, 264)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(192, 27)
         Me.txtDireccion.TabIndex = 18
@@ -122,7 +146,7 @@ Partial Class IngresarCliente
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(44, 181)
+        Me.Label3.Location = New System.Drawing.Point(44, 240)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 21)
         Me.Label3.TabIndex = 20
@@ -133,7 +157,7 @@ Partial Class IngresarCliente
         Me.txtTelefono.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtTelefono.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTelefono.ForeColor = System.Drawing.Color.White
-        Me.txtTelefono.Location = New System.Drawing.Point(48, 138)
+        Me.txtTelefono.Location = New System.Drawing.Point(48, 197)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(192, 27)
         Me.txtTelefono.TabIndex = 17
@@ -142,7 +166,7 @@ Partial Class IngresarCliente
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(44, 114)
+        Me.Label2.Location = New System.Drawing.Point(44, 173)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 21)
         Me.Label2.TabIndex = 16
@@ -153,7 +177,7 @@ Partial Class IngresarCliente
         Me.txtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
         Me.txtNombre.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.Color.White
-        Me.txtNombre.Location = New System.Drawing.Point(48, 74)
+        Me.txtNombre.Location = New System.Drawing.Point(48, 62)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(192, 27)
         Me.txtNombre.TabIndex = 15
@@ -162,7 +186,7 @@ Partial Class IngresarCliente
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(44, 50)
+        Me.Label1.Location = New System.Drawing.Point(44, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 21)
         Me.Label1.TabIndex = 14
@@ -172,7 +196,7 @@ Partial Class IngresarCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(374, 277)
+        Me.ClientSize = New System.Drawing.Size(374, 314)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "IngresarCliente"
@@ -196,4 +220,6 @@ Partial Class IngresarCliente
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtNombre As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents Label4 As Label
 End Class

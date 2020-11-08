@@ -11,7 +11,7 @@ Public Class IngresarClienteParaEncargos
         Else
 
             Dim sqlValidation As String = "select * from cliente where telefono=" & txtTelefono.Text & ";"
-            Dim sql As String = String.Format("insert into cliente(nombre,telefono,direccion) values ('{0}',{1},'{2}');", txtNombre.Text, txtTelefono.Text, txtDireccion.Text)
+            Dim sql As String = String.Format("insert into cliente(nombre,apellido,telefono,direccion) values ('{0}','{1}',{2},'{3}');", txtNombre.Text, txtApellido.Text, txtTelefono.Text, txtDireccion.Text)
 
             IngresarRegistro(sqlValidation, sql)
 
@@ -28,11 +28,11 @@ Public Class IngresarClienteParaEncargos
     End Sub
 
 
-    Private Sub txtNombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNombre.KeyPress
+    Private Sub txtNombre_KeyPress(sender As Object, e As KeyPressEventArgs)
         SoloDigitos(e)
     End Sub
 
-    Private Sub txtTelefono_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtTelefono.KeyPress
+    Private Sub txtTelefono_KeyPress(sender As Object, e As KeyPressEventArgs)
         SoloNumeros(e)
     End Sub
 

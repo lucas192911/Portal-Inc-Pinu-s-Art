@@ -5,6 +5,7 @@
     Private Sub mostar_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim s As String = <a>select id , 
                                     nombre,
+                                    apellido,
                                     telefono, 
                                     direccion
                                     from cliente</a>
@@ -14,8 +15,9 @@
         dtgMostrar.DataSource = dtClientes
         dtgMostrar.Columns(0).DataPropertyName = "ID"
         dtgMostrar.Columns(1).DataPropertyName = "Nombre"
-        dtgMostrar.Columns(2).DataPropertyName = "Telefono"
-        dtgMostrar.Columns(3).DataPropertyName = "Direccion"
+        dtgMostrar.Columns(2).DataPropertyName = "Apellido"
+        dtgMostrar.Columns(3).DataPropertyName = "Telefono"
+        dtgMostrar.Columns(4).DataPropertyName = "Direccion"
     End Sub
 
 
