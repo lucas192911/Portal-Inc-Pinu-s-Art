@@ -31,6 +31,7 @@ Partial Class ClientesParaEncargo
         Me.dtgMostrar = New System.Windows.Forms.DataGridView()
         Me.btnVovler = New System.Windows.Forms.Button()
         Me.btnSeleccionar = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.pnlTitleBar.SuspendLayout()
         CType(Me.dtgMostrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -38,6 +39,7 @@ Partial Class ClientesParaEncargo
         'pnlTitleBar
         '
         Me.pnlTitleBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pnlTitleBar.Controls.Add(Me.Label7)
         Me.pnlTitleBar.Controls.Add(Me.btnClose)
         Me.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTitleBar.Location = New System.Drawing.Point(0, 0)
@@ -132,6 +134,19 @@ Partial Class ClientesParaEncargo
         Me.btnSeleccionar.Text = "Seleccionar"
         Me.btnSeleccionar.UseVisualStyleBackColor = False
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(324, 5)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(82, 17)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "Seleccionar"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'ClientesParaEncargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -148,6 +163,7 @@ Partial Class ClientesParaEncargo
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ClientesParaEncargo"
         Me.pnlTitleBar.ResumeLayout(False)
+        Me.pnlTitleBar.PerformLayout()
         CType(Me.dtgMostrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -157,4 +173,5 @@ Partial Class ClientesParaEncargo
     Friend WithEvents dtgMostrar As System.Windows.Forms.DataGridView
     Friend WithEvents btnVovler As System.Windows.Forms.Button
     Friend WithEvents btnSeleccionar As System.Windows.Forms.Button
+    Friend WithEvents Label7 As Label
 End Class
