@@ -109,3 +109,6 @@ C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Softw
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Formulario.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Correo.resources
 C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Bienvenida.resources
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.Stock.resources
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.IngresarProducto.resources
+C:\Users\kel\Documents\GitHub\Portal-Inc-Pinu-s-Art\SoftwareAdministrativo\Software Administrativo\obj\x86\Debug\Software_Administrativo.EditarStock.resources

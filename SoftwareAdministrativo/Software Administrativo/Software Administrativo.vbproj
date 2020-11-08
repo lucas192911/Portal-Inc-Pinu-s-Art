@@ -154,6 +154,12 @@
     <Compile Include="EditarMaterial.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EditarStock.Designer.vb">
+      <DependentUpon>EditarStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Eleccion.Designer.vb">
       <DependentUpon>Eleccion.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,12 @@
       <DependentUpon>Formulario.vb</DependentUpon>
     </Compile>
     <Compile Include="Formulario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarProducto.Designer.vb">
+      <DependentUpon>IngresarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -267,6 +279,12 @@
     <Compile Include="PreguntarParaElminar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Stock.Designer.vb">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AgregarMaterialesParaEncargos.resx">
@@ -289,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarMaterial.resx">
       <DependentUpon>EditarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarStock.resx">
+      <DependentUpon>EditarStock.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eleccion.resx">
       <DependentUpon>Eleccion.vb</DependentUpon>
@@ -323,6 +344,9 @@
     <EmbeddedResource Include="IngresarMateriales.resx">
       <DependentUpon>IngresarMateriales.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IngresarProducto.resx">
+      <DependentUpon>IngresarProducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PreguntarParaElminar.resx">
       <DependentUpon>PreguntarParaElminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

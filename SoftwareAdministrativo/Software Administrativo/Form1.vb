@@ -285,6 +285,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnPrecio_Click(sender As Object, e As EventArgs) Handles btnStock.Click
+        AbrirFormEnPanel(Me.pnlContenedor, Stock)
         If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes" Or currentBtn.Text = "Finalizados") Then
 
             'comprueba si el boton actual tiene no solo el color de seleccion, si no tambien el nombre 'Pendientes'
@@ -298,6 +299,8 @@ Public Class Form1
 
         btnStock.BackColor = Color.FromArgb(145, 89, 90)
         currentBtn = btnStock
+
+
     End Sub
 
 End Class
