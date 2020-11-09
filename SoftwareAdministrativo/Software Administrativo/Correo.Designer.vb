@@ -23,30 +23,48 @@ Partial Class Correo
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnEnviar = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnEnviar
         '
         Me.btnEnviar.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnEnviar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnEnviar.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnEnviar.FlatAppearance.BorderSize = 0
         Me.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEnviar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEnviar.ForeColor = System.Drawing.Color.White
-        Me.btnEnviar.Location = New System.Drawing.Point(0, 0)
+        Me.btnEnviar.Location = New System.Drawing.Point(152, 0)
         Me.btnEnviar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEnviar.Name = "btnEnviar"
-        Me.btnEnviar.Size = New System.Drawing.Size(222, 58)
+        Me.btnEnviar.Size = New System.Drawing.Size(248, 58)
         Me.btnEnviar.TabIndex = 21
         Me.btnEnviar.Text = "Enviar Correo"
         Me.btnEnviar.UseVisualStyleBackColor = False
+        '
+        'btnVolver
+        '
+        Me.btnVolver.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnVolver.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnVolver.FlatAppearance.BorderSize = 0
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVolver.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.ForeColor = System.Drawing.Color.White
+        Me.btnVolver.Location = New System.Drawing.Point(-15, 0)
+        Me.btnVolver.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(167, 58)
+        Me.btnVolver.TabIndex = 22
+        Me.btnVolver.Text = "Volver"
+        Me.btnVolver.UseVisualStyleBackColor = False
         '
         'Correo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(222, 58)
+        Me.ClientSize = New System.Drawing.Size(400, 58)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnEnviar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Correo"
@@ -56,4 +74,5 @@ Partial Class Correo
 
     End Sub
     Friend WithEvents btnEnviar As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As Button
 End Class

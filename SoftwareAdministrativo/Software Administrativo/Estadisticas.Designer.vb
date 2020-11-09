@@ -149,7 +149,7 @@ Partial Class Estadisticas
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Estadisticas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "chy"
+        Me.Text = "what"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
