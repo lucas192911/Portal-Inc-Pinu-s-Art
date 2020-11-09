@@ -8,14 +8,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Software Administrativo.exe.manifest" size="5268">
+    <dependentAssembly dependencyType="install" codebase="Software Administrativo.exe.manifest" size="5619">
       <assemblyIdentity name="Software Administrativo.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>wmUxesDCCmiJr/U72ekOAOLUgus=</dsig:DigestValue>
+        <dsig:DigestValue>MtgwxsO0rjVEA2ywLwnK/yAMa9U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

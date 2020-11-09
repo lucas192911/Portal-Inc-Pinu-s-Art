@@ -37,9 +37,9 @@ Partial Class Ingresar_Encargo
         Me.Button2 = New System.Windows.Forms.Button()
         Me.txtBxDescripcion = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnCalcular = New System.Windows.Forms.Button()
         Me.txtGastos = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnCalcular = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -211,6 +211,22 @@ Partial Class Ingresar_Encargo
         Me.Panel2.Size = New System.Drawing.Size(387, 574)
         Me.Panel2.TabIndex = 21
         '
+        'btnCalcular
+        '
+        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCalcular.FlatAppearance.BorderSize = 0
+        Me.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCalcular.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalcular.ForeColor = System.Drawing.Color.White
+        Me.btnCalcular.Location = New System.Drawing.Point(11, 486)
+        Me.btnCalcular.Name = "btnCalcular"
+        Me.btnCalcular.Size = New System.Drawing.Size(91, 31)
+        Me.btnCalcular.TabIndex = 24
+        Me.btnCalcular.Text = "Calcular"
+        Me.btnCalcular.UseVisualStyleBackColor = False
+        Me.btnCalcular.Visible = False
+        '
         'txtGastos
         '
         Me.txtGastos.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
@@ -230,22 +246,6 @@ Partial Class Ingresar_Encargo
         Me.Label3.Size = New System.Drawing.Size(177, 21)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Gastos en materiales:"
-        '
-        'btnCalcular
-        '
-        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
-        Me.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCalcular.FlatAppearance.BorderSize = 0
-        Me.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCalcular.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalcular.ForeColor = System.Drawing.Color.White
-        Me.btnCalcular.Location = New System.Drawing.Point(11, 486)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(91, 31)
-        Me.btnCalcular.TabIndex = 24
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = False
-        Me.btnCalcular.Visible = False
         '
         'Ingresar_Encargo
         '

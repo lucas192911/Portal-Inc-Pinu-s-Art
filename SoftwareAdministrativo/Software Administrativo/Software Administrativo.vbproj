@@ -69,7 +69,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>a0859098-ea84-4cf9-8be6-91fd6c75577d_200x200.ico</ApplicationIcon>
+    <ApplicationIcon>Logo Escritorio.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>43528D1163EF672FAB683C21240AAE2113A0BC00</ManifestCertificateThumbprint>
@@ -476,6 +476,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="a0859098-ea84-4cf9-8be6-91fd6c75577d_200x200.ico" />
+    <Content Include="Logo Escritorio.ico" />
     <None Include="Resources\Ventana Inicial.png" />
   </ItemGroup>
   <ItemGroup>
