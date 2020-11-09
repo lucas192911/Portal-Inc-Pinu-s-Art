@@ -79,5 +79,15 @@
         AgregarMaterialesParaEncargos.ShowDialog()
     End Sub
 
+    Private Sub txtManoObra_TextChanged(sender As Object, e As EventArgs) Handles txtManoObra.TextChanged
+        btnCalcular.Visible = True
+    End Sub
 
+    Private Sub txtGastos_TextChanged(sender As Object, e As EventArgs) Handles txtGastos.TextChanged
+        btnCalcular.Visible = True
+    End Sub
+
+    Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
+        lblMonto.Text += txtGastos.Text + txtManoObra.Text
+    End Sub
 End Class

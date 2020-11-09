@@ -39,6 +39,7 @@ Partial Class Ingresar_Encargo
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtGastos = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnCalcular = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -107,11 +108,11 @@ Partial Class Ingresar_Encargo
         '
         Me.lblMonto.AutoSize = True
         Me.lblMonto.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMonto.Location = New System.Drawing.Point(14, 510)
+        Me.lblMonto.Location = New System.Drawing.Point(13, 520)
         Me.lblMonto.Name = "lblMonto"
-        Me.lblMonto.Size = New System.Drawing.Size(89, 17)
+        Me.lblMonto.Size = New System.Drawing.Size(93, 17)
         Me.lblMonto.TabIndex = 13
-        Me.lblMonto.Text = "Monto Total:"
+        Me.lblMonto.Text = "Monto Total: "
         '
         'Button1
         '
@@ -197,7 +198,9 @@ Partial Class Ingresar_Encargo
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.btnCalcular)
         Me.Panel2.Controls.Add(Me.txtGastos)
+        Me.Panel2.Controls.Add(Me.lblMonto)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.Button2)
@@ -228,6 +231,22 @@ Partial Class Ingresar_Encargo
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Gastos en materiales:"
         '
+        'btnCalcular
+        '
+        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(149, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(127, Byte), Integer))
+        Me.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCalcular.FlatAppearance.BorderSize = 0
+        Me.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCalcular.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalcular.ForeColor = System.Drawing.Color.White
+        Me.btnCalcular.Location = New System.Drawing.Point(11, 486)
+        Me.btnCalcular.Name = "btnCalcular"
+        Me.btnCalcular.Size = New System.Drawing.Size(91, 31)
+        Me.btnCalcular.TabIndex = 24
+        Me.btnCalcular.Text = "Calcular"
+        Me.btnCalcular.UseVisualStyleBackColor = False
+        Me.btnCalcular.Visible = False
+        '
         'Ingresar_Encargo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -236,7 +255,6 @@ Partial Class Ingresar_Encargo
         Me.ClientSize = New System.Drawing.Size(387, 574)
         Me.Controls.Add(Me.txtBxDescripcion)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.lblMonto)
         Me.Controls.Add(Me.txtManoObra)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
@@ -272,4 +290,5 @@ Partial Class Ingresar_Encargo
     Friend WithEvents Panel2 As Panel
     Friend WithEvents txtGastos As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnCalcular As Button
 End Class
