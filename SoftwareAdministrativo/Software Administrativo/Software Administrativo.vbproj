@@ -384,6 +384,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Resources\manual.pdf" />
     <None Include="Software Administrativo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
