@@ -15,20 +15,22 @@
 
         Else
 
-            Dim sqlValidation As String = "select * from producto where nombre=" & txtNombre.Text & ";"
             Dim sql As String = String.Format("insert into producto(nombre,precio) values ('{0}',{1})", txtNombre.Text, txtPrecio.Text)
 
-            IngresarRegistro(sqlValidation, sql)
+            IngresarRegistro(sql)
 
-            If Modulo.num = 0 Then
-                Dim s As String = <a>select id as ID, 
-                                    nombre as Nombre,
-                                    precio as Precio    
+            Dim s As String = <a>select id , 
+                                    nombre,
+                                    precio
                                     from producto</a>
+            Dim dtClientes As DataTable = Consulta(s)
 
-                Clientes.dtgMostrar.DataSource = Consulta(s)
-                Me.Close()
-            End If
+            Stock.dtgMostrarStock.AutoGenerateColumns = False
+            Stock.dtgMostrarStock.DataSource = dtClientes
+            Stock.dtgMostrarStock.Columns(0).DataPropertyName = "ID"
+            Stock.dtgMostrarStock.Columns(1).DataPropertyName = "Nombre"
+            Stock.dtgMostrarStock.Columns(2).DataPropertyName = "Precio"
+            Me.Close()
 
         End If
     End Sub

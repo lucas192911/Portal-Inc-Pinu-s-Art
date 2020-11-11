@@ -29,14 +29,20 @@
         If (dtgMostrarStock.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
             i = dtgMostrarStock.SelectedRows.Item(0).Cells(0).Value
             Dim sql As String = String.Format("delete from producto where id = {0}", i)
-
-            Dim s As String = <a>select id as ID, 
-                                    nombre as Nombre,
-                                    precio as Precio
-                                    from producto</a>
-
             Eliminar(sql)
-            dtgMostrarStock.DataSource = Consulta(s)
+
+            Dim s As String = <a>select id , 
+                                    nombre,
+                                    precio
+                                    from producto</a>
+            Dim dtClientes As DataTable = Consulta(s)
+
+            dtgMostrarStock.AutoGenerateColumns = False
+            dtgMostrarStock.DataSource = dtClientes
+            dtgMostrarStock.Columns(0).DataPropertyName = "ID"
+            dtgMostrarStock.Columns(1).DataPropertyName = "Nombre"
+            dtgMostrarStock.Columns(2).DataPropertyName = "Precio"
+
         End If
 
     End Sub

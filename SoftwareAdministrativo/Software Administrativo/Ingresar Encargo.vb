@@ -88,6 +88,12 @@
     End Sub
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
-        lblMonto.Text += txtGastos.Text + txtManoObra.Text
+        lblMonto.Text = "Monto Total: "
+        If txtGastos.Text <> "" And txtManoObra.Text <> "" Then
+            Dim num1 As Integer = txtGastos.Text
+            Dim num2 As Integer = txtManoObra.Text
+
+            lblMonto.Text += (num1 + num2).ToString
+        End If
     End Sub
 End Class

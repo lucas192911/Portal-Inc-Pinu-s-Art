@@ -52,7 +52,7 @@ Partial Class Ingresar_Encargo
         Me.txtNombre.Location = New System.Drawing.Point(12, 66)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(231, 23)
-        Me.txtNombre.TabIndex = 0
+        Me.txtNombre.TabIndex = 1
         '
         'lblNombre
         '
@@ -102,7 +102,7 @@ Partial Class Ingresar_Encargo
         Me.txtManoObra.Location = New System.Drawing.Point(12, 449)
         Me.txtManoObra.Name = "txtManoObra"
         Me.txtManoObra.Size = New System.Drawing.Size(231, 21)
-        Me.txtManoObra.TabIndex = 8
+        Me.txtManoObra.TabIndex = 5
         '
         'lblMonto
         '
@@ -125,7 +125,7 @@ Partial Class Ingresar_Encargo
         Me.Button1.Location = New System.Drawing.Point(268, 520)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 41)
-        Me.Button1.TabIndex = 14
+        Me.Button1.TabIndex = 7
         Me.Button1.Text = "Aceptar"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -178,7 +178,7 @@ Partial Class Ingresar_Encargo
         Me.Button2.Location = New System.Drawing.Point(11, 280)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(231, 32)
-        Me.Button2.TabIndex = 18
+        Me.Button2.TabIndex = 3
         Me.Button2.Text = "Ver"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -191,15 +191,15 @@ Partial Class Ingresar_Encargo
         Me.txtBxDescripcion.Location = New System.Drawing.Point(12, 146)
         Me.txtBxDescripcion.Name = "txtBxDescripcion"
         Me.txtBxDescripcion.Size = New System.Drawing.Size(286, 96)
-        Me.txtBxDescripcion.TabIndex = 20
+        Me.txtBxDescripcion.TabIndex = 2
         Me.txtBxDescripcion.Text = ""
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.btnCalcular)
         Me.Panel2.Controls.Add(Me.txtGastos)
+        Me.Panel2.Controls.Add(Me.btnCalcular)
         Me.Panel2.Controls.Add(Me.lblMonto)
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label3)
@@ -222,7 +222,7 @@ Partial Class Ingresar_Encargo
         Me.btnCalcular.Location = New System.Drawing.Point(11, 486)
         Me.btnCalcular.Name = "btnCalcular"
         Me.btnCalcular.Size = New System.Drawing.Size(91, 31)
-        Me.btnCalcular.TabIndex = 24
+        Me.btnCalcular.TabIndex = 6
         Me.btnCalcular.Text = "Calcular"
         Me.btnCalcular.UseVisualStyleBackColor = False
         Me.btnCalcular.Visible = False
@@ -235,7 +235,7 @@ Partial Class Ingresar_Encargo
         Me.txtGastos.Location = New System.Drawing.Point(11, 378)
         Me.txtGastos.Name = "txtGastos"
         Me.txtGastos.Size = New System.Drawing.Size(231, 21)
-        Me.txtGastos.TabIndex = 23
+        Me.txtGastos.TabIndex = 4
         '
         'Label3
         '
@@ -253,9 +253,9 @@ Partial Class Ingresar_Encargo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(214, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(199, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(387, 574)
+        Me.Controls.Add(Me.txtManoObra)
         Me.Controls.Add(Me.txtBxDescripcion)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.txtManoObra)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblNombre)

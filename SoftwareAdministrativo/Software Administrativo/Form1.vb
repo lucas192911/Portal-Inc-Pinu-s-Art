@@ -300,6 +300,19 @@ Public Class Form1
         btnStock.BackColor = Color.FromArgb(145, 89, 90)
         currentBtn = btnStock
 
+        ''Mostrar productos en datagrid
+        Dim s As String = <a>select id , 
+                                    nombre,
+                                    precio
+                                    from producto</a>
+        Dim dtClientes As DataTable = Consulta(s)
+
+        Stock.dtgMostrarStock.AutoGenerateColumns = False
+        Stock.dtgMostrarStock.DataSource = dtClientes
+        Stock.dtgMostrarStock.Columns(0).DataPropertyName = "ID"
+        Stock.dtgMostrarStock.Columns(1).DataPropertyName = "Nombre"
+        Stock.dtgMostrarStock.Columns(2).DataPropertyName = "Precio"
+
 
     End Sub
 
