@@ -42,7 +42,4 @@
         SendMesagge(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub Eleccion_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

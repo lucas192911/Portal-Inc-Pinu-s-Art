@@ -22,7 +22,6 @@ Partial Class Login
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
@@ -31,8 +30,6 @@ Partial Class Login
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TimerDesplegar = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +51,6 @@ Partial Class Login
         Me.btnAceptar.TabIndex = 2
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = False
-        Me.btnAceptar.Visible = False
         '
         'txtPassword
         '
@@ -88,7 +84,6 @@ Partial Class Login
         Me.lblBienvenido.Size = New System.Drawing.Size(133, 24)
         Me.lblBienvenido.TabIndex = 6
         Me.lblBienvenido.Text = "¡Bienvenido!"
-        Me.lblBienvenido.Visible = False
         '
         'Label2
         '
@@ -115,7 +110,6 @@ Partial Class Login
         Me.btnClose.Size = New System.Drawing.Size(35, 25)
         Me.btnClose.TabIndex = 15
         Me.btnClose.UseVisualStyleBackColor = False
-        Me.btnClose.Visible = False
         '
         'Panel1
         '
@@ -126,14 +120,6 @@ Partial Class Login
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(430, 25)
         Me.Panel1.TabIndex = 17
-        Me.Panel1.Visible = False
-        '
-        'TimerDesplegar
-        '
-        Me.TimerDesplegar.Interval = 1
-        '
-        'Timer2
-        '
         '
         'PictureBox2
         '
@@ -189,8 +175,6 @@ Partial Class Login
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnClose As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents TimerDesplegar As Timer
-    Friend WithEvents Timer2 As Timer
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents CheckBox1 As CheckBox
 End Class

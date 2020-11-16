@@ -313,7 +313,6 @@ Public Class Form1
         Stock.dtgMostrarStock.Columns(1).DataPropertyName = "Nombre"
         Stock.dtgMostrarStock.Columns(2).DataPropertyName = "Precio"
 
-
     End Sub
 
 End Class

@@ -82,7 +82,7 @@ Partial Class Form1
         Me.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlMenu.Location = New System.Drawing.Point(0, 0)
         Me.pnlMenu.Name = "pnlMenu"
-        Me.pnlMenu.Size = New System.Drawing.Size(172, 600)
+        Me.pnlMenu.Size = New System.Drawing.Size(172, 644)
         Me.pnlMenu.TabIndex = 5
         '
         'btnStock
@@ -294,7 +294,7 @@ Partial Class Form1
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(5, 578)
+        Me.Label1.Location = New System.Drawing.Point(5, 622)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(48, 17)
         Me.Label1.TabIndex = 14
@@ -310,7 +310,7 @@ Partial Class Form1
         Me.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTitleBar.Location = New System.Drawing.Point(172, 0)
         Me.pnlTitleBar.Name = "pnlTitleBar"
-        Me.pnlTitleBar.Size = New System.Drawing.Size(878, 29)
+        Me.pnlTitleBar.Size = New System.Drawing.Size(973, 29)
         Me.pnlTitleBar.TabIndex = 11
         '
         'btnRestaurar
@@ -320,7 +320,7 @@ Partial Class Form1
         Me.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnRestaurar.FlatAppearance.BorderSize = 0
         Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRestaurar.Location = New System.Drawing.Point(800, 0)
+        Me.btnRestaurar.Location = New System.Drawing.Point(895, 0)
         Me.btnRestaurar.Name = "btnRestaurar"
         Me.btnRestaurar.Size = New System.Drawing.Size(35, 29)
         Me.btnRestaurar.TabIndex = 15
@@ -334,7 +334,7 @@ Partial Class Form1
         Me.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnMaximizar.FlatAppearance.BorderSize = 0
         Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximizar.Location = New System.Drawing.Point(800, 0)
+        Me.btnMaximizar.Location = New System.Drawing.Point(895, 0)
         Me.btnMaximizar.Name = "btnMaximizar"
         Me.btnMaximizar.Size = New System.Drawing.Size(35, 29)
         Me.btnMaximizar.TabIndex = 9
@@ -347,7 +347,7 @@ Partial Class Form1
         Me.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Location = New System.Drawing.Point(835, 0)
+        Me.btnClose.Location = New System.Drawing.Point(930, 0)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(43, 29)
         Me.btnClose.TabIndex = 7
@@ -360,7 +360,7 @@ Partial Class Form1
         Me.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnMinimizar.FlatAppearance.BorderSize = 0
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimizar.Location = New System.Drawing.Point(759, 0)
+        Me.btnMinimizar.Location = New System.Drawing.Point(854, 0)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(35, 29)
         Me.btnMinimizar.TabIndex = 8
@@ -374,7 +374,7 @@ Partial Class Form1
         Me.lblCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.lblCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCerrar.ForeColor = System.Drawing.Color.White
-        Me.lblCerrar.Location = New System.Drawing.Point(993, 29)
+        Me.lblCerrar.Location = New System.Drawing.Point(1088, 29)
         Me.lblCerrar.Name = "lblCerrar"
         Me.lblCerrar.Size = New System.Drawing.Size(41, 15)
         Me.lblCerrar.TabIndex = 12
@@ -388,7 +388,7 @@ Partial Class Form1
         Me.lblMinimizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.lblMinimizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMinimizar.ForeColor = System.Drawing.Color.White
-        Me.lblMinimizar.Location = New System.Drawing.Point(950, 29)
+        Me.lblMinimizar.Location = New System.Drawing.Point(1045, 29)
         Me.lblMinimizar.Name = "lblMinimizar"
         Me.lblMinimizar.Size = New System.Drawing.Size(62, 15)
         Me.lblMinimizar.TabIndex = 13
@@ -402,7 +402,7 @@ Partial Class Form1
         Me.lblMaximizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.lblMaximizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMaximizar.ForeColor = System.Drawing.Color.White
-        Me.lblMaximizar.Location = New System.Drawing.Point(985, 29)
+        Me.lblMaximizar.Location = New System.Drawing.Point(1080, 29)
         Me.lblMaximizar.Name = "lblMaximizar"
         Me.lblMaximizar.Size = New System.Drawing.Size(65, 15)
         Me.lblMaximizar.TabIndex = 14
@@ -416,7 +416,7 @@ Partial Class Form1
         Me.lblRestaurar.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(85, Byte), Integer))
         Me.lblRestaurar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRestaurar.ForeColor = System.Drawing.Color.White
-        Me.lblRestaurar.Location = New System.Drawing.Point(985, 29)
+        Me.lblRestaurar.Location = New System.Drawing.Point(1080, 29)
         Me.lblRestaurar.Name = "lblRestaurar"
         Me.lblRestaurar.Size = New System.Drawing.Size(61, 15)
         Me.lblRestaurar.TabIndex = 15
@@ -430,7 +430,7 @@ Partial Class Form1
         Me.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlContenedor.Location = New System.Drawing.Point(172, 29)
         Me.pnlContenedor.Name = "pnlContenedor"
-        Me.pnlContenedor.Size = New System.Drawing.Size(878, 571)
+        Me.pnlContenedor.Size = New System.Drawing.Size(973, 615)
         Me.pnlContenedor.TabIndex = 16
         '
         'pnlContenedorMain
@@ -442,7 +442,7 @@ Partial Class Form1
         Me.pnlContenedorMain.ForeColor = System.Drawing.Color.Black
         Me.pnlContenedorMain.Location = New System.Drawing.Point(0, 0)
         Me.pnlContenedorMain.Name = "pnlContenedorMain"
-        Me.pnlContenedorMain.Size = New System.Drawing.Size(878, 571)
+        Me.pnlContenedorMain.Size = New System.Drawing.Size(973, 615)
         Me.pnlContenedorMain.TabIndex = 0
         '
         'LabelFH
@@ -453,7 +453,7 @@ Partial Class Form1
         Me.LabelFH.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.LabelFH.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelFH.ForeColor = System.Drawing.Color.White
-        Me.LabelFH.Location = New System.Drawing.Point(255, 442)
+        Me.LabelFH.Location = New System.Drawing.Point(302, 464)
         Me.LabelFH.Name = "LabelFH"
         Me.LabelFH.Size = New System.Drawing.Size(0, 39)
         Me.LabelFH.TabIndex = 11
@@ -462,7 +462,7 @@ Partial Class Form1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = Global.Software_Administrativo.My.Resources.Resources.Dibujo_sin_título1
-        Me.PictureBox1.Location = New System.Drawing.Point(231, 434)
+        Me.PictureBox1.Location = New System.Drawing.Point(278, 456)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(437, 58)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -473,7 +473,7 @@ Partial Class Form1
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox2.Image = Global.Software_Administrativo.My.Resources.Resources.fondo_abstracto_textura_metalica_oro_rosa_1048_7968
-        Me.PictureBox2.Location = New System.Drawing.Point(265, 40)
+        Me.PictureBox2.Location = New System.Drawing.Point(312, 40)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(355, 352)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -484,8 +484,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1050, 600)
+        Me.BackColor = System.Drawing.Color.Black
+        Me.ClientSize = New System.Drawing.Size(1145, 644)
         Me.Controls.Add(Me.pnlContenedor)
         Me.Controls.Add(Me.lblRestaurar)
         Me.Controls.Add(Me.lblMaximizar)
@@ -496,8 +496,11 @@ Partial Class Form1
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(786, 527)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlMenu.ResumeLayout(False)
         Me.pnlMenu.PerformLayout()
         Me.pnlSubMenuEncargos.ResumeLayout(False)
