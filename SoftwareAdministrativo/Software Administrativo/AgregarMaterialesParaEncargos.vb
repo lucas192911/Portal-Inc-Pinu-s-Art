@@ -38,16 +38,18 @@
         Me.Close()
     End Sub
 
-    Private Sub btnFinalizar_Click(sender As Object, e As EventArgs) Handles btnFinalizar.Click
+    Dim idx As Integer
+    Dim cant As Integer
 
+    Private Sub btnFinalizar_Click(sender As Object, e As EventArgs) Handles btnFinalizar.Click
 
         For i As Integer = 0 To dtgMostrarMateriales.Rows.Count - 1
             If CBool(dtgMostrarMateriales.Rows(i).Cells(0).Value) = True Then
-                Dim id As Integer = dtgMostrarMateriales.Rows(i).Cells(1).Value
-                Dim cant As Integer = dtgMostrarMateriales.Rows(i).Cells(5).Value
-                Consulta("update materiales set cantidad = cantidad - " & cant.ToString & " where id = " & id.ToString)
+                idx = dtgMostrarMateriales.Rows(i).Cells(1).Value
+                cant = dtgMostrarMateriales.Rows(i).Cells(5).Value
+                Consulta("update materiales set cantidad = cantidad - " & cant.ToString & " where id = " & idx.ToString)
             End If
         Next
-
+        Me.Close()
     End Sub
 End Class

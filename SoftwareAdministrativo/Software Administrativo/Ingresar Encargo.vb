@@ -67,12 +67,27 @@
             Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
 
             AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
+
+            Dim sMtr As String = <A>select * from materiales</A>
+
+            Dim dtMateriales As DataTable = Consulta(sMtr)
+
+            Materiales.dtgMostrar.AutoGenerateColumns = False
+            Materiales.dtgMostrar.DataSource = dtMateriales
+            Materiales.dtgMostrar.Columns(0).DataPropertyName = "ID"
+            Materiales.dtgMostrar.Columns(1).DataPropertyName = "Nombre"
+            Materiales.dtgMostrar.Columns(2).DataPropertyName = "Precio"
+            Materiales.dtgMostrar.Columns(3).DataPropertyName = "Cantidad"
+            Materiales.dtgMostrar.Columns(4).DataPropertyName = "Descripcion"
+
             Me.Close()
             Form1.Show()
         End If
-        Dim num1 As Integer = txtManoObra.Text
-        Dim num2 As Integer = txtGastos.Text
-        lblMonto.Text = num1 + num2
+        If txtGastos.Text <> "" And txtManoObra.Text <> "" Then
+            Dim num1 As Integer = txtManoObra.Text
+            Dim num2 As Integer = txtGastos.Text
+            lblMonto.Text = num1 + num2
+        End If
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
