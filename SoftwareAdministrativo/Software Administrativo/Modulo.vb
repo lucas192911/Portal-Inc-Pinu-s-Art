@@ -81,10 +81,23 @@ Module Modulo
                 MsgBox(ex.Message, MsgBoxStyle.Critical)
             End Try
 
-
-
         End If
-        
+
+        conection.Close()
+    End Sub
+
+    Public Sub EliminarNoAlert(ByVal sql As String)
+        conection.Open()
+
+
+        Try
+
+                Dim cm As New MySqlCommand(sql, conection)
+                cm.ExecuteNonQuery()
+            Catch ex As Exception
+                MsgBox(ex.Message, MsgBoxStyle.Critical)
+            End Try
+
 
         conection.Close()
     End Sub

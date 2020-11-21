@@ -35,7 +35,8 @@
 
         If (dtgMostrar.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
             Dim i As Integer = dtgMostrar.SelectedRows.Item(0).Cells(0).Value
-            Dim sql As String = String.Format("delete from cliente where id = {0}", i)
+            Dim sqlEncargo As String = String.Format("delete encargo.* from encargo join cliente on cliente.id = encargo.id_Cliente where cliente.id = {0}", i)
+            Dim sqlCliente As String = String.Format("delete from cliente where id = {0}", i)
 
             Dim s As String = <a>select id as ID, 
                                     nombre as Nombre,
@@ -43,10 +44,20 @@
                                     direccion as Direccion 
                                     from cliente</a>
 
-            Eliminar(sql)
-            dtgMostrar.DataSource = Consulta(s)
-        End If
+            EliminarNoAlert(sqlEncargo)
+            Eliminar(sqlCliente)
 
+
+            Dim dtClientes As DataTable = Consulta(s)
+
+            dtgMostrar.AutoGenerateColumns = False
+            dtgMostrar.DataSource = dtClientes
+            dtgMostrar.Columns(0).DataPropertyName = "ID"
+            dtgMostrar.Columns(1).DataPropertyName = "Nombre"
+            dtgMostrar.Columns(2).DataPropertyName = "Apellido"
+            dtgMostrar.Columns(3).DataPropertyName = "Telefono"
+            dtgMostrar.Columns(4).DataPropertyName = "Direccion"
+        End If
 
     End Sub
 

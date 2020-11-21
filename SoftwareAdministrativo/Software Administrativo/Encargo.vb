@@ -24,9 +24,8 @@
             dtgMostrar.Columns(0).DataPropertyName = "id"
             dtgMostrar.Columns(1).DataPropertyName = "nombre"
             dtgMostrar.Columns(2).DataPropertyName = "fecha"
-            dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
-            dtgMostrar.Columns(4).DataPropertyName = "descripcion"
-            dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+            dtgMostrar.Columns(3).DataPropertyName = "descripcion"
+            dtgMostrar.Columns(4).DataPropertyName = "nombreCliente"
 
         End If
 
