@@ -9,6 +9,7 @@
                                     telefono, 
                                     direccion
                                     from cliente</a>
+
         Dim dtClientes As DataTable = Consulta(s)
 
         dtgMostrar.AutoGenerateColumns = False
@@ -23,7 +24,7 @@
 
 
 
-    Private Sub btnSeleccionar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
+    Private Sub btnIngresar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIngresar.Click
 
         IngresarCliente.ShowDialog()
 
@@ -59,7 +60,4 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
 End Class

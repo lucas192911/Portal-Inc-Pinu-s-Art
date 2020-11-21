@@ -4,19 +4,25 @@
         Dim vld As String = String.Format("select * from materiales where nombre = '{0}'", txtNombre.Text)
         Dim sql As String = String.Format("insert into materiales (nombre,precio,cantidad,descripcion) values ('{0}',{1},{2},'{3}')", txtNombre.Text, txtPrecio.Text, txtCantidad.Text, txtDescripcion.Text)
 
-        IngresarRegistro(vld, sql)
+        If txtCantidad.Text <> "" And txtDescripcion.Text <> "" And txtNombre.Text <> "" And txtPrecio.Text <> "" Then
+            IngresarRegistro(vld, sql)
 
-        If Modulo.num = 0 Then
-            Dim s As String = <a>select id as ID, 
+            If Modulo.num = 0 Then
+                Dim s As String = <a>select id as ID, 
                                     nombre as Nombre, 
                                     precio as Precio,
                                     cantidad as Cantidad, 
                                     descripcion as Descripcion 
                                     from materiales</a>
 
-            Materiales.dtgMostrar.DataSource = Consulta(s)
-            Me.Close()
+                Materiales.dtgMostrar.DataSource = Consulta(s)
+                Me.Close()
+            End If
+        Else
+            MsgBox("Complete los ampos")
         End If
+
+
 
 
     End Sub

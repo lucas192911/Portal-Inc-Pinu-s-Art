@@ -39,11 +39,10 @@ Public Class Correo
     End Sub
 
     Private Sub btnEnviar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEnviar.Click
-        Dim dt1 As DataTable = Consulta("select correo from email where id = 1")
-        Dim dt2 As DataTable = Consulta("select correo from email where id = 2")
+        Dim dt1 As DataTable = Consulta("select * from email")
 
-        Dim correo1 As String = dt1.Rows(0).Item(0).ToString
-        Dim correo2 As String = dt2.Rows(0).Item(0).ToString
+        Dim correo1 As String = dt1.Rows(0).Item(1).ToString
+        Dim correo2 As String = dt1.Rows(1).Item(1).ToString
 
 
 

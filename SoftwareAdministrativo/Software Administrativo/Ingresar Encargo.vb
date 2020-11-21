@@ -33,22 +33,23 @@
 
         Dim val As String = String.Format("select * from encargo where nombre = '{0}' and descripcion = '{1}'", txtNombre.Text, txtBxDescripcion.Text)
 
+        If txtNombre.Text <> "" And txtBxDescripcion.Text <> "" Then
 
-        If id = 0 Then
-            Dim dt As DataTable = Consulta("select id from cliente")
-            Dim row As DataRow = dt.Rows(dt.Rows.Count - 1)
-            Dim s As Integer = CStr(row("id"))
-            Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, s)
-            IngresarRegistro(val, sql)
+            If id = 0 Then
+                Dim dt As DataTable = Consulta("select id from cliente")
+                Dim row As DataRow = dt.Rows(dt.Rows.Count - 1)
+                Dim s As Integer = CStr(row("id"))
+                Dim sql As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, s)
+                IngresarRegistro(val, sql)
 
-        Else
-            Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, id)
-            IngresarRegistro(val, s)
-        End If
+            Else
+                Dim s As String = String.Format("insert into encargo (nombre, fecha, descripcion, id_Cliente, estado) values ('{0}',now(),'{1}', {2}, 1)", txtNombre.Text, txtBxDescripcion.Text, id)
+                IngresarRegistro(val, s)
+            End If
 
-        If Modulo.num = 0 Then
+            If Modulo.num = 0 Then
 
-            Dim s As String = <a>  select encargo.id, 
+                Dim s As String = <a>  select encargo.id, 
                                 encargo.nombre, 
                                 fecha, presupuesto, 
                                 descripcion, 
@@ -57,32 +58,36 @@
                                 on id_Cliente = cliente.id
                                 where estado = 1</a>
 
-            Encargo.dtgMostrar.AutoGenerateColumns = False
-            Encargo.dtgMostrar.DataSource = Consulta(s)
-            Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
-            Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
-            Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
-            Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
-            Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
-            Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+                Encargo.dtgMostrar.AutoGenerateColumns = False
+                Encargo.dtgMostrar.DataSource = Consulta(s)
+                Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
+                Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
+                Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
+                Encargo.dtgMostrar.Columns(3).DataPropertyName = "descripcion"
+                Encargo.dtgMostrar.Columns(4).DataPropertyName = "nombreCliente"
 
-            AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
+                AbrirFormEnPanel(Form1.pnlContenedor, Encargo)
 
-            Dim sMtr As String = <A>select * from materiales</A>
+                Dim sMtr As String = <A>select * from materiales</A>
 
-            Dim dtMateriales As DataTable = Consulta(sMtr)
+                Dim dtMateriales As DataTable = Consulta(sMtr)
 
-            Materiales.dtgMostrar.AutoGenerateColumns = False
-            Materiales.dtgMostrar.DataSource = dtMateriales
-            Materiales.dtgMostrar.Columns(0).DataPropertyName = "ID"
-            Materiales.dtgMostrar.Columns(1).DataPropertyName = "Nombre"
-            Materiales.dtgMostrar.Columns(2).DataPropertyName = "Precio"
-            Materiales.dtgMostrar.Columns(3).DataPropertyName = "Cantidad"
-            Materiales.dtgMostrar.Columns(4).DataPropertyName = "Descripcion"
+                Materiales.dtgMostrar.AutoGenerateColumns = False
+                Materiales.dtgMostrar.DataSource = dtMateriales
+                Materiales.dtgMostrar.Columns(0).DataPropertyName = "ID"
+                Materiales.dtgMostrar.Columns(1).DataPropertyName = "Nombre"
+                Materiales.dtgMostrar.Columns(2).DataPropertyName = "Precio"
+                Materiales.dtgMostrar.Columns(3).DataPropertyName = "Cantidad"
+                Materiales.dtgMostrar.Columns(4).DataPropertyName = "Descripcion"
 
-            Me.Close()
-            Form1.Show()
+                Me.Close()
+                Form1.Show()
+            End If
+
+        Else
+            MsgBox("Complete los campos")
         End If
+
         If txtGastos.Text <> "" And txtManoObra.Text <> "" Then
             Dim num1 As Integer = txtManoObra.Text
             Dim num2 As Integer = txtGastos.Text

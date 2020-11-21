@@ -148,7 +148,7 @@ Public Class Form1
 
         Dim s As String = <a>   select encargo.id, 
                                 encargo.nombre, 
-                                fecha, presupuesto, 
+                                fecha, 
                                 descripcion, 
                                 cliente.nombre as nombreCliente
                                 from encargo join cliente
@@ -159,9 +159,8 @@ Public Class Form1
         Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
         Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
         Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
-        Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
-        Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
-        Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+        Encargo.dtgMostrar.Columns(3).DataPropertyName = "descripcion"
+        Encargo.dtgMostrar.Columns(4).DataPropertyName = "nombreCliente"
         AbrirFormEnPanel(Me.pnlContenedor, Encargo)
 
         If Encargo.Contains(Encargo.btnEliminar) = False Then
@@ -259,15 +258,14 @@ Public Class Form1
     End Sub
 
     Private Sub subBtnFinalizado_Click(sender As Object, e As EventArgs) Handles subBtnFinalizado.Click
-        Dim s As String = "select encargo.id, encargo.nombre, fecha, presupuesto,descripcion,cliente.nombre As nombreCliente From encargo Join cliente On id_Cliente = cliente.id Where estado <> 1"
+        Dim s As String = "select encargo.id, encargo.nombre, fecha,descripcion,cliente.nombre As nombreCliente From encargo Join cliente On id_Cliente = cliente.id Where estado <> 1"
         Encargo.dtgMostrar.AutoGenerateColumns = False
         Encargo.dtgMostrar.DataSource = Consulta(s)
         Encargo.dtgMostrar.Columns(0).DataPropertyName = "id"
         Encargo.dtgMostrar.Columns(1).DataPropertyName = "nombre"
         Encargo.dtgMostrar.Columns(2).DataPropertyName = "fecha"
-        Encargo.dtgMostrar.Columns(3).DataPropertyName = "presupuesto"
-        Encargo.dtgMostrar.Columns(4).DataPropertyName = "descripcion"
-        Encargo.dtgMostrar.Columns(5).DataPropertyName = "nombreCliente"
+        Encargo.dtgMostrar.Columns(3).DataPropertyName = "descripcion"
+        Encargo.dtgMostrar.Columns(4).DataPropertyName = "nombreCliente"
         AbrirFormEnPanel(Me.pnlContenedor, Encargo)
 
         If (currentBtn.BackColor = Color.FromArgb(145, 89, 90) And currentBtn.Text = "Pendientes") Then

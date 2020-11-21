@@ -24,6 +24,7 @@
         frm.txtPrecio.Text = dtgMostrarStock.CurrentRow.Cells(2).Value.ToString
         frm.ShowDialog()
     End Sub
+
     Public i As Integer
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         If (dtgMostrarStock.GetCellCount(DataGridViewElementStates.Selected) > 0) Then
@@ -42,8 +43,8 @@
             dtgMostrarStock.Columns(0).DataPropertyName = "ID"
             dtgMostrarStock.Columns(1).DataPropertyName = "Nombre"
             dtgMostrarStock.Columns(2).DataPropertyName = "Precio"
-
         End If
 
     End Sub
+
 End Class
