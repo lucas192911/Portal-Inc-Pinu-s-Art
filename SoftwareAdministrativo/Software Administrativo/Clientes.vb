@@ -66,8 +66,9 @@
         Dim frm As New EditarCliente
 
         frm.txtNombre.Text = dtgMostrar.CurrentRow.Cells(1).Value.ToString
-        frm.txtTelefono.Text = dtgMostrar.CurrentRow.Cells(2).Value.ToString
-        frm.txtDireccion.Text = dtgMostrar.CurrentRow.Cells(3).Value.ToString
+        frm.txtApellido.Text = dtgMostrar.CurrentRow.Cells(2).Value.ToString
+        frm.txtTelefono.Text = dtgMostrar.CurrentRow.Cells(3).Value.ToString
+        frm.txtDireccion.Text = dtgMostrar.CurrentRow.Cells(4).Value.ToString
         frm.ShowDialog()
     End Sub
 
